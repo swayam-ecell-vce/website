@@ -1,0 +1,10 @@
+Use tabs not spaces for indentation. No, like seriously, use TABS
+Ensure that you name the variables appropriately.
+The class names should follow the standards mentioned below:
+  1. It should have the elements name in it (a classname for button elemenent would be btn)
+  2. The element tyoe should follow the name (if the button is for submitting stuff, then the class name would be btn-submit)
+  3. Write the CSS file in the order of the elements (if div comes before button in html, then div styling should be infront of button in the css file)
+  4. Name all the files appropriately (a good name for a file containing authentication routes would be 'auth.js')
+  
+NEVER PUSH DIRECTLY TO THE MASTER BRANCH. First, push the new code to a different branch and then create a pull request.
+Stick to the tasks given to you. If you find any discrepancy in code pushed by others, immediately create an issue.
