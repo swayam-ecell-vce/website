@@ -1,0 +1,11 @@
+Use the DRY principle (Don't repeat yourself).
+Create multiple files instead of writing a big file.
+Place all your CSS files in one common folder.
+Use Inline CSS only if there is less than one styling to be applied.
+Review your code before creating a pull request.
+Split your code into multiple smaller functions. Each with a single responsibility.
+Name your files logically according to the job that they perform. (For example, a good name for a login functionality file can be login.js)
+Clean code is self-commenting(using the right variable names and function names). Use comments only to explain complex functions.
+Write the import statements for modules and libraries in an alphabetical order.
+Leave an empty space after each function/block fo code
+Don't write anything in the index.js file
