@@ -1,0 +1,43 @@
+.Nav-ul-main
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Nav-li
+{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 0px;
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out
+}
+.Nav-li:hover
+{
+    font-weight: 700;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.781);
+}
+.Nav-Div-Main
+{
+    color: white;
+    background-color: rgb(27, 27, 27);
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    box-shadow: 5px 5px 10px #000000;
+}
+.selected
+{
+    font-weight: 800;
+}
+.selected:hover
+{
+    font-weight: 800;
+    border: 0px;
+}
