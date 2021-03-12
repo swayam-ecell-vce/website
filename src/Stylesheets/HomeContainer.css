@@ -4,6 +4,33 @@
 	margin-top: 3%;
 	height: 100vh;
 }
+.home-div-header
+{
+	background-color: #121212;
+	display: block;
+	margin-top: 5%;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+.home-p-title
+{
+	
+	font-size: 50px;
+}
+.home-span-Swayam
+{
+	color: #BB86FC;
+	font-size: 60px;
+}
+.home-span-titledecor
+{
+	color: #BB86FC;
+}
+.home-p-tagline
+{
+	font-size: 35px;
+	color: #BB86FC;
+}
 .home-div-main
 {
 	display: flex;
@@ -13,17 +40,18 @@
 {
 	background-color: rgb(27, 27, 27);
 	height: 50vh;
-    width: 53%;
+    width: 48%;
     text-align: center;
     padding-top: 10%;
 	border: 1px white;
-	margin-right: 1%;
-	box-shadow: 0px 5px 10px rgb(70, 66, 66);
+	margin-right: 2%;
+	margin-left: 2%;
+	box-shadow: 0px 5px 10px rgb(5, 5, 5);
 	transition: box-shadow 0.6s ease-in-out
 }
 .home-div-ter
 {
-	font-size: xx-large;
+	font-size: xx-large; 
 	padding-bottom: 10%;
 }
 .home-btn-main
@@ -33,7 +61,7 @@
 }
 .home-div-sec:hover
 {
-	box-shadow: 0px 5px 10px white;
+	box-shadow: 2.5px 2.5px 7.5px #a361f3;
 	cursor: pointer;
 }
 .home-div-abt
@@ -60,10 +88,6 @@
 	box-shadow: 3px 3px 6px black;
 	padding-left: 5%;
 	transition: all 0.6s;
-}
-.home-div-abt-sec:hover
-{
-	box-shadow: 3px 3px 9px rgb(112, 107, 107);
 }
 .home-img-abt
 {

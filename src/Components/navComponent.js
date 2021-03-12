@@ -6,7 +6,7 @@ const navcomponent = (props) =>
 {
 	return(
 		<ul className='Nav-ul-main'>
-			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
+			<NavLink to='/events' className='Nav-li' activeClassName='selected' exact>
 				Events
 			</NavLink>
 			<NavLink to='/incubator' className='Nav-li' activeClassName='selected' exact>
