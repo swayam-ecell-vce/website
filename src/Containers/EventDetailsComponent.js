@@ -30,7 +30,7 @@ class EventDetails extends Component
 						Ethereum is a technology that's home to digital money, global payments
 					</p>
 					<a className='det-a-btn'>
-						RSVP
+						Register
 					</a>
 				</div>
 				<div className='det-div-sec'>
@@ -66,7 +66,7 @@ class EventDetails extends Component
 					</div>
 					<div className='det-div-details'>
 						<a className='det-a-btn-sec'>
-							RSVP	
+							Register	
 						</a>
 					</div>
 				</div>

@@ -1,5 +1,28 @@
 import React from 'react'
 import '../Stylesheets/HomeContainer.css'
+import styled from 'styled-components'
+import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
+import LocalAtmRoundedIcon from '@material-ui/icons/LocalAtmRounded';
+import EmojiPeopleRoundedIcon from '@material-ui/icons/EmojiPeopleRounded';
+import BusinessRoundedIcon from '@material-ui/icons/BusinessRounded';
+import { Grid, SvgIcon } from '@material-ui/core';
+
+const Div = styled.div `
+
+height: 50vh;
+width: 70%;
+margin-top: 4%;
+padding: 3%;
+background-image: url(${props => props.urlparam || 'https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'});
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+box-shadow: 10px 10px #a361f3;
+margin-bottom: 3%;
+
+`
 
 const homeComponent = (props) =>
 {
@@ -33,80 +56,46 @@ const homeComponent = (props) =>
 			</div>
 		</div>
 		{/* Add the numbers speak line after this */}
-		<div className='home-div-numb'>
 
+		<div className='home-div-numb-title'>
+			Swayam in Numbers
 		</div>
+		<div className='home-div-numb'>
+			<EmojiEventsOutlinedIcon style={{ fontSize: 55 }} titleAccess = 'Event'></EmojiEventsOutlinedIcon>
+			<EmojiObjectsIcon style={{fontSize: 55}}></EmojiObjectsIcon>
+			<PeopleOutlineRoundedIcon style={{fontSize: 55}}></PeopleOutlineRoundedIcon>
+			<LocalAtmRoundedIcon style={{fontSize: 55}}></LocalAtmRoundedIcon>
+			<EmojiPeopleRoundedIcon style={{fontSize: 55}}></EmojiPeopleRoundedIcon>
+			<BusinessRoundedIcon style={{fontSize: 55}}></BusinessRoundedIcon>
+		</div>
+		
+		<div className='home-div-numb-sec'>
+			<p>
+				50+ Events <br /> Hosted
+			</p>
+			<p>
+				23+ Startups <br /> Incubated
+			</p>
+			<p>
+				5000+ Students <br /> Impacted
+			</p>
+			<p>
+				15,00,000+ <br /> Funds <br /> Raised
+			</p>
+			<p>
+				70+ <br />  Created <br /> Young Leaders
+			</p>
+			<p>
+				70+ <br />  Collaborations <br /> made
+			</p>
+		</div>
+		<div className='home-div-caro-title'>
+			Here’s What Some of Our Prominent Visitors had to Say
+		</div>
+		<div className='home-div-caro'>
+			<Div urlparam = '/1.PNG'>
 
-		<div className='home-div-abt'>
-			<div className='home-div-abt-sec'>
-				<p className='home-p-abt'>
-					What is Swayam?
-				</p>
-				<div className='home-abt-wrapper'>
-					<div className='home-img-abt'>
-
-					</div>
-				<p className='home-p-content'>
-				Contrary to popular belief, Lorem Ipsum is not simply random text.
-				It has roots in a piece of classical Latin literature from 45 BC,
-				making it over 2000 years old. Richard McClintock, a Latin professor at
-				Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-				discovered the undoubtable source.
-				Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-				(The Extremes of Good and Evil) by Cicero, written in 45 BC.
-				This book is a treatise on the theory of ethics,
-				very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-				comes from a line in section 1.10.32.
-				</p>
-				</div>
-			</div>
-			<div className='home-div-abt-sec'>
-				<p className='home-p-abt-alt'>
-					How Does it Work?
-				</p>
-				<div className='home-abt-wrapper'>
-				<p className='home-p-content-alt'>
-				Contrary to popular belief, Lorem Ipsum is not simply random text.
-				It has roots in a piece of classical Latin literature from 45 BC,
-				making it over 2000 years old. Richard McClintock, a Latin professor at
-				Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-				discovered the undoubtable source.
-				Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-				(The Extremes of Good and Evil) by Cicero, written in 45 BC.
-				This book is a treatise on the theory of ethics,
-				very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-				comes from a line in section 1.10.32.
-				</p>
-				<div className='home-img-abt-2'>
-
-				</div>
-				</div>
-			</div>
-			<div className='home-div-abt-sec'>
-				<p className='home-p-abt'>
-					What is Swayam?
-				</p>
-				<div className='home-abt-wrapper'>
-					<div className='home-img-abt'>
-
-					</div>
-				<p className='home-p-content'>
-				Contrary to popular belief, Lorem Ipsum is not simply random text.
-				It has roots in a piece of classical Latin literature from 45 BC,
-				making it over 2000 years old. Richard McClintock, a Latin professor at
-				Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-				discovered the undoubtable source.
-				Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-				(The Extremes of Good and Evil) by Cicero, written in 45 BC.
-				This book is a treatise on the theory of ethics,
-				very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-				comes from a line in section 1.10.32.
-				</p>
-				</div>
-			</div>
+			</Div>
 		</div>
 		</React.Fragment>
 		

@@ -6,6 +6,7 @@ import HomeContainer from './Containers/HomeContainer'
 import Incubator from './Containers/Incubator'
 import EventsConatiner from './Containers/Events'
 import EventDetails from './Containers/EventDetailsComponent'
+import AboutUs from './Containers/About'
 
 function App()
 {
@@ -17,6 +18,7 @@ function App()
         <Route path='/incubator' component = {Incubator} exact />
         <Route path='/events' component = {EventsConatiner} exact />
         <Route path='/events/:id' component = {EventDetails} exact />
+        <Route path='/about' component = {AboutUs} exact />
       </Switch>
     </div>
     </BrowserRouter>

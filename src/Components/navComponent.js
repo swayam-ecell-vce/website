@@ -12,8 +12,8 @@ const navcomponent = (props) =>
 			<NavLink to='/incubator' className='Nav-li' activeClassName='selected' exact>
 				Incubator
 			</NavLink>
-			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
-				Resources
+			<NavLink to='/about' className='Nav-li' activeClassName='selected' exact>
+				About Us
 			</NavLink>
 			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
 				Swayam

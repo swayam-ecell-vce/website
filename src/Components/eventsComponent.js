@@ -23,43 +23,43 @@ const eventComponent = (props) =>
 	    <p className='ev-p-title'>Incubation Contest </p>
         <p className='ev-p-date'>21.03.2021</p>
         <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <p className='ev-p-btn'>Register Now</p>     
+        <a href='/events/1' className='ev-p-btn'>Register Now</a>    
       </div>
       <div className='ev-div-card'>
 	    <p className='ev-p-title'>Incubation Contest </p>
         <p className='ev-p-date'>21.03.2021</p>
         <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <p className='ev-p-btn'>Register Now</p>     
+        <a href='/events/1' className='ev-p-btn'>Register Now</a>     
       </div>
       <div className='ev-div-card'>
 	    <p className='ev-p-title'>Incubation Contest </p>
         <p className='ev-p-date'>21.03.2021</p>
         <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <p className='ev-p-btn'>Register Now</p>     
+        <a href='/events/1' className='ev-p-btn'>Register Now</a>    
       </div>
       <div className='ev-div-card'>
 	    <p className='ev-p-title'>Incubation Contest </p>
         <p className='ev-p-date'>21.03.2021</p>
         <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <p className='ev-p-btn'>Register Now</p>     
+        <a href='/events/1' className='ev-p-btn'>Register Now</a>     
       </div>
       <div className='ev-div-card'>
 	    <p className='ev-p-title'>Incubation Contest </p>
         <p className='ev-p-date'>21.03.2021</p>
         <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <p className='ev-p-btn'>Register Now</p>     
+        <a href='/events/1' className='ev-p-btn'>Register Now</a>    
       </div>
       <div className='ev-div-card'>
 	    <p className='ev-p-title'>Incubation Contest </p>
         <p className='ev-p-date'>21.03.2021</p>
         <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <p className='ev-p-btn'>Register Now</p>     
+        <a href='/events/1' className='ev-p-btn'>Register Now</a>   
       </div>
       <div className='ev-div-card'>
 	    <p className='ev-p-title'>Incubation Contest </p>
         <p className='ev-p-date'>21.03.2021</p>
         <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <p className='ev-p-btn'>Register Now</p>     
+        <a href='/events/1' className='ev-p-btn'>Register Now</a>  
       </div>
       
      
