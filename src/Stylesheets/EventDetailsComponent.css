@@ -1,0 +1,98 @@
+.det-div-wrapper
+{
+	background: linear-gradient(to bottom, rgba(51, 51, 51, 0.8), #121212);
+}
+.det-div-main
+{
+	padding-top: 5%;
+}
+.det-div-tnd
+{
+	font-size: large;
+	display: flex;
+	justify-content: center;
+	margin-top: 4%;
+}
+.det-p-title
+{
+	margin-top: 0;
+	margin-bottom: 1.5%;
+	font-size: 60px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+}
+.det-p-tagline
+{
+	text-align: center;
+}
+.det-a-btn, .det-a-btn-sec
+{
+	display: flex;
+	font-size: larger;
+	margin: 0px auto;
+	margin-top: 3%;
+	padding: 0.5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 7px;
+	width: fit-content;
+	background: linear-gradient(to right, rgba(37, 255, 190, 0.8), rgb(148, 34, 255));
+	transition: background 0.5s ease-in-out;
+}
+.det-a-btn-sec
+{
+	margin: 0;
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+.det-a-btn:hover
+{
+	cursor: pointer;
+	background-position: 105px;
+}
+.det-a-btn-sec:hover
+{
+	cursor: pointer;
+	background-position: 93px;
+}
+.det-div-sec
+{
+	margin-top: 5%;
+}
+.det-div-img
+{
+	background-image: url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 70%;
+	height: 500px;
+	margin: 0px auto;
+	border-radius: 15px;
+}
+.det-p-subtitle
+{
+	font-size: xx-large;
+}
+.det-div-details
+{
+	margin: 4%;
+	padding-left: 13%;
+	margin-bottom: 0;
+}
+.det-div-wrapper-sec
+{
+	font-size: larger;
+}
+.det-div-wrapper-sec
+{
+	margin-bottom: 0;
+}
+.det-p-place
+{
+	margin-top: 0;
+}
+.det-p-time
+{
+	margin-bottom: 4px;
+}
