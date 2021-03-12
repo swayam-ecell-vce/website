@@ -9,6 +9,17 @@ const homeComponent = (props) =>
 	}
 	return(
 		<React.Fragment>
+		<div className='home-div-header'>
+			<p className='home-p-title'>
+			<span className='home-span-Swayam'>//Swayam Logo//</span> <br />
+			The <br />
+			<span className='home-span-titledecor'>Entrepreneurship</span> cell  <br />
+			of <span className='home-span-titledecor'>Vasavi</span> College of Engineering
+			</p>
+			<p className='home-p-tagline'>
+				"Students to Innovators"
+			</p>
+		</div>
 		<div className='home-div-main'>
 			<div className='home-div-sec' onClick={divclickhandler}>
 				<div className='home-div-ter'>
@@ -17,7 +28,7 @@ const homeComponent = (props) =>
 			</div>
 			<div className='home-div-sec'>
 				<div className='home-div-ter'>
-					Swayam
+					Swayam Events
 				</div>
 			</div>
 		</div>
