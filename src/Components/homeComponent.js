@@ -32,6 +32,11 @@ const homeComponent = (props) =>
 				</div>
 			</div>
 		</div>
+		{/* Add the numbers speak line after this */}
+		<div className='home-div-numb'>
+
+		</div>
+
 		<div className='home-div-abt'>
 			<div className='home-div-abt-sec'>
 				<p className='home-p-abt'>

@@ -35,19 +35,20 @@
 {
 	display: flex;
 	margin-top: 3.7%;
+	justify-content: center;
 }
 .home-div-sec
 {
 	background-color: rgb(27, 27, 27);
-	height: 50vh;
-    width: 48%;
+	height: 25vh;
+    width: 38%;
     text-align: center;
     padding-top: 10%;
 	border: 1px white;
 	margin-right: 2%;
 	margin-left: 2%;
 	box-shadow: 0px 5px 10px rgb(5, 5, 5);
-	transition: box-shadow 0.6s ease-in-out
+	transition: box-shadow 0.5s ease-in-out
 }
 .home-div-ter
 {
@@ -63,6 +64,11 @@
 {
 	box-shadow: 2.5px 2.5px 7.5px #a361f3;
 	cursor: pointer;
+}
+.home-div-numb
+{
+	display: flex;
+	justify-content: space-evenly;
 }
 .home-div-abt
 {
