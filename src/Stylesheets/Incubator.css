@@ -1,16 +1,179 @@
 .inc-div-main
 {
 	padding-top: 2%;
+	background-color: #121212;
 }
 .inc-div-jumbo
 {
-	height: 70vh;
+	height: 75%;
+	width: 95%;
+	margin-left: 2.25%;
 	margin-bottom: 3.5%;
+	margin-right: 1%;
+	margin-top: 4%;
 	border: 1px;
 	background-color: rgb(27,27,27);
 	box-shadow: 15px 15px 10px rgb(0, 0, 0);
+	transition: all 0.5s;
 }
+
+.inc-div-jumbo:hover{
+	transition: box shadow 0.6s ease-in-out;
+    cursor: pointer;
+	box-shadow: 2px 2px 1px #4ba3c3;
+}
+
+.inc-abt-wrapper
+{
+	display: flex;
+}
+.inc-p-content
+{
+	width: 45%;
+	padding-left: 5%;
+}
+.inc-p-content-alt
+{
+	width: 45%;
+	padding-right: 5%;
+}
+.inc-p-content:hover
+{
+	cursor: copy;
+}
+
+.inc-img-abt{
+	background-image: url('https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+	background-size: cover;
+    background-position: center;
+	height: 300px;
+    width: 45%;
+    display: inline-block;
+	padding-right: 2.5%;
+	margin-bottom: 7%;
+	margin-left: 1%;
+}
+
 .inc-p-head
 {
+	font-size: 45px;
+  margin-left: 1%;
+  margin-top: 3.5%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #4ba3c3;
+}
+
+.inc-facility{
+	margin-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+.inc-div-facility-wrapper{
+	display: flex;
+	padding: 1%;
+}
+
+.inc-div-facility-sec{
+	max-width: 25%;
+	max-height: 50%;
+    float: left;
+    margin: 20px auto;
+    background-color: #4ba3c3;
+    box-shadow: 15px 15px 10px rgb(0, 0, 0);
+    transition: 0.25s;
+    padding: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	text-align: center;
+}
+
+.inc-div-facility-sec:hover{
+	transition: all ease-in-out 0.5s;
+	transform: scale(1.05);
+}
+
+.inc-p-abt{
 	font-size: xx-large;
+}
+
+.inc-p-facility-content{
+	display: inline-block;
+	width: 45%;
+	padding-left: 1%;
+	padding-right: 5%;
+}
+
+.inc-p-facility-content:hover{
+	cursor: copy;
+}
+
+.card {
+  position: relative;
+  width: 1200px;
+  height: 450px;
+  overflow: hidden;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Light blue cover above the slide show*/
+.card::after {
+  content: '';
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 900;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(140, 22, 115, 0.2);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX( 1200px );
+  background-size: cover;
+  background-position: center;
+  background-image: url( 'https://image.shutterstock.com/image-photo/sun-comes-far-end-beach-600w-1722041116.jpg' );
+  
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url( 'https://image.shutterstock.com/image-photo/sun-comes-far-end-beach-600w-1722041116.jpg' );
+  animation-delay: 7s;
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url( 'https://image.shutterstock.com/image-photo/wet-asphalt-reflection-neon-lights-600w-1312820954.jpg');
+  animation-delay: 14s;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url('https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80' );
+  animation-delay: 21s;
+}
+
+
+@keyframes opaqTransition {
+  3% { transform: translateX( 0 ); }
+  25% { transform: translateX( 0 ); }
+  28% { transform: translateX( -1200px ); }
+  100% { transform: translateX( -1200px ); }
 }
