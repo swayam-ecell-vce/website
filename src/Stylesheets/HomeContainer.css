@@ -1,3 +1,7 @@
+.home-wrapper
+{
+	margin-bottom: 4%;
+}
 .Home-Main-Div
 {
 	color: white;
@@ -35,19 +39,20 @@
 {
 	display: flex;
 	margin-top: 3.7%;
+	justify-content: center;
 }
 .home-div-sec
 {
 	background-color: rgb(27, 27, 27);
-	height: 50vh;
-    width: 48%;
+	height: 25vh;
+    width: 38%;
     text-align: center;
     padding-top: 10%;
 	border: 1px white;
 	margin-right: 2%;
 	margin-left: 2%;
 	box-shadow: 0px 5px 10px rgb(5, 5, 5);
-	transition: box-shadow 0.6s ease-in-out
+	transition: box-shadow 0.5s ease-in-out
 }
 .home-div-ter
 {
@@ -64,6 +69,41 @@
 	box-shadow: 2.5px 2.5px 7.5px #a361f3;
 	cursor: pointer;
 }
+.home-div-numb
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3%;
+}
+.home-div-numb-title
+{
+	font-size: 40px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	color: #BB86FC;
+	padding-top: 4%;
+}
+.home-div-numb-sec
+{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding-bottom: 3%;
+}
+.home-div-caro-title
+{
+	padding-top: 2%;
+	font-size: 40px;
+	text-align: center;
+	color: #BB86FC;
+	font-family: 'Times New Roman', Times, serif;
+}
+.home-div-caro
+{
+	display: flex;
+	justify-content: center;
+	
+}
 .home-div-abt
 {
 	margin-top: 5%;
@@ -71,15 +111,26 @@
 	padding-right: 5%;
 	padding-bottom: 5%;
 }
+.home-div-abt-title
+{
+	font-size: 40px;
+	margin-left: 2%;
+}
 .home-p-abt
 {
 	font-size: xx-large;
+	font-weight: 700;
+	color: #BB86FC;
+	padding-top: 2%;
 }
 .home-p-abt-alt
 {
 	font-size: xx-large;
+	font-weight: 700;
 	text-align: end;
 	padding-right: 2%;
+	padding-top: 2%;
+	color: #BB86FC;
 }
 .home-div-abt-sec
 {
@@ -119,13 +170,248 @@
 {
 	width: 45%;
 	padding-left: 5%;
+	font-size: larger;
 }
 .home-p-content-alt
 {
 	width: 45%;
 	padding-right: 5%;
+	font-size: larger;
 }
 .home-p-content:hover
 {
 	cursor: copy;
+}
+.home-div-grid-img-1
+{
+	width: 25vh;
+	height: 25vh;
+}
+.home-div-collage
+{
+	margin-top: 5%;
+	background-color: #5a29ca;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2%;
+}
+.home-div-collage-title
+{
+	width: 100%;
+}
+.home-p-collage-title
+{
+	font-size: xx-large;
+	text-align: center;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1px;
+	grid-auto-rows: minmax(100px, auto);
+	width: 100%;
+}
+.one {
+	grid-column: 1;
+	grid-row: 1 / 3;
+	background-image: url('https://images.unsplash.com/photo-1579678986055-a0fe07e4b1cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1.5%;
+	border: 3px solid white;
+}
+.two {
+	grid-column: 2 / 3;
+	grid-row: 1 / 4;
+	background-image: url('https://images.unsplash.com/photo-1579678986055-a0fe07e4b1cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1.5%;
+	border: 3px solid white;
+}
+.three {
+	grid-column: 1;
+	grid-row: 3 / 6;
+	background-image: url('https://images.unsplash.com/photo-1579678986055-a0fe07e4b1cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1.5%;
+	border: 3px solid white;
+}
+.four {
+	grid-row: 4 /6;
+	background-image: url('https://images.unsplash.com/photo-1579678986055-a0fe07e4b1cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1.5%;
+	border: 3px solid white;
+	width: 50%;
+}
+.five {
+	grid-column: 2;
+	grid-row: 4 / 6;
+	background-image: url('https://images.unsplash.com/photo-1579678986055-a0fe07e4b1cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1.5%;
+	border: 3px solid white;
+}
+.six {
+	grid-column: 3;
+	grid-row: 1 / 4;
+	background-image: url('https://images.unsplash.com/photo-1579678986055-a0fe07e4b1cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1.5%;
+	border: 3px solid white;
+}
+.overlay
+{
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgb(90,41,202, 0.7);;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+.text
+{
+	color: white;
+	font-size: 20px;
+	font-weight: 800;
+	text-align: center;
+	margin: 0;
+	padding-top: 15%;
+}
+.one:hover .overlay
+{
+	opacity: 1;
+	cursor: pointer;
+}
+.two:hover .overlay
+{
+	opacity: 1;
+	cursor: pointer;
+}
+.three:hover .overlay
+{
+	opacity: 1;
+	cursor: pointer;
+}
+.four:hover .overlay
+{
+	opacity: 1;
+	cursor: pointer;
+}
+.five:hover .overlay
+{
+	opacity: 1;
+	cursor: pointer;
+}
+.six:hover .overlay
+{
+	opacity: 1;
+	cursor: pointer;
+}
+.home-div-show
+{
+	background-color: white;
+	padding: 4%;
+	width: 60%;
+	box-shadow: 10px 10px 0px #5a29ca;
+	margin: 0px auto;
+	margin-top: 5%;
+	position: static;
+}
+.home-div-st
+{
+	padding: 4%;
+}
+.home-div-show-wrapper, .home-div-show-wrapper-2
+{
+	display: flex !important;
+}
+.home-div-show-wrapper-2
+{
+	border: 5px solid white;
+	width: 80% !important;
+	height: 25vh;
+	margin: 5%;
+	padding: 4%;
+	padding-left: 0%;
+	padding-top: 6%;
+}
+.home-img-avatar, .home-img-avatar-2
+{
+	background-image: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80');
+	height: 180px;
+	width: 270px;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 10px 10px #5a29ca;
+	margin: 0.4%;
+}
+
+.home-img-avatar-2
+{
+	height: 240px;
+	width: 240px;
+	position: relative;
+	padding-right: 3%;
+	border: 4px solid white;
+	margin: 0;
+}
+.home-p-show-text
+{
+	font-size: larger;
+	font-weight: 700;
+	color: black;
+}
+.home-div-show-quote
+{
+	margin-left: 4%;
+	height: 60px;
+}
+.home-p-show-author
+{
+	font-size: medium;
+	font-weight: 700;
+	color: #5a29ca;
+}
+.home-p-show-title
+{
+	font-size: small;
+	font-weight: normal;
+	color: black;
+}
+.home-div-startups
+{
+	margin-top: 3%;
+}
+.slick-dots
+{
+	width: 100%;
+}
+
+.home-div-st
+{
+	background-color: #5a29ca;
+}
+.home-div-show-details
+{
+	width: 50%;
+	margin-left: 2%;
+}
+.home-div-show-title
+{
+	font-size: larger;
+	font-weight: 700;
 }

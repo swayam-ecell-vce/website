@@ -1,5 +1,19 @@
 import React from 'react'
 import '../Stylesheets/HomeContainer.css'
+import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
+import PeopleOutlineRoundedIcon from '@material-ui/icons/PeopleOutlineRounded';
+import LocalAtmRoundedIcon from '@material-ui/icons/LocalAtmRounded';
+import EmojiPeopleRoundedIcon from '@material-ui/icons/EmojiPeopleRounded';
+import BusinessRoundedIcon from '@material-ui/icons/BusinessRounded';
+import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import Slider from "react-slick";
+import SliderWrapper from '../UI/sliderdots'
+
+//import the css files here
+import "../../node_modules/slick-carousel/slick/slick.css" 
+import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
 
 const homeComponent = (props) =>
 {
@@ -7,8 +21,39 @@ const homeComponent = (props) =>
 	{
 		//configure the click handler user React.history.push or something better
 	}
+
+	//settings needed for the testimonials carousel to run
+	const settings = {
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		initialSlide: 0,
+		speed: 500,
+		arrows: false,
+		adaptiveHeight: true,
+		appendDots: dots => <ul>{dots}</ul>,
+		customPaging: i => (
+		  <div className="ft-slick__dots--custom">
+			<div className="loading" />
+		  </div>
+		)
+	  };
+	  const settings2 = {
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		initialSlide: 0,
+		speed: 500,
+		adaptiveHeight: true,
+	  }
 	return(
-		<React.Fragment>
+		<div className='home-wrapper'>
 		<div className='home-div-header'>
 			<p className='home-p-title'>
 			<span className='home-span-Swayam'>//Swayam Logo//</span> <br />
@@ -32,78 +77,227 @@ const homeComponent = (props) =>
 				</div>
 			</div>
 		</div>
-		<div className='home-div-abt'>
-			<div className='home-div-abt-sec'>
-				<p className='home-p-abt'>
-					What is Swayam?
+		{/* Add the numbers speak line after this */}
+		<div className='home-div-collage'>
+			<div className='home-div-collage-title'>
+				<p className='home-p-collage-title'>
+				Swayam At a Glance
 				</p>
-				<div className='home-abt-wrapper'>
-					<div className='home-img-abt'>
-
-					</div>
-				<p className='home-p-content'>
-				Contrary to popular belief, Lorem Ipsum is not simply random text.
-				It has roots in a piece of classical Latin literature from 45 BC,
-				making it over 2000 years old. Richard McClintock, a Latin professor at
-				Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-				discovered the undoubtable source.
-				Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-				(The Extremes of Good and Evil) by Cicero, written in 45 BC.
-				This book is a treatise on the theory of ethics,
-				very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-				comes from a line in section 1.10.32.
-				</p>
+			</div>
+		<div className="wrapper">
+			<div className="one">
+				<div className='overlay'>
+					<p className='text'>
+						Swayam Internship Drive 2019
+					</p>
 				</div>
 			</div>
-			<div className='home-div-abt-sec'>
-				<p className='home-p-abt-alt'>
-					How Does it Work?
-				</p>
-				<div className='home-abt-wrapper'>
-				<p className='home-p-content-alt'>
-				Contrary to popular belief, Lorem Ipsum is not simply random text.
-				It has roots in a piece of classical Latin literature from 45 BC,
-				making it over 2000 years old. Richard McClintock, a Latin professor at
-				Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-				discovered the undoubtable source.
-				Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-				(The Extremes of Good and Evil) by Cicero, written in 45 BC.
-				This book is a treatise on the theory of ethics,
-				very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-				comes from a line in section 1.10.32.
-				</p>
-				<div className='home-img-abt-2'>
-
-				</div>
+			<div className="two">
+				<div className='overlay'>
+					<p className='text'>
+						Swayam Hackathon
+					</p>
 				</div>
 			</div>
-			<div className='home-div-abt-sec'>
-				<p className='home-p-abt'>
-					What is Swayam?
-				</p>
-				<div className='home-abt-wrapper'>
-					<div className='home-img-abt'>
-
-					</div>
-				<p className='home-p-content'>
-				Contrary to popular belief, Lorem Ipsum is not simply random text.
-				It has roots in a piece of classical Latin literature from 45 BC,
-				making it over 2000 years old. Richard McClintock, a Latin professor at
-				Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-				consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-				discovered the undoubtable source.
-				Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-				(The Extremes of Good and Evil) by Cicero, written in 45 BC.
-				This book is a treatise on the theory of ethics,
-				very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-				comes from a line in section 1.10.32.
-				</p>
+			<div className="three">
+				<div className='overlay'>
+					<p className='text'>
+						Swayam Ideation Contest 2019
+					</p>
+				</div>
+			</div>
+			<div className="four">
+				<div className='overlay'>
+					<p className='text'>
+						Swayam Start-up Fest 2019
+					</p>
+				</div>
+			</div>
+			<div className="five">
+				<div className='overlay'>
+					<p className='text'>
+						Swayam Service Drive 2019
+					</p>
+				</div>
+			</div>
+			<div className="six">
+				<div className='overlay'>
+					<p className='text'>
+						Swayam Doge
+					</p>
 				</div>
 			</div>
 		</div>
-		</React.Fragment>
+		</div>
+		{/*test code for the photo collage */}
+		<div className='home-div-numb-title'>
+			Swayam in Numbers
+		</div>
+		<div className='home-div-numb'>
+			<EmojiEventsOutlinedIcon style={{ fontSize: 55 }} titleAccess = 'Event'></EmojiEventsOutlinedIcon>
+			<EmojiObjectsIcon style={{fontSize: 55}}></EmojiObjectsIcon>
+			<PeopleOutlineRoundedIcon style={{fontSize: 55}}></PeopleOutlineRoundedIcon>
+			<LocalAtmRoundedIcon style={{fontSize: 55}}></LocalAtmRoundedIcon>
+			<EmojiPeopleRoundedIcon style={{fontSize: 55}}></EmojiPeopleRoundedIcon>
+			<BusinessRoundedIcon style={{fontSize: 55}}></BusinessRoundedIcon>
+		</div>
+		
+		<div className='home-div-numb-sec'>
+			<p>
+				50+ Events <br /> Hosted
+			</p>
+			<p>
+				23+ Startups <br /> Incubated
+			</p>
+			<p>
+				5000+ Students <br /> Impacted
+			</p>
+			<p>
+				15,00,000+ <br /> Funds <br /> Raised
+			</p>
+			<p>
+				70+ <br />  Created <br /> Young Leaders
+			</p>
+			<p>
+				70+ <br />  Collaborations <br /> made
+			</p>
+		</div>
+		<div className='home-div-caro-title'>
+			Here’s What Some of Our Prominent Visitors had to Say
+		</div>
+
+		<div className='home-div-show'>
+			<SliderWrapper>
+			<Slider {...settings}>
+				<div className='home-div-show-wrapper'>
+					<div className='home-img-avatar'>
+
+					</div>
+					<div className='home-div-show-quote'>
+						<FormatQuoteIcon style={{ fontSize: 55, color: 'black' }}/>
+					</div>
+					<div className='home-div-show-text'>
+						<br />
+						<p className='home-p-show-text'>
+							You guys  provided young enthusiasts exposure to experts
+							with various initiatives, successes and failures, and that
+							is truly Amazing.
+							<br />
+							<p className='home-p-show-author'>
+								Sri Charan Lakkaraju
+								<br />
+								<p className='home-p-show-title'>
+								Forbes 30 Under30 Asia 2018 | Founder, stuMagz
+								</p>
+							</p>
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper'>
+					<div className='home-img-avatar'>
+
+					</div>
+					<div className='home-div-show-quote'>
+						<FormatQuoteIcon style={{ fontSize: 55, color: 'black' }}/>
+					</div>
+					<div className='home-div-show-text'>
+						<br />
+						<p className='home-p-show-text'>
+							You guys  provided young enthusiasts exposure to experts
+							with various initiatives, successes and failures, and that
+							is truly Amazing.
+							<br />
+							<p className='home-p-show-author'>
+								Sri Charan Lakkaraju
+								<br />
+								<p className='home-p-show-title'>
+								Forbes 30 Under30 Asia 2018 | Founder, stuMagz
+								</p>
+							</p>
+						</p>
+					</div>
+				</div>
+			</Slider>
+			</SliderWrapper>
+      	</div>
+
+		<div className='home-div-startups'>
+			<p className = 'home-div-caro-title'>
+				Our College Start-ups
+			</p>
+			<div className = 'home-div-st'>
+			<SliderWrapper>
+			<Slider {...settings2}>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								Cure Cloud India
+							</p>
+							Lorem ipsum dolor sit amet, consetetur
+							sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+							sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								Cure Cloud India
+							</p>
+							Lorem ipsum dolor sit amet, consetetur
+							sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								Cure Cloud India
+							</p>
+							Lorem ipsum dolor sit amet, consetetur
+							sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+			</Slider>
+			</SliderWrapper>
+			</div>
+		</div>
+		</div>
 		
 	)
 }
