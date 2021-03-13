@@ -41,6 +41,17 @@ const homeComponent = (props) =>
 		  </div>
 		)
 	  };
+	  const settings2 = {
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		initialSlide: 0,
+		speed: 500,
+		adaptiveHeight: true,
+	  }
 	return(
 		<div className='home-wrapper'>
 		<div className='home-div-header'>
@@ -214,6 +225,77 @@ const homeComponent = (props) =>
 			<p className = 'home-div-caro-title'>
 				Our College Start-ups
 			</p>
+			<div className = 'home-div-st'>
+			<SliderWrapper>
+			<Slider {...settings2}>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								Cure Cloud India
+							</p>
+							Lorem ipsum dolor sit amet, consetetur
+							sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+							sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								Cure Cloud India
+							</p>
+							Lorem ipsum dolor sit amet, consetetur
+							sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2'>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								Cure Cloud India
+							</p>
+							Lorem ipsum dolor sit amet, consetetur
+							sadipscing elitr, sed diam nonumy eirmod 
+							tempor invidunt ut labore et dolore magna 
+							aliquyam erat, sed diam voluptua. At vero 
+							eos et accusam et justo duo ... Read More 
+						</p>
+					</div>
+				</div>
+			</Slider>
+			</SliderWrapper>
+			</div>
 		</div>
 		</div>
 		
