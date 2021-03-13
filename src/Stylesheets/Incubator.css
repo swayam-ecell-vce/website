@@ -56,9 +56,13 @@
 
 .inc-p-head
 {
-	font-size: xx-large;
+	font-size: 45px;
   margin-left: 1%;
   margin-top: 3.5%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: #4ba3c3;
 }
 
 .inc-facility{
@@ -110,7 +114,7 @@
 .card {
   position: relative;
   width: 1200px;
-  height: 500px;
+  height: 450px;
   overflow: hidden;
   margin-left: 2.5%;
   margin-top: 2%;
