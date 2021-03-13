@@ -196,6 +196,12 @@ const homeComponent = (props) =>
 				</div>
 			</Slider>
       	</div>
+
+		<div className='home-div-startups'>
+			<p className = 'home-div-caro-title'>
+				Our College Start-ups
+			</p>
+		</div>
 		</div>
 		
 	)
