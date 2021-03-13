@@ -370,3 +370,11 @@
 {
 	margin-top: 3%;
 }
+.slick-prev:before,
+.slick-next:before {
+  color: #5a29ca !important;
+}
+.slick-dots
+{
+	width: 100%;
+}

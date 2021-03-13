@@ -8,6 +8,7 @@ import EmojiPeopleRoundedIcon from '@material-ui/icons/EmojiPeopleRounded';
 import BusinessRoundedIcon from '@material-ui/icons/BusinessRounded';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import Slider from "react-slick";
+import SliderWrapper from '../UI/sliderdots'
 
 //import the css files here
 import "../../node_modules/slick-carousel/slick/slick.css" 
@@ -20,15 +21,25 @@ const homeComponent = (props) =>
 	{
 		//configure the click handler user React.history.push or something better
 	}
-	//trying out the carousel from react-slick
+
+	//settings needed for the testimonials carousel to run
 	const settings = {
 		dots: true,
-		lazyLoad: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		infinite: true,
-		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		initialSlide: 2
+		initialSlide: 0,
+		speed: 500,
+		arrows: false,
+		adaptiveHeight: true,
+		appendDots: dots => <ul>{dots}</ul>,
+		customPaging: i => (
+		  <div className="ft-slick__dots--custom">
+			<div className="loading" />
+		  </div>
+		)
 	  };
 	return(
 		<div className='home-wrapper'>
@@ -145,6 +156,7 @@ const homeComponent = (props) =>
 		</div>
 
 		<div className='home-div-show'>
+			<SliderWrapper>
 			<Slider {...settings}>
 				<div className='home-div-show-wrapper'>
 					<div className='home-img-avatar'>
@@ -195,6 +207,7 @@ const homeComponent = (props) =>
 					</div>
 				</div>
 			</Slider>
+			</SliderWrapper>
       	</div>
 
 		<div className='home-div-startups'>
