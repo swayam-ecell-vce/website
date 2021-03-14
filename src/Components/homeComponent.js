@@ -26,7 +26,7 @@ const homeComponent = (props) =>
 	const settings = {
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 500000,
+		autoplaySpeed: 5000,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -44,7 +44,7 @@ const homeComponent = (props) =>
 	  const settings2 = {
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 400000,
+		autoplaySpeed: 4000,
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
