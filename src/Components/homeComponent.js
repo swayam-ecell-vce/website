@@ -26,7 +26,7 @@ const homeComponent = (props) =>
 	const settings = {
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 500000,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -44,13 +44,24 @@ const homeComponent = (props) =>
 	  const settings2 = {
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 4000,
+		autoplaySpeed: 400000,
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
 		initialSlide: 0,
 		speed: 500,
 		adaptiveHeight: true,
+		responsive: [
+			{
+			  breakpoint: 700,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			  }
+			}
+		  ]
 	  }
 	return(
 		<div className='home-wrapper'>
