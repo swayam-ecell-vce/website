@@ -1,0 +1,84 @@
+.foo-div-det
+{
+    height: 100vh;
+    padding: 4%;
+    padding-left: 3%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2%;
+    flex-wrap: wrap;
+}
+.foo-p-title
+{
+    font-size: x-large;
+    text-align: center;
+}
+.foo-div-main
+{
+    display: flex;
+    font-size: small !important;
+    padding: 0.5%;
+    background-color: black;
+}
+.foo-div-tm
+{
+    padding-left: 7%;
+}
+.foot-ul
+{
+    width: 80%;
+    justify-content: flex-end;
+}
+.foo-div-map
+{
+    height: 45%;
+    width: 100%;
+    box-shadow: 10px 10px #5a29ca;
+}
+.MuiInput-underline
+{
+    width: 200% !important;
+}
+.MuiInput-underline:before
+{
+    border-bottom: 1px solid rgba(255,255,255, 0.8) !important;
+}
+.MuiFormLabel-root
+{
+    color: rgba(255,255,255, 0.8) !important;
+}
+.foo-div-form input
+{
+    color: rgba(255,255,255, 0.8);
+    font-size: larger;
+}
+.MuiInputBase-input
+{
+    color: rgba(255,255,255, 0.8) !important;
+}
+.foo-btn-submit
+{
+    margin-top: 20%;
+    font-size: larger;
+    padding: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 200%;
+    box-shadow: 10px 10px #5a29ca;
+}
+.foo-p-address
+{
+    font-size: larger;
+    text-align: center;
+    margin: 0;
+}
+.foo-div-logos
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foo-p-contact
+{
+    margin: 0;
+}
