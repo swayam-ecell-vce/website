@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-right: 2%;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 .foo-p-title
 {
