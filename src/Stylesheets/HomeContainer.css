@@ -22,6 +22,7 @@
 {
 	color: #37d68c;
 	font-size: 60px;
+	font-family:cursive;	
 }
 
 .home-span-titledecor
@@ -33,8 +34,7 @@
 {
 	font-size: 35px;
 	color: #fc0b67;
-	font-weight: 1000;
-	
+	font-weight: 1000;	
 }
 .home-div-main
 {
@@ -94,6 +94,10 @@
 .home-div-caro-title
 {
 	padding-top: 2%;
+	font-size: 40px;
+	text-align: center;
+	color: #00ff88;
+  padding-top: 2%;
 	font-size: 40px;
 	text-align: center;
 	color: #00ff88;

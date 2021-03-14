@@ -113,6 +113,7 @@ const homeComponent = (props) =>
 					</p>
 				</div>
 			</div>
+			
 			<div className="five">
 				<div className='overlay'>
 					<p className='text'>
