@@ -38,10 +38,10 @@ const incubatorComponent = (props) => {
       </div>
 
       <div className="inc-div-jumbo">
-        <p className="inc-p-head">What is Swayam Incubator?</p>
+        <p className="inc-p-abt-head">What is Swayam Incubator?</p>
         <div className="inc-abt-wrapper">
           <div className="inc-img-abt">
-			  
+
 		  </div>
           <p className="inc-p-content">
             Enim esse elit cupidatat laborum Sint labore minim officia aliquip
