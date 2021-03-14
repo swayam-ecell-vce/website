@@ -4,16 +4,19 @@
 }
 .Home-Main-Div
 {
-	color: white;
+	color: rgb(255, 255, 255);
 	margin-top: 3%;
 }
 .home-div-header
 {
-	background-color: #121212;
+	background-color: #050505;
 	display: block;
 	margin-top: 5%;
 	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-weight: 500px;
+
+	
 }
 .home-p-title
 {
@@ -22,17 +25,23 @@
 }
 .home-span-Swayam
 {
-	color: #BB86FC;
+	color: #37d68c;
 	font-size: 60px;
+	font-family:cursive;	
 }
+
 .home-span-titledecor
 {
-	color: #BB86FC;
+	color: #00fdb1;
+	font-style: oblique;
 }
 .home-p-tagline
 {
 	font-size: 35px;
-	color: #BB86FC;
+	color: #fc0b67;
+	font-family:cursive;
+	font-weight: 1000;
+	
 }
 .home-div-main
 {
@@ -47,7 +56,7 @@
     width: 38%;
     text-align: center;
     padding-top: 10%;
-	border: 1px white;
+	border: 5px white;
 	margin-right: 2%;
 	margin-left: 2%;
 	box-shadow: 0px 5px 10px rgb(5, 5, 5);
@@ -65,7 +74,7 @@
 }
 .home-div-sec:hover
 {
-	box-shadow: 2.5px 2.5px 7.5px #a361f3;
+	box-shadow: 2.5px 2.5px 7.5px #ff0a7c;
 	cursor: pointer;
 }
 .home-div-numb
@@ -77,10 +86,11 @@
 .home-div-numb-title
 {
 	font-size: 40px;
-	font-family: 'Times New Roman', Times, serif;
+	font-family:'Times New Roman', Times, serif;
 	text-align: center;
-	color: #BB86FC;
-	padding-top: 4%;
+	color: #49f73e;
+	padding-top: 5%;
+	font-weight: bold;
 }
 .home-div-numb-sec
 {
@@ -94,8 +104,9 @@
 	padding-top: 2%;
 	font-size: 40px;
 	text-align: center;
-	color: #BB86FC;
+	color: #00ff88;
 	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
 }
 .home-div-caro
 {
@@ -119,7 +130,7 @@
 {
 	font-size: xx-large;
 	font-weight: 700;
-	color: #BB86FC;
+	color: #00ffff;
 	padding-top: 2%;
 }
 .home-p-abt-alt
@@ -129,7 +140,7 @@
 	text-align: end;
 	padding-right: 2%;
 	padding-top: 2%;
-	color: #BB86FC;
+	color: #1ffff4;
 }
 .home-div-abt-sec
 {
@@ -189,7 +200,7 @@
 .home-div-collage
 {
 	margin-top: 5%;
-	background-color: #5a29ca;
+	background-color: #37d68c;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2%;
@@ -197,11 +208,15 @@
 .home-div-collage-title
 {
 	width: 100%;
+	
 }
 .home-p-collage-title
 {
-	font-size: xx-large;
+	font-size: 55px;
 	text-align: center;
+	color: #2c033f;
+	font-weight: bold;
+	
 }
 
 .wrapper {
@@ -275,15 +290,15 @@
 {
 	opacity: 0;
 	transition: .5s ease;
-	background-color: rgb(90,41,202, 0.7);;
+	background-color: #37d68c;
 	text-align: center;
 	height: 100%;
 	width: 100%;
 }
 .text
 {
-	color: white;
-	font-size: 20px;
+	color: #2c033f;
+	font-size: 35px;
 	font-weight: 800;
 	text-align: center;
 	margin: 0;
@@ -324,7 +339,7 @@
 	background-color: white;
 	padding: 4%;
 	width: 60%;
-	box-shadow: 10px 10px 0px #5a29ca;
+	box-shadow: 10px 10px 0px #37d68c;
 	margin: 0px auto;
 	margin-top: 5%;
 	position: static;
@@ -339,7 +354,7 @@
 }
 .home-div-show-wrapper-2
 {
-	border: 5px solid white;
+	border: 5px solid #040739;
 	width: 80% !important;
 	height: 25vh;
 	margin: 5%;
@@ -355,7 +370,7 @@
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	box-shadow: 10px 10px #5a29ca;
+	box-shadow: 10px 10px #37d68c;
 	margin: 0.4%;
 }
 
@@ -383,7 +398,7 @@
 {
 	font-size: medium;
 	font-weight: 700;
-	color: #5a29ca;
+	color: #be0000;
 }
 .home-p-show-title
 {
@@ -402,12 +417,13 @@
 
 .home-div-st
 {
-	background-color: #5a29ca;
+	background-color: #37d68c;
 }
 .home-div-show-details
 {
 	width: 50%;
 	margin-left: 2%;
+	color : #0d0538;
 }
 .home-div-show-title
 {
