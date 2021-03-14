@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 
 //import the other components here
 import Navbar from './Navbar'
+import Footer from './Footer'
 import '../Stylesheets/EventDetailsComponent.css'
 
 class EventDetails extends Component
@@ -70,6 +71,7 @@ class EventDetails extends Component
 						</a>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		)
 	}

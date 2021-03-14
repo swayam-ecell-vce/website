@@ -1,6 +1,5 @@
 .foo-div-det
 {
-    height: 100vh;
     padding: 4%;
     padding-left: 3%;
     padding-top: 3%;
@@ -66,6 +65,10 @@
     padding-bottom: 5%;
     width: 200%;
     box-shadow: 10px 10px #5a29ca;
+}
+.foo-btn-submit:hover
+{
+    cursor: pointer;
 }
 .foo-p-address
 {
