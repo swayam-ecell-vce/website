@@ -9,14 +9,9 @@
 }
 .home-div-header
 {
-	background-color: #050505;
 	display: block;
 	margin-top: 5%;
 	text-align: center;
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	font-weight: 500px;
-
-	
 }
 .home-p-title
 {
@@ -39,9 +34,7 @@
 {
 	font-size: 35px;
 	color: #fc0b67;
-	font-family:cursive;
-	font-weight: 1000;
-	
+	font-weight: 1000;	
 }
 .home-div-main
 {
@@ -86,7 +79,6 @@
 .home-div-numb-title
 {
 	font-size: 40px;
-	font-family:'Times New Roman', Times, serif;
 	text-align: center;
 	color: #49f73e;
 	padding-top: 5%;
@@ -105,7 +97,10 @@
 	font-size: 40px;
 	text-align: center;
 	color: #00ff88;
-	font-family: 'Times New Roman', Times, serif;
+  padding-top: 2%;
+	font-size: 40px;
+	text-align: center;
+	color: #00ff88;
 	font-weight: bold;
 }
 .home-div-caro
