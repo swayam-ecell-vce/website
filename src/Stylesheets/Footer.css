@@ -1,3 +1,6 @@
+.footer{
+    margin:0%;
+}
 .foo-div-det
 {
     padding: 4%;
@@ -5,8 +8,9 @@
     padding-top: 3%;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 2%;
-    flex-wrap: wrap-reverse;
+
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .foo-p-title
 {
@@ -16,17 +20,23 @@
 .foo-div-main
 {
     display: flex;
-    font-size: small !important;
-    padding: 0.5%;
+    font-size: small !important;    
+    left:0;
+    right:0;
+    flex-direction: row;
+    z-index: 100;
+    bottom: 0;
     background-color: black;
 }
 .foo-div-tm
 {
     padding-left: 7%;
+    padding-top: 1%;
 }
 .foot-ul
 {
-    width: 80%;
+    width:80%;
+    padding:1%;
     justify-content: flex-end;
 }
 .foo-div-map
@@ -37,11 +47,13 @@
 }
 .MuiInput-underline
 {
-    width: 200% !important;
+    width: 150% !important;
 }
+
 .MuiInput-underline:before
 {
     border-bottom: 1px solid rgba(255,255,255, 0.8) !important;
+    margin-bottom: auto;
 }
 .MuiFormLabel-root
 {
@@ -50,7 +62,8 @@
 .foo-div-form input
 {
     color: rgba(255,255,255, 0.8);
-    font-size: larger;
+    font-size: large;   
+    
 }
 .MuiInputBase-input
 {
@@ -58,13 +71,13 @@
 }
 .foo-btn-submit
 {
-    margin-top: 20%;
-    font-size: larger;
-    padding: 3%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 200%;
-    box-shadow: 10px 10px #5a29ca;
+    margin-top:20%;
+    font-size: large;
+    padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 5px 5px #5a29ca;
+    width: 100%;
 }
 .foo-btn-submit:hover
 {
@@ -84,4 +97,105 @@
 .foo-p-contact
 {
     margin: 0;
+}
+
+.foo-div-mapaddress{
+    padding: 1%;
+}
+
+.foo-div-form{
+    padding-left: 10%;
+    width: 30%;
+}
+
+@media (max-width: 848px){
+    .foo-div-det{
+        flex-direction: column;       
+    }
+
+    .foo-div-map{
+        box-shadow: 0px 0px #5a29ca;
+        width:60%;
+        margin: auto;
+       
+    }
+    .foo-div-mapaddress{
+         display: flex;
+        justify-content:space-between;
+    }
+
+    .foo-p-address{
+        font-size: smaller;
+    }
+
+    .foo-div-logos{
+        transform: scale(0.5  );
+    }
+
+    .foo-div-form{
+        margin: auto;
+        width:50%;
+        display: flex;
+        font-size: 15px;
+        padding: 0%;
+        padding-top: 5%;
+    }
+
+    .foo-btn-submit{
+        display: flex;
+        width: 100%;
+
+    }
+
+    .foo-div-main{
+        
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+    .foo-div-tm{
+        font-size: 15px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .foot-ul{
+        font-size: 11px;
+        display:flex;
+        justify-content: space-evenly;
+        width:100%;
+    }
+    .Nav-li{
+        padding: 0%;
+        
+    }
+}
+
+@media (max-width: 460px){
+   
+   
+    .foo-div-form{
+        margin: auto;
+        display: flex;
+        font-size: 10px;
+        transform: scale(0.6);
+        width:80%;
+
+    }
+
+    .foo-btn-submit{
+        display: flex;
+
+    }
+
+    .foo-div-tm{
+        font-size: 9px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .foot-ul{
+        font-size: 9px;
+        display:flex;
+        justify-content: space-evenly;
+        width:100%;
+    }
+    
 }
