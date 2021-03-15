@@ -24,6 +24,7 @@
   text-shadow: 100px;
   margin-bottom: 0;
   color: #00ff88;
+  opacity: 1;
 }
 
 /* Style for Slide Show */
@@ -59,6 +60,7 @@
   width: 100%;
   align-items: center;
   height: 340px;
+  overflow: hidden;
   object-fit: cover;
 }
 
@@ -105,7 +107,7 @@
   margin-bottom: 3.5%;
   padding: 1.08%;
   border: 1px;
-  background-color: rgb(27, 27, 27);
+  background-color:rgb(27,27,27);
   box-shadow: 15px 15px 10px rgb(0, 0, 0);
 }
 
@@ -143,30 +145,23 @@
   margin-bottom: 2%;
 }
 
-.inc-p-abt {
-  font-size: xx-large;
-}
-
 /* Style for Facility */
-.inc-div-facility-wrapper {
-  display: flex;
-  padding: 1%;
-}
 
 .inc-facility {
+  display: flex;
   margin-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
 }
 
-.inc-div-facility-sec {
-  max-width: 25%;
-  max-height: 50%;
-  display: block;
+.inc-fac-card {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  display: inline-block;
   float: right;
   margin: 60px auto;
-  background-color: #00ff88;
   box-shadow: 15px 15px 10px rgb(0 0 0);
   transition: 0.25s;
   padding: 2.08%;
@@ -176,19 +171,56 @@
   margin-bottom: 15%;
   text-align: center;
 }
-
-.inc-div-facility-sec:hover {
-  transition: all ease-in-out 0.5s;
-  transform: scale(1.05);
+.inc-fac-card .inc-fac-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-
-.inc-p-facility-content {
-  display: inline-block;
-  width: 45%;
-  padding-left: 1%;
-  padding-right: 5%;
+.inc-fac-card .inc-fac-image img {
+  width: 100%;
+  transition: 0.5s;
 }
-
-.inc-p-facility-content:hover {
-  cursor: copy;
+.inc-fac-card:hover .inc-fac-image img {
+  opacity: 0.5;
+  transform: translateX(30%); /*100%*/
+}
+.inc-fac-card .inc-fac-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /*100%*/
+  height: 100%;
+  background: #00ff88;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+.inc-fac-card:hover .inc-fac-details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+.inc-fac-card .inc-fac-details .inc-fac-content {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inc-fac-card .inc-fac-details .inc-fac-content h1 {
+  margin: 0;
+  padding: 0;
+  color: #00113f;
+  line-height: 20px;
+  font-size: x-large;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.inc-fac-card .inc-fac-details .inc-fac-content h1 span {
+  font-size: large;
+  color: #262626;
+}
+.inc-fac-card .inc-fac-details .inc-fac-content p {
+  margin: 10px 0;
+  padding: 0;
+  color: #262626;
 }

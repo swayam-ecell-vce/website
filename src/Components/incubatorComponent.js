@@ -40,9 +40,7 @@ const incubatorComponent = (props) => {
       <div className="inc-div-jumbo">
         <p className="inc-p-abt-head">What is Swayam Incubator?</p>
         <div className="inc-abt-wrapper">
-          <div className="inc-img-abt">
-
-		  </div>
+          <div className="inc-img-abt"></div>
           <p className="inc-p-content">
             Enim esse elit cupidatat laborum Sint labore minim officia aliquip
             aliquip cillum voluptate et do dolor Lorem. Aliquip minim in
@@ -65,34 +63,59 @@ const incubatorComponent = (props) => {
         </div>
       </div>
       <div className="inc-div-facility">
-        <div className="inc-div-facility-sec">
-          <p className="inc-p-abt">Mentors</p>
-          <div className="inc-facility-wrapper">
-            <p className="inc-p-facility-content">
-              Esen sint deserunt nostrfficipa et ullamco excepteur duis laborum
-              elit magna.
-            </p>
+        <div class="inc-fac-card">
+          <div class="inc-fac-image">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+          </div>
+          <div class="inc-fac-details">
+            <div class="inc-fac-content">
+              <h1>
+                Mentors
+                <br />
+                <span>team leader</span>
+              </h1>
+              <p>
+                Lorem ipsum is simple dummy text on the printing and typesetting
+                industry.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="inc-div-facility-sec">
-        <p className="inc-p-abt">Mentors</p>
-        <div className="inc-facility-wrapper">
-          <div className="inc-img-facility"></div>
-          <p className="inc-p-facility-content">
-            Esse enim est velit laborum exercitant pa et ullamco excepteur duis
-            laborum elit magna.
-          </p>
+        <div class="inc-fac-card">
+          <div class="inc-fac-image">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+          </div>
+          <div class="inc-fac-details">
+            <div class="inc-fac-content">
+              <h1>
+                Mentors
+                <br />
+                <span>team leader</span>
+              </h1>
+              <p>
+                Lorem ipsum is simple dummy text on the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="inc-div-facility-sec">
-        <p className="inc-p-abt">Mentors</p>
-        <div className="inc-facility-wrapper">
-          <div className="inc-img-facility"></div>
-          <p className="inc-p-facility-content">
-            Esse enim est velit laborum exeint deserunt nosficia aceis laborum
-            elit magna.
-          </p>
+        <div class="inc-fac-card">
+          <div class="inc-fac-image">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+          </div>
+          <div class="inc-fac-details">
+            <div class="inc-fac-content">
+              <h1>
+                Mentors
+                <br />
+                <span>team leader</span>
+              </h1>
+              <p>
+                Lorem ipsum is simple dummy text on the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
