@@ -81,15 +81,15 @@
 .slick-dots li button:before {
   border-radius: 50%;
   font-family: "slick";
-  font-size: 6px;
+  font-size: 4px;
   line-height: 20px;
   position: absolute;
   margin-bottom: 5%;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
-  content: "•";
+  width: 7px;
+  height: 7px;
+  content: "";
   text-align: center;
   opacity: 0.25;
   color: black;
@@ -107,8 +107,13 @@
   margin-bottom: 3.5%;
   padding: 1.08%;
   border: 1px;
-  background-color:rgb(27,27,27);
+  background-color: rgb(27, 27, 27);
   box-shadow: 15px 15px 10px rgb(0, 0, 0);
+}
+
+.inc-div-jumbo:hover {
+  box-shadow: #00ff88;
+  transition: all ease-in-out 0.5s;
 }
 
 .inc-img-abt {
@@ -127,9 +132,12 @@
   display: flex;
 }
 .inc-p-content {
+  color: whitesmoke;
+  font-weight: 500;
   margin-top: 0.5%;
   width: 45%;
   padding-left: 5%;
+  font-size: larger;
 }
 .inc-p-content-alt {
   width: 45%;
@@ -180,6 +188,10 @@
   width: 100%;
   transition: 0.5s;
 }
+.inc-fac-card:hover {
+  transform: scale(1.08);
+}
+
 .inc-fac-card:hover .inc-fac-image img {
   opacity: 0.5;
   transform: translateX(30%); /*100%*/
@@ -218,9 +230,12 @@
 .inc-fac-card .inc-fac-details .inc-fac-content h1 span {
   font-size: large;
   color: #262626;
+  font-weight: 600;
 }
 .inc-fac-card .inc-fac-details .inc-fac-content p {
-  margin: 10px 0;
+  margin: 2% 0;
   padding: 0;
   color: #262626;
+  font-weight: 400;
+  font-size: large;
 }

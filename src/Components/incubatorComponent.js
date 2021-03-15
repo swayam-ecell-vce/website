@@ -53,12 +53,6 @@ const incubatorComponent = (props) => {
             sunt cupidatat deserunt nisi laborum sit ex ad excepteur. Non aute
             id laboris et. Aliqua sunt non sint pariatur voluptate. Consectetur
             commodo cupidatat elit ad anim esse ut. Lorem mollit consequat ea
-            mollit officia amet dolore laborum fugiat excepteur cupidatat in.
-            amet in aliquip in dolore reprehenderit. Ex laboris dolor nulla esse
-            consectetur consectetur duis in id enim. Adipisicing amet dolor
-            incididunt ea ad qui. Sint in cillum eu voluptate deserunt nostrud
-            sunt exercitation reprehenderit culpa cillum. Non minim ea commodo
-            dolore deserunt est fugiat.
           </p>
         </div>
       </div>
