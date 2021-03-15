@@ -159,7 +159,6 @@
   position: relative;
   width: 25%;
   height: 50%;
-  display: inline-block;
   float: right;
   margin: 60px auto;
   box-shadow: 15px 15px 10px rgb(0 0 0);
@@ -181,7 +180,7 @@
   transition: 0.5s;
 }
 .inc-fac-card:hover .inc-fac-image img {
-  opacity: 0.5;
+  opacity: 0.4;
   transform: translateX(30%); /*100%*/
 }
 .inc-fac-card .inc-fac-details {

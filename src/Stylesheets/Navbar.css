@@ -2,6 +2,8 @@
 {
     display: flex;
     justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .Nav-li
 {
@@ -46,5 +48,23 @@
 {
 	.Nav-li{
         font-size: 0.8rem;
+    }
+}
+@media (max-width: 360px)
+{
+	.Nav-li{
+        font-size: 0.65rem;
+    }
+}
+@media (max-width: 250px)
+{
+	.Nav-li{
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 200px)
+{
+	.Nav-li{
+        font-size: 0.45rem;
     }
 }
