@@ -276,9 +276,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1%;
   }
   .inc-fac-card 
   {
 width: 50%;
   }
+  .inc-p-content
+  {
+    font-size: 0.9rem;
+  }
+  .inc-fac-card .inc-fac-details .inc-fac-content h1 {
+  font-size: 1.4rem;
+}
+.inc-fac-card .inc-fac-details .inc-fac-content h1 span {
+  font-size: 1rem;
+}
+.inc-fac-card .inc-fac-details .inc-fac-content p {
+ font-size: 0.9rem;
+}
 }
