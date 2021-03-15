@@ -51,6 +51,17 @@ const homeComponent = (props) =>
 		initialSlide: 0,
 		speed: 500,
 		adaptiveHeight: true,
+		responsive: [
+			{
+			  breakpoint: 700,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			  }
+			}
+		  ]
 	  }
 	return(
 		<div className='home-wrapper'>

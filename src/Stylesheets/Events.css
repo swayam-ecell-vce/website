@@ -15,16 +15,16 @@
 
 .ev-div-card {
 	max-width: 25%;
-	max-height: 50%;
-    display:inline-block;
+    max-height: 50%;
+    display: inline-block;
     margin: 60px auto;
-    background-color: #5a29ca;
-    box-shadow: 15px 15px 10px rgb(0, 0, 0);
+    background-color: #37d68c;
+    box-shadow: 15px 15px 10px rgb(0 0 0);
     transition: 0.25s;
     padding: 2.08%;
     margin-right: 2%;
     margin-left: 2%;
-	text-align: center;
+    text-align: center;
 }
 .ev-div-card:hover{
 	transition: all ease-in-out 0.5s;
@@ -33,33 +33,49 @@
 }
 .ev-p-title{
 	font-size: xx-large;
+    color: #00113f;
+    font-weight: bold;
 }
 .ev-p-date{
     text-align: center;
-    font-weight: 400;
-    color: rgb(252, 252, 252);
+    font-weight: 800;
+    color: rgb(96 2 2);
 }
 
-.ev-p-info{
+.ev-p-info {
     font-size: small;
-    color: rgb(252, 252, 252);
+    color: rgb(44 2 2);
     text-align: center;
+    font-weight: 600;
 }
 .ev-div-event-list{
     padding: 1%;
+    background-color: #01041e;
 }
 
 .ev-p-btn{
     text-align: center;
     text-decoration: none;
     font-size: large;
-    font-weight: 600;
-    color: rgb(112, 252, 112)
+    font-weight: bold;
+    color: rgb(163 255 157);
+    display: flex;
+    font-size: larger;
+    margin: 0px auto;
+    margin-top: 3%;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 7px;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: linear-gradient(to right, rgb(0 0 0), rgb(7 23 141));
+    transition: background 0.5s ease-in-out;
 }
 
 .ev-p-btn:hover{
     text-decoration-line: underline;
-    color: #03da6f;
+    color: rgb(243, 79, 38);
 	cursor: pointer;
 	text-decoration: none;
     font-weight: 700;
