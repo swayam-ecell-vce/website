@@ -1,16 +1,16 @@
 .ev-div-main
 {
 	padding-top: 2%;
+    background-color: #01041e;
 }
-
-
 .ev-p-head
 {
-	font-size: 90px;
+	font-size: 3em;
     font-weight: 500;
     text-align: center;
     text-shadow: 100px;
 	margin-bottom: 0;
+    margin-top: 4%;
 }
 
 .ev-div-card {
@@ -32,7 +32,7 @@
     transform: scale(1.2);
 }
 .ev-p-title{
-	font-size: xx-large;
+	font-size: 2em;
     color: #00113f;
     font-weight: bold;
 }
@@ -56,27 +56,28 @@
 .ev-p-btn{
     text-align: center;
     text-decoration: none;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     color: rgb(163 255 157);
     display: flex;
-    font-size: larger;
     margin: 0px auto;
     margin-top: 3%;
-    padding: 0.5%;
+    padding: 0.75%;
     padding-left: 2%;
     padding-right: 2%;
     border-radius: 7px;
     width: -moz-fit-content;
     width: fit-content;
-    background: linear-gradient(to right, rgb(0 0 0), rgb(7 23 141));
-    transition: background 0.5s ease-in-out;
+    background: linear-gradient(to right, rgb(111, 74, 247), rgb(0, 24, 202));
+    transition: all 0.5s ease-in-out;
+    color: white;
 }
 
 .ev-p-btn:hover{
     text-decoration-line: underline;
-    color: rgb(243, 79, 38);
+    background: linear-gradient(to right, rgb(50, 34, 107), rgb(0, 8, 71));
 	cursor: pointer;
+    color: white;
 	text-decoration: none;
     font-weight: 700;
 }

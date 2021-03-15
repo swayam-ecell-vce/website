@@ -35,8 +35,10 @@
 	padding-right: 2%;
 	border-radius: 7px;
 	width: fit-content;
-	background: linear-gradient(to right, rgb(1, 5, 41), rgb(25, 218, 192));
+	background: linear-gradient(to right, rgb(5, 155, 68), rgb(4, 240, 83));
 	transition: background 0.5s ease-in-out;
+	color: black;
+	font-weight: 700;
 }
 .det-a-btn-sec
 {
