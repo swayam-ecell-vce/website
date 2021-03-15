@@ -1,0 +1,174 @@
+.home-div-abt
+{
+	margin-top: 5%;
+	padding: 4%;
+	text-align: center !important;
+}
+.home-div-abt-title
+{
+	font-size: 2em;
+	margin-left: 2%;
+	text-align: center;
+}
+.home-div-abt-vid {
+	position: relative;
+	padding-top: 30%;
+	width: 50%;
+	margin: 0px auto;
+	margin-top: 4%;
+}
+.react-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: 6px 6px #1ac4bb;
+}
+.home-p-abt-details
+{
+	text-align: center;
+	margin: 4%;
+}
+.home-p-abt
+{
+	font-size: xx-large;
+	font-weight: 700;
+	padding-right: 2%;
+	padding-top: 2%;
+	width: fit-content;
+	text-align: center;
+	margin: 0px auto;
+	padding: 4%;
+}
+.home-p-abt-alt
+{
+	font-size: xx-large;
+	font-weight: 700;
+	padding-right: 2%;
+	padding-top: 2%;
+	width: fit-content;
+	text-align: center;
+	margin: 0px auto;
+	padding: 4%;
+}
+.home-div-abt-sec
+{
+	border-bottom: 1px white;
+	background-color: #0ec9bf;
+	box-shadow: 3px 3px 6px black;
+	transition: all 0.6s;
+	margin-bottom: 3%;
+}
+.home-img-abt
+{
+	background-image: url('../undraw_forming_ideas_0pav.svg');
+	background-size: cover;
+    background-position: center;
+    width: 35%;
+    display: inline-block;
+	background-color: #121212;
+}
+.home-img-abt-2
+{
+	background-image: url('../Components/undraw_maker_launch_crhe.svg');
+	background-size: cover;
+    background-position: center;
+    width: 35%;
+    display: inline-block;
+	background-color: #121212;
+}
+.home-abt-wrapper
+{
+	display: flex;
+	margin-left: 5%;
+	background-color: #121212;
+}
+.home-abt-wrapper-alt
+{
+	display: flex;
+	margin-right: 5%;
+	background-color: #121212;
+}
+.home-p-content
+{
+	padding-right: 5%;
+	margin: 0px auto;
+}
+.home-p-content-alt
+{
+	padding-right: 5%;
+	margin: 0px auto;
+}
+.home-p-content:hover
+{
+	cursor: copy;
+}
+.home-div-abt-text
+{
+	width: 50%;
+	background-image: linear-gradient(rgb(8, 117, 180), rgb(80, 41, 255));
+	padding: 4%;
+	margin: 0px auto;
+	text-align: center;
+}
+.home-div-abt-color
+{
+	width: 5%;
+	background-color: #00ffff;
+}
+.home-div-abt-slideshow
+{
+	display: flex !important;
+}
+.home-div-abt-car-wrapper
+{
+	background-color: white;
+	width: 60%;
+	box-shadow: 10px 10px 0px #37d68c;
+	margin: 0px auto;
+	margin-top: 5%;
+	position: static;
+}
+.home-div-abt-car
+{
+	background-image: url('https://images.unsplash.com/photo-1570562855402-cec3ca287f25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80');
+	height: 200px;
+	width: 100%;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0.4%;
+	padding: 2%;
+	box-shadow: 7px 7px 7px rgb(31, 49, 207);
+}
+.home-div-abt-cert
+{
+	color: rgb(80, 41, 255);
+	font-weight: 700;
+	font-size: 1.5em;
+	margin: 0px auto;
+}
+.home-div-abt-cert-wrapper
+{
+	width: 50%;
+	margin: 0px auto;
+	padding: 3%;
+}
+.home-div-abt-cert-awarder
+{
+	font-size: small;
+	color: black;
+}
+.home-div-abt-cert-det
+{
+	margin: 0px auto;
+	font-size: 0.7em;
+	color: black;
+	padding: 3%;
+}
+.home-div-abt-car-img-wrapper
+{
+	background-image: linear-gradient(rgb(8, 117, 180), rgb(80, 41, 255));
+	width: 50%;
+	height: 100%;
+	padding: 6%;
+}
