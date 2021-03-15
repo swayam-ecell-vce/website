@@ -96,28 +96,28 @@ const homeComponent = (props) =>
 				</p>
 			</div>
 		<div className="wrapper">
-			<div className="one">
+			<div className="one num">
 				<div className='overlay'>
 					<p className='text'>
 						Swayam Internship Drive 2019
 					</p>
 				</div>
 			</div>
-			<div className="two">
+			<div className="two num">
 				<div className='overlay'>
 					<p className='text'>
 						Swayam Hackathon
 					</p>
 				</div>
 			</div>
-			<div className="three">
+			<div className="three num">
 				<div className='overlay'>
 					<p className='text'>
 						Swayam Ideation Contest 2019
 					</p>
 				</div>
 			</div>
-			<div className="four">
+			<div className="four num">
 				<div className='overlay'>
 					<p className='text'>
 						Swayam Start-up Fest 2019
@@ -125,14 +125,14 @@ const homeComponent = (props) =>
 				</div>
 			</div>
 			
-			<div className="five">
+			<div className="five num">
 				<div className='overlay'>
 					<p className='text'>
 						Swayam Service Drive 2019
 					</p>
 				</div>
 			</div>
-			<div className="six">
+			<div className="six num">
 				<div className='overlay'>
 					<p className='text'>
 						Swayam Doge
@@ -142,38 +142,52 @@ const homeComponent = (props) =>
 		</div>
 		</div>
 		{/*test code for the photo collage */}
-		<div className='home-div-numb-title'>
-			Swayam in Numbers
-		</div>
-		<div className='home-div-numb'>
-			<EmojiEventsOutlinedIcon style={{ fontSize: 55 }} titleAccess = 'Event'></EmojiEventsOutlinedIcon>
-			<EmojiObjectsIcon style={{fontSize: 55}}></EmojiObjectsIcon>
-			<PeopleOutlineRoundedIcon style={{fontSize: 55}}></PeopleOutlineRoundedIcon>
-			<LocalAtmRoundedIcon style={{fontSize: 55}}></LocalAtmRoundedIcon>
-			<EmojiPeopleRoundedIcon style={{fontSize: 55}}></EmojiPeopleRoundedIcon>
-			<BusinessRoundedIcon style={{fontSize: 55}}></BusinessRoundedIcon>
-		</div>
 		
-		<div className='home-div-numb-sec'>
-			<p>
-				50+ Events <br /> Hosted
-			</p>
-			<p>
-				23+ Startups <br /> Incubated
-			</p>
-			<p>
-				5000+ Students <br /> Impacted
-			</p>
-			<p>
-				15,00,000+ <br /> Funds <br /> Raised
-			</p>
-			<p>
-				70+ <br />  Created <br /> Young Leaders
-			</p>
-			<p>
-				70+ <br />  Collaborations <br /> made
-			</p>
-		</div>
+			<div className='home-div-numb-title'>
+				Swayam in Numbers
+			</div>
+			<div className='home-div-numb'>
+				<div className='home-div-wrapicon'>
+					<EmojiEventsOutlinedIcon style={{ fontSize: 55 }} titleAccess = 'Event'></EmojiEventsOutlinedIcon>
+					<p>
+						50+ Events <br /> Hosted
+					</p>
+				</div>
+				<div className='home-div-wrapicon'>
+					<EmojiObjectsIcon style={{fontSize: 55}}></EmojiObjectsIcon>
+					<p>
+						23+ Startups <br /> Incubated
+					</p>
+				</div>
+				<div className='home-div-wrapicon'>
+					<PeopleOutlineRoundedIcon style={{fontSize: 55}}></PeopleOutlineRoundedIcon>
+					<p>
+						5000+ Students <br /> Impacted
+					</p>
+				</div>
+				<div className='home-div-wrapicon'>
+					<LocalAtmRoundedIcon style={{fontSize: 55}}></LocalAtmRoundedIcon>
+					
+					<p>
+						15,00,000+ <br /> Funds <br /> Raised
+					</p>
+				</div>
+				<div className='home-div-wrapicon'>
+					<EmojiPeopleRoundedIcon style={{fontSize: 55}}></EmojiPeopleRoundedIcon>
+					
+					<p>
+						70+ <br />  Created <br /> Young Leaders
+					</p>
+				</div>
+				<div className='home-div-wrapicon'>
+					<BusinessRoundedIcon style={{fontSize: 55}}></BusinessRoundedIcon>
+					<p>
+						70+ <br />  Collaborations <br /> made
+					</p>
+				</div>
+			</div>
+			
+		
 		<div className='home-div-caro-title'>
 			Here’s What Some of Our Prominent Visitors had to Say
 		</div>

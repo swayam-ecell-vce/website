@@ -50,28 +50,28 @@ const footerComponent = (props) =>
 				</div>
 			</div>
 			<div className='foo-div-main'>
-				<div className='foo-div-tm'>
+				<div className='foo-li foo-div-tm'>
 					<p>
 						2021 Swayam E-Cell, VCE
 					</p>
 				</div>
 				<ul className='Nav-ul-main foot-ul'>
-				<NavLink to='/incubator' className='Nav-li' activeClassName='selected' exact>
+				<NavLink to='/incubator' className='foo-li Nav-li' activeClassName='selected' exact>
 					About Us &nbsp; | &nbsp;
 				</NavLink>
-				<NavLink to='/about' className='Nav-li' activeClassName='selected' exact>
+				<NavLink to='/about' className='foo-li Nav-li' activeClassName='selected' exact>
 					Initiatives &nbsp; | &nbsp;
 				</NavLink>
-				<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
+				<NavLink to='/' className='foo-li Nav-li' activeClassName='selected' exact>
 					Resources &nbsp; | &nbsp;
 				</NavLink>
-				<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
+				<NavLink to='/' className='foo-li Nav-li' activeClassName='selected' exact>
 					Partners &nbsp; | &nbsp;
 				</NavLink>
-				<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
+				<NavLink to='/' className='foo-li Nav-li' activeClassName='selected' exact>
 					Join Us &nbsp; | &nbsp;
 				</NavLink>
-				<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
+				<NavLink to='/' className='foo-li Nav-li' activeClassName='selected' exact>
 					Our Team
 				</NavLink>
 			</ul>
