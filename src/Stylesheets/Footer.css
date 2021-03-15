@@ -8,19 +8,18 @@
     padding-top: 3%;
     display: flex;
     justify-content: space-evenly;
-
     flex-wrap: wrap;
     flex-direction: row;
 }
 .foo-p-title
 {
-    font-size: x-large;
+    font-size: 2rem;
     text-align: center;
 }
 .foo-div-main
 {
     display: flex;
-    font-size: small !important;    
+    font-size: 0.9rem;    
     left:0;
     right:0;
     flex-direction: row;
@@ -108,7 +107,7 @@
     width: 30%;
 }
 
-@media (max-width: 848px){
+@media (max-width: 880px){
     .foo-div-det{
         flex-direction: column;       
     }
@@ -125,7 +124,7 @@
     }
 
     .foo-p-address{
-        font-size: small;
+        font-size: 1rem;
     }
 
     .foo-div-logos{
@@ -154,12 +153,12 @@
         text-align: center;
     }
     .foo-div-tm{
-        font-size: 15px;
+        
         padding: 0%;
         margin: 0%;
     }
     .foot-ul{
-        font-size: 13px;
+        
         display:flex;
         justify-content: center;
         width:100%;
@@ -168,18 +167,32 @@
         padding: 0%;
         
     }
+    .foo-li{
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 560px)
 {
-    .foo-div-main{
-        width: vmax;
-        margin: 0;
+    .foo-li{
+        font-size: 0.7rem;
+    }    
+    .foo-p-title{
+        font-size: 1rem;
     }
+    .foo-div-form{
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    
 }
 
 @media (max-width: 460px){
    
+   .foo-li{
+        font-size: 0.5rem;
+    }
    
     .foo-div-form{
         margin: auto;
@@ -197,15 +210,25 @@
     }
 
     .foo-div-tm{
-        font-size: 9px;
+        
         padding: 0%;
         margin: 0%;
     }
     .foot-ul{
-        font-size: 9px;
+        
         display:flex;
         justify-content: space-evenly;
         width:100%;
     }
+    .foo-p-address{
+        font-size: 0.7rem;
+    }
     
+}
+
+@media (max-width: 270px){
+    .foo-li{
+        font-size: 0.4rem;
+    }
+
 }
