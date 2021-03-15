@@ -161,7 +161,9 @@
         
         display:flex;
         justify-content: center;
-        width:100%;
+        width:90%;
+        margin: 0px auto;
+        padding-top: 2%;
     }
     .Nav-li{
         padding: 0%;
@@ -181,7 +183,7 @@
         font-size: 1rem;
     }
     .foo-div-form{
-        padding: 0%;
+        padding-left: 20%;
         margin: 0%;
     }
     
@@ -200,6 +202,7 @@
         font-size: 10px;
         transform: scale(0.6);
         width:80%;
+        padding-top: 0;
         padding-left: 0%;
 
     }
@@ -218,7 +221,7 @@
         
         display:flex;
         justify-content: space-evenly;
-        width:100%;
+        width:90%;
     }
     .foo-p-address{
         font-size: 0.7rem;
@@ -229,6 +232,11 @@
 @media (max-width: 270px){
     .foo-li{
         font-size: 0.4rem;
+    }
+    .foo-div-form
+    {
+        padding-right: 10%;
+        margin-left: 0;
     }
 
 }
