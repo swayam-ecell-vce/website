@@ -25,6 +25,7 @@
 }
 .home-p-abt-details
 {
+	font-size: 1.5em;
 	text-align: center;
 	margin: 4%;
 }
@@ -64,6 +65,7 @@
 	background-size: cover;
     background-position: center;
     width: 35%;
+	height: auto;
     display: inline-block;
 	background-color: #121212;
 }
@@ -73,6 +75,7 @@
 	background-size: cover;
     background-position: center;
     width: 35%;
+	height: auto;
     display: inline-block;
 	background-color: #121212;
 }
@@ -171,4 +174,240 @@
 	width: 50%;
 	height: 100%;
 	padding: 6%;
+}
+
+@media (max-width:1200px){
+	.home-div-abt-cert-det{
+		font-size: 0.85em;
+	}
+
+	.home-div-abt-title{
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width:980px){
+	.home-div-abt-title{
+		font-size: 2em;
+	}
+
+	.home-p-abt-details{
+		font-size: 1.3em;
+	}
+
+	.home-div-abt-car-img-wrapper{
+		padding: 4%;
+	}
+}
+
+@media (max-width:828px){
+	.home-div-abt-cert{
+		font-size: 1em;
+	}
+	.home-div-abt-cert-awarder{
+		font-size: 0.55em;
+		font-weight: bolder;
+	}
+	.home-div-abt-cert-det{
+		font-size: 0.8em;
+	}
+	.home-div-abt-car{
+		height: 150px;
+	}
+}
+
+@media (max-width:790px){
+	.home-div-abt-title{
+		font-size: 1.5em;
+	}
+	.home-p-abt-details{
+		font-size: 1.1em;
+	}
+	
+	.home-div-abt-cert-awarder{
+		font-size: 0.5em;
+		font-weight: bold;
+	}
+	.home-div-abt-cert-det{
+		font-size: 0.65em;
+		font-weight: 200;
+	}
+	.home-div-abt-car{
+		height: 140px;
+	}
+}
+
+@media (max-width:720px){
+	.home-div-abt-cert-awarder{
+		font-size: 0.4em;
+	}
+}
+
+@media (max-width:650px){
+	.home-div-abt-cert-det{
+		font-size: 0.6em;
+	}
+
+	.home-div-abt-car{
+		height: 130px;
+	}
+
+	.home-div-abt-cert{
+		font-size: 0.9em;
+	}
+
+	.home-div-abt-cert-awarder{
+		font-size: 0.45em;
+	}
+
+	.home-p-content{
+		font-size: smaller;
+	}
+
+	.home-p-content-alt{
+		font-size: smaller;
+	
+	}
+	.home-p-abt-alt{
+		font-size: x-large;
+	}
+	.home-p-abt{
+		font-size: x-large;
+	}
+}
+
+@media (max-width:650px){
+
+	.home-div-abt-title{
+		margin-top: 2%;
+	}
+	.home-div-abt-sec{
+		margin-top: 6%;
+		margin-bottom: 5%;
+	}
+
+	.home-div-abt-car{
+		height: 120px;
+	}
+	
+	.home-div-abt-cert-awarder{
+		font-size: 0.4em;
+	}
+}
+
+@media  (max-width:600px){
+	.home-div-abt-title{
+		font-size: 1.5em;
+		margin-top: 6%;
+	}
+	.home-p-abt-details{
+		font-size: 0.9em;
+		font-weight: lighter;
+		margin: 8.25%;
+		padding: 2%;
+	}
+
+	.home-div-abt-sec{
+		margin-bottom: 10%;
+	}
+
+	.home-p-abt-alt{
+		font-size: large;
+	}
+
+	.home-p-abt{
+		font-size: large;
+	}
+
+	.home-p-content{
+		font-size: x-small;
+		padding: 5%;
+	}
+
+	.home-p-content-alt{
+		font-size: x-small;
+		padding: 5%;
+	}
+
+	.home-div-abt-cert{
+		font-size: 0.9em;
+	}
+
+	.home-div-abt-cert-awarder{
+		font-size: 0.45em;
+	}
+
+	.home-div-abt-cert-det{
+		font-size: 0.6em;
+		padding: 1%;
+		margin: 1%;
+		align-items:flex-start;
+	}
+
+	.home-img-abt-2{
+		width: 55%;
+	}
+
+	.home-img-abt{
+		width: 55%;
+	}
+
+	.home-div-abt-text{
+		padding: 0%;
+		width: 50%;
+	}
+
+	.home-div-abt-slideshow{
+		flex-direction:column;
+		align-items: center;
+	}
+
+	.home-div-abt-car{
+		height: 110px;
+		padding: 1%;
+	}
+
+	.home-div-abt-car-img-wrapper{
+		height: 50%;
+		width: 55%;
+		margin-top: 2%;
+	}
+}
+
+@media (max-width:560px){
+	.home-div-abt-cert-awarder{
+		font-size: 0.4em;
+	}
+}
+
+@media (max-width: 496px){
+	.home-div-abt-cert-awarder{
+		font-size: 0.35em;
+		font-weight: bolder;
+	}
+	.home-div-abt-cert{
+		font-size: 0.85em;
+	}
+	.home-div-abt-cert-det{
+		font-size: 0.55em;
+	}
+}
+
+@media (max-width:465px){
+	.home-div-abt-cert-awarder{
+		font-size: 0.05em;
+	}
+}
+
+@media (max-width: 270px) {
+	.home-abt-wrapper{
+		font-size: 0.025em;
+	}
+	.home-div-abt-cert{
+		font-size: 0.5em;
+	}
+
+	.home-div-abt-cert-det{
+		font-size: 0.4em;
+	}
 }
