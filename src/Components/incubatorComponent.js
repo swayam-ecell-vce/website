@@ -26,7 +26,9 @@ const incubatorComponent = (props) => {
 
   return (
     <div className="inc-div-main">
+      <div className='inc-head-div-main'>
       <p className="inc-p-head">Swayam Incubator</p>
+      <div className='slider-div-main'>
       <div className="slider-wrapper">
         <Slider {...settings}>
           {images.map((image_src, index) => (
@@ -36,7 +38,9 @@ const incubatorComponent = (props) => {
           ))}
         </Slider>
       </div>
-
+            </div>
+            </div>
+      <div className='inc-div-jumbo-main'>
       <div className="inc-div-jumbo">
         <p className="inc-p-abt-head">What is Swayam Incubator?</p>
         <div className="inc-abt-wrapper">
@@ -56,11 +60,14 @@ const incubatorComponent = (props) => {
           </p>
         </div>
       </div>
+      </div>
       <div className="inc-div-facility">
         <div class="inc-fac-card">
+
           <div class="inc-fac-image">
             <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
           </div>
+
           <div class="inc-fac-details">
             <div class="inc-fac-content">
               <h1>
@@ -74,6 +81,7 @@ const incubatorComponent = (props) => {
               </p>
             </div>
           </div>
+          
         </div>
         <div class="inc-fac-card">
           <div class="inc-fac-image">
