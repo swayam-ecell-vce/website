@@ -1,69 +1,36 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 //import other components here
 import '../Stylesheets/Events.css'
 
 const eventComponent = (props) =>
 {
+  const eventsmapped  = props.eventdb.map((event) => {
+    const urlid = event.id
+    const baseurl = '/events/'
+    const finalurl = baseurl.concat(urlid)
+		return(
+			<React.Fragment>
+        <div className='ev-div-card'>
+        <p className='ev-p-title'>{event.title} </p>
+          <p className='ev-p-date'>{event.date}</p>
+          <p className='ev-p-info'>{event.tagline}</p>   
+          <NavLink to= {finalurl} className='ev-p-btn' exact>Register Now</NavLink>     
+        </div>
+        </React.Fragment>
+		)
+  })
 
   //Need to connect the events with a database and get the details from there using Axios
+
 	return(
 		<div className='ev-div-main'>
 			<p className='ev-p-head'>
 				Events <br/>
-			</p>			
+			</p>
       <div className='ev-div-event-list'>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>     
-      </div>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>    
-      </div>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>     
-      </div>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>    
-      </div>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>     
-      </div>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>    
-      </div>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>   
-      </div>
-      <div className='ev-div-card'>
-	    <p className='ev-p-title'>Incubation Contest </p>
-        <p className='ev-p-date'>21.03.2021</p>
-        <p className='ev-p-info'>Ethereum is a technology that's home to digital money, global payments</p>   
-        <a href='/events/1' className='ev-p-btn'>Register Now</a>  
-      </div>
-      
-     
-      
+        {eventsmapped}
       </div>
 		</div>
 	)
