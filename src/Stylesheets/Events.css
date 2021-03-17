@@ -1,66 +1,118 @@
 .ev-div-main
 {
 	padding-top: 2%;
+    background-color: #01041e;
 }
-
-
 .ev-p-head
 {
-	font-size: 90px;
+	font-size: 3em;
     font-weight: 500;
     text-align: center;
     text-shadow: 100px;
 	margin-bottom: 0;
+    margin-top: 10vh;
 }
 
-.ev-div-card {
-	max-width: 25%;
-	max-height: 50%;
-    display:inline-block;
-    margin: 60px auto;
-    background-color: #5a29ca;
-    box-shadow: 15px 15px 10px rgb(0, 0, 0);
-    transition: 0.25s;
-    padding: 2.08%;
-    margin-right: 2%;
-    margin-left: 2%;
-	text-align: center;
-}
 .ev-div-card:hover{
 	transition: all ease-in-out 0.5s;
     cursor: pointer;
     transform: scale(1.2);
 }
 .ev-p-title{
-	font-size: xx-large;
+	font-size: 2em;
+    color: #00113f;
+    font-weight: bold;
 }
 .ev-p-date{
     text-align: center;
-    font-weight: 400;
-    color: rgb(252, 252, 252);
+    font-weight: 800;
+    color: rgb(96 2 2);
 }
 
-.ev-p-info{
+.ev-p-info {
     font-size: small;
-    color: rgb(252, 252, 252);
+    color: rgb(44 2 2);
     text-align: center;
-}
-.ev-div-event-list{
-    padding: 1%;
+    font-weight: 600;
 }
 
 .ev-p-btn{
     text-align: center;
     text-decoration: none;
-    font-size: large;
-    font-weight: 600;
-    color: rgb(112, 252, 112)
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(163 255 157);
+    display: flex;
+    margin: 0px auto;
+    margin-top: 3%;
+    padding: 0.75%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 7px;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: linear-gradient(to right, rgb(111, 74, 247), rgb(0, 24, 202));
+    transition: all 0.5s ease-in-out;
+    color: white;
 }
 
 .ev-p-btn:hover{
     text-decoration-line: underline;
-    color: #03da6f;
+    background: linear-gradient(to right, rgb(50, 34, 107), rgb(0, 8, 71));
 	cursor: pointer;
+    color: white;
 	text-decoration: none;
     font-weight: 700;
+}
+
+.ev-div-card {
+	max-width: 25%;
+    max-height: 50%;
+    display: inline-block;
+    margin: 60px auto;
+    background-color: #37d68c;
+    box-shadow: 15px 15px 10px rgb(0 0 0);
+    transition: 0.25s;
+    padding: 2.08%;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.ev-div-event-list{
+    display: inline-block;
+    
+    padding: 1%;
+    background-color: #01041e;
+}
+
+@media (max-width: 980px){
+    .ev-div-card{
+        padding: 3%;
+        max-width: 35%;
+        margin: 4.5%;
+    }
+    .ev-div-event-list{
+        text-align: center;
+    }
+}
+
+@media (max-width: 730px){
+    .ev-p-title{
+        font-size: 1.5em;
+    } 
+    
+}
+
+@media (max-width: 500px){
+    .ev-div-card{
+        max-width: 75%;
+        margin: 7%;
+    }
+    .ev-p-title{
+        font-size: 1.1em;
+    }
+    .ev-p-info{
+        font-size: 0.9em;
+    }
 }
