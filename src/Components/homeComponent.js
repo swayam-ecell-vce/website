@@ -21,7 +21,6 @@ const homeComponent = (props) =>
 	{
 		//configure the click handler user React.history.push or something better
 	}
-
 	//settings needed for the testimonials carousel to run
 	const settings = {
 		dots: true,
@@ -63,6 +62,8 @@ const homeComponent = (props) =>
 			}
 		  ]
 	  }
+	  const visitors=props.visitorsdetails
+	  const startups=props.startupsdetails
 	return(
 		<div className='home-wrapper'>
 		<div className='home-div-header'>
@@ -196,7 +197,7 @@ const homeComponent = (props) =>
 			<SliderWrapper>
 			<Slider {...settings}>
 				<div className='home-div-show-wrapper'>
-					<div className='home-img-avatar'>
+					<div className='home-img-avatar' style={{backgroundImage:`url(${visitors.visitor1.img})`}}>
 
 					</div>
 					<div className='home-div-show-quote'>
@@ -205,22 +206,20 @@ const homeComponent = (props) =>
 					<div className='home-div-show-text'>
 						<br />
 						<p className='home-p-show-text'>
-							You guys  provided young enthusiasts exposure to experts
-							with various initiatives, successes and failures, and that
-							is truly Amazing.
+							{visitors.visitor1.text}
 							<br />
 							<p className='home-p-show-author'>
-								Sri Charan Lakkaraju
+								{visitors.visitor1.author}
 								<br />
 								<p className='home-p-show-title'>
-								Forbes 30 Under30 Asia 2018 | Founder, stuMagz
+								{visitors.visitor1.title}
 								</p>
 							</p>
 						</p>
 					</div>
 				</div>
 				<div className='home-div-show-wrapper'>
-					<div className='home-img-avatar'>
+					<div className='home-img-avatar' style={{backgroundImage:`url(${visitors.visitor2.img})`}}>
 
 					</div>
 					<div className='home-div-show-quote'>
@@ -229,15 +228,13 @@ const homeComponent = (props) =>
 					<div className='home-div-show-text'>
 						<br />
 						<p className='home-p-show-text'>
-							You guys  provided young enthusiasts exposure to experts
-							with various initiatives, successes and failures, and that
-							is truly Amazing.
+							{visitors.visitor2.text}
 							<br />
 							<p className='home-p-show-author'>
-								Sri Charan Lakkaraju
+								{visitors.visitor2.author}
 								<br />
 								<p className='home-p-show-title'>
-								Forbes 30 Under30 Asia 2018 | Founder, stuMagz
+								{visitors.visitor2.title}
 								</p>
 							</p>
 						</p>
@@ -255,67 +252,54 @@ const homeComponent = (props) =>
 			<SliderWrapper>
 			<Slider {...settings2}>
 				<div className='home-div-show-wrapper-2'>
-					<div className='home-img-avatar-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup1.img})`}}>
 
 					</div>
 					<div className = 'home-div-show-details'>
 						<p>
 							<p className = 'home-div-show-title'>
-								Cure Cloud India
+								{startups.startup1.title}
 							</p>
-							Lorem ipsum dolor sit amet, consetetur
-							sadipscing elitr, sed diam nonumy eirmod 
-							tempor invidunt ut labore et dolore magna 
-							aliquyam erat, sed diam voluptua. At vero 
-							eos et accusam et justo duo ... Read More 
+							{startups.startup1.text}
 						</p>
 					</div>
 				</div>
 				<div className='home-div-show-wrapper-2'>
-					<div className='home-img-avatar-2'>
-
-					</div>
-					<div className = 'home-div-show-details'>
-						<p>
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-							sed diam nonumy eirmod 
-							tempor invidunt ut labore et dolore magna 
-							aliquyam erat, sed diam voluptua. At vero 
-							eos et accusam et justo duo ... Read More 
-						</p>
-					</div>
-				</div>
-				<div className='home-div-show-wrapper-2'>
-					<div className='home-img-avatar-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup2.img})`}}>
 
 					</div>
 					<div className = 'home-div-show-details'>
 						<p>
 							<p className = 'home-div-show-title'>
-								Cure Cloud India
+								{startups.startup2.title}
 							</p>
-							Lorem ipsum dolor sit amet, consetetur
-							sadipscing elitr, sed diam nonumy eirmod 
-							tempor invidunt ut labore et dolore magna 
-							aliquyam erat, sed diam voluptua. At vero 
-							eos et accusam et justo duo ... Read More 
+							{startups.startup2.text}
 						</p>
 					</div>
 				</div>
 				<div className='home-div-show-wrapper-2'>
-					<div className='home-img-avatar-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup3.img})`}}>
 
 					</div>
 					<div className = 'home-div-show-details'>
 						<p>
 							<p className = 'home-div-show-title'>
-								Cure Cloud India
+								{startups.startup3.title}
 							</p>
-							Lorem ipsum dolor sit amet, consetetur
-							sadipscing elitr, sed diam nonumy eirmod 
-							tempor invidunt ut labore et dolore magna 
-							aliquyam erat, sed diam voluptua. At vero 
-							eos et accusam et justo duo ... Read More 
+							{startups.startup3.text}
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup4.img})`}}>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								{startups.startup4.title}
+							</p>
+							{startups.startup4.text}
 						</p>
 					</div>
 				</div>
