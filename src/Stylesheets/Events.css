@@ -144,7 +144,9 @@
 @media (max-width: 500px){
     .ev-div-card{
         max-width: 75%;
-        margin: 7%;
+        padding: 10%;
+	padding-left: 15%;
+	padding-right: 15%;
     }
     .ev-p-title{
         font-size: 0.90em;
@@ -174,7 +176,7 @@
 {
     .ev-p-btn
     {
-        font-size: 0.4em;
+        font-size: 0.7em;
     }
     .ev-p-title{
         font-size: 0.70em;
