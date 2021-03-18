@@ -106,21 +106,23 @@ const homeComponent = (props) =>
 			<div className="two num">
 				<div className='overlay'>
 					<p className='text'>
-						Swayam Hackathon
+						TiE MoU &amp; Ideation
+						<br />
+						28-Aug-2019
 					</p>
 				</div>
 			</div>
 			<div className="three num">
 				<div className='overlay'>
 					<p className='text'>
-						Swayam Ideation Contest 2019
+						T Tribe MoU with T-Hub
 					</p>
 				</div>
 			</div>
 			<div className="four num">
 				<div className='overlay'>
 					<p className='text'>
-						Swayam Start-up Fest 2019
+						Design Thinking Workshop
 					</p>
 				</div>
 			</div>
@@ -128,14 +130,14 @@ const homeComponent = (props) =>
 			<div className="five num">
 				<div className='overlay'>
 					<p className='text'>
-						Swayam Service Drive 2019
+						Swayam E Summit
 					</p>
 				</div>
 			</div>
 			<div className="six num">
 				<div className='overlay'>
 					<p className='text'>
-						Swayam Doge
+						E-Leader Workshop 2k19
 					</p>
 				</div>
 			</div>

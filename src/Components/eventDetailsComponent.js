@@ -1,8 +1,19 @@
 import React from 'react'
 import '../Stylesheets/EventDetailsComponent.css'
+import styled from 'styled-components'
 
 const eventDetails = (props) =>
 {
+	const Div = styled.div `
+	background-image: url(${props => props.imageurl});
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 70%;
+	height: 500px;
+	margin: 0px auto;
+	border-radius: 15px;
+`
 	const eventfound = props.eventdetails
 	return(
 		<React.Fragment>
@@ -29,9 +40,9 @@ const eventDetails = (props) =>
 				</a>
 			</div>
 				<div className='det-div-sec'>
-					<div className='det-div-img'>
+					<Div imageurl = {eventfound.imageurl}>
 						{/* Just a placeholder for the image*/}
-					</div>
+					</Div>
 					<div className='det-div-details'>
 						<p className='det-p-subtitle'>
 							Time &#38; Location

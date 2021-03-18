@@ -12,11 +12,12 @@ const eventComponent = (props) =>
     const finalurl = baseurl.concat(urlid)
 		return(
 			<React.Fragment>
-        <div className='ev-div-card'>
+        <div className={event.status ? "ev-div-card pastevent" : "ev-div-card"}>
         <p className='ev-p-title'>{event.title} </p>
           <p className='ev-p-date'>{event.date}</p>
-          <p className='ev-p-info'>{event.tagline}</p>   
-          <NavLink to= {finalurl} className='ev-p-btn' exact>Register Now</NavLink>     
+          <p className='ev-p-info'>{event.tagline}</p>
+          <p className={event.status ? "ev-p-btn disabled" : "ev-p-btn hidden"}>Registrations closed</p>   
+          <NavLink to= {finalurl} className={event.status ? "ev-p-btn hidden" : "ev-p-btn"} exact>Register Now</NavLink>     
         </div>
         </React.Fragment>
 		)
@@ -29,6 +30,8 @@ const eventComponent = (props) =>
 			<p className='ev-p-head'>
 				Events <br/>
 			</p>
+      <p>
+      </p>
       <div className='ev-div-event-list'>
         {eventsmapped}
       </div>
