@@ -143,7 +143,6 @@ const homeComponent = (props) =>
 			</div>
 		</div>
 		</div>
-		{/*test code for the photo collage */}
 		
 			<div className='home-div-numb-title'>
 				Swayam in Numbers
