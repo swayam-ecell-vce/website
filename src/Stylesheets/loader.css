@@ -1,0 +1,30 @@
+.Loader-Div
+{
+    z-index: 200;
+    background-color: black;
+}
+.Loader-Backdrop
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+    z-index: 250;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Sub-loader
+{
+    margin-left: 30%;
+}
+.Loading-H3
+{
+    color: pink;
+    text-align: center;
+    margin: 0px auto;
+}
+.Red-Span
+{
+    color: rgb(250, 0, 0);
+}

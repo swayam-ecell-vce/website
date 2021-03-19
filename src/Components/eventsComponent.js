@@ -7,7 +7,7 @@ import '../Stylesheets/Events.css'
 const eventComponent = (props) =>
 {
   const eventsmapped  = props.eventdb.map((event) => {
-    const urlid = event.id
+    const urlid = event.title
     const baseurl = '/events/'
     const finalurl = baseurl.concat(urlid)
 		return(
