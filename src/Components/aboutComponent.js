@@ -97,7 +97,7 @@ Swayam takes curious, insightful, and hard-working students and shapes them into
 						But be aware slick-carousel has a peer-dependancy on jQuery which you,
 						or your colleagues may not like to see in your console output,
 						so you can always grab the CSS from there and convert it
-						into any CSS in JS solution that you might be using.
+						
 						</p>
 					</div>
 				</div>
