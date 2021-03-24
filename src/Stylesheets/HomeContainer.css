@@ -20,20 +20,20 @@
 }
 .home-span-Swayam
 {
-	color: #37d68c;
+	color: #2ff5e8;
 	font-size: 3rem !important;
 	margin: 0px auto;
 	padding-bottom: 2%;
 }
 .home-span-titledecor
 {
-	color: #00fdb1;
+	color: #2ff5e8;
 	font-style: oblique;
 }
 .home-p-tagline
 {
 	font-size: 1.6rem;
-	color: #fc0b67;
+	color: #2ff5e8;
 	font-weight: 1000;	
 }
 .home-div-main
@@ -99,7 +99,7 @@
 {
 	font-size: 2rem;
 	text-align: center;
-	color: #49f73e;
+	color: white;
 	padding-top: 5%;
 	font-weight: bold;
 }
@@ -115,11 +115,9 @@
 	padding-top: 2%;
 	font-size: 2rem;
 	text-align: center;
-	color: #00ff88;
-  padding-top: 2%;
+	color: white;
+  	padding-top: 2%;
 	font-size: 40px;
-	text-align: center;
-	color: #00ff88;
 	font-weight: bold;
 }
 .home-div-caro
@@ -150,7 +148,7 @@
 {
 	font-size: 2rem;
 	text-align: center;
-	color: #2c033f;
+	color: white;
 	font-weight: bold;
 	
 }
@@ -233,7 +231,7 @@
 }
 .text
 {
-	color: #2c033f;
+	color: white;
 	font-size: 1.5rem;
 	font-weight: 800;
 	text-align: center;
@@ -366,8 +364,8 @@
 {
 	width: 70%;
 	margin-left: 3%;
-	color : #0d0538;
-	font-size: 1.4em;
+	color : white;
+	font-size: 1.2em;
 	margin-bottom: 1%;
 }
 .home-div-show-title
@@ -555,7 +553,7 @@
 	}
 	.home-div-show-details
 	{
-		font-size: 1em;
+		font-size: 0.9em;
 	}
 }
 @media (max-width:665px){
@@ -574,7 +572,7 @@
 	}
 	.home-div-show-details
 	{
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 }
 @media (max-width: 490px)
@@ -692,6 +690,10 @@
 @media (max-width:280px){
 	.home-div-ter{
 		margin-top: 55%;
+	}
+	.home-div-show-details
+	{
+		font-size: 0.05em;
 	}
 }
 @media (max-width: 250px)

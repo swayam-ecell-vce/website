@@ -17,7 +17,7 @@
 	width: 25%;
     max-height: 50%;
     margin: 60px auto;
-    background-color: #37d68c;
+    background-color: #4328d1;
     box-shadow: 15px 15px 10px rgb(0 0 0);
     transition: 0.25s;
     padding: 2.08%;
@@ -32,22 +32,22 @@
 }
 .pastevent
 {
-    background-color: #74eeb5 !important;
+    background-color: #4328d1 !important;
 }
 .ev-p-title{
 	font-size: 2em;
-    color: #00113f;
+    color: white;
     font-weight: bold;
 }
 .ev-p-date{
     text-align: center;
     font-weight: 800;
-    color: rgb(96 2 2);
+    color: #2ff5e8
 }
 
 .ev-p-info {
     font-size: small;
-    color: rgb(44 2 2);
+    color: white;
     text-align: center;
     font-weight: 600;
 }
@@ -101,7 +101,7 @@
     max-height: 50%;
     display: inline-block;
     margin: 60px auto;
-    background-color: #37d68c;
+    background-color: #4328d1;
     box-shadow: 15px 15px 10px rgb(0 0 0);
     transition: 0.25s;
     padding: 2.08%;
