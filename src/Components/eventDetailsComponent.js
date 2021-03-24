@@ -6,19 +6,44 @@ const eventDetails = (props) =>
 {
 	const Div = styled.div `
 	background-image: url(${props => props.imageurl});
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 70%;
-	height: 500px;
+	height: 800px;
 	margin: 0px auto;
 	border-radius: 15px;
+
+	@media(max-width: 1150px) {
+		width: 60%;
+		height: 500px
+	  }
+	  @media(max-width: 800px) {
+		width: 50%;
+		height: 300px
+	  }
+	  @media(max-width: 580px) {
+		width: 40%;
+		height: 200px
+	  }
+	  @media(max-width: 480px) {
+		width: 40%;
+		height: 150px
+	  }
+	  @media(max-width: 350px) {
+		width: 30%;
+		height: 90px
+	  }
+
 `
 	const eventfound = props.eventdetails
 	return(
 		<React.Fragment>
 			<div className='det-div-main'>
 				<div className='det-div-tnd'>
+				<p>
+					{eventfound.date}&nbsp; | &nbsp;
+				</p>
 				<p>
 					{eventfound.time}
 				</p>
@@ -45,9 +70,12 @@ const eventDetails = (props) =>
 					</Div>
 					<div className='det-div-details'>
 						<p className='det-p-subtitle'>
-							Time &#38; Location
+							Date, Time, &#38; Location
 						</p>
 						<div className='det-div-wrapper-sec'>
+							<p className='det-p-time det-p-date'>
+								{eventfound.date}
+							</p>
 							<p className='det-p-time'>
 								{eventfound.time}
 							</p>

@@ -12,6 +12,7 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 4%;
+	flex-wrap: wrap;
 }
 .det-p-title
 {
@@ -85,5 +86,42 @@
 }
 .det-p-time
 {
+	margin-top: 0%;
 	margin-bottom: 4px;
+}
+.det-p-date
+{
+	margin-top: 3%;
+}
+
+@media(max-width: 520px)
+{
+	.det-div-tnd
+	{
+		font-size: small;
+		margin-top: 8%;
+	}
+	.det-p-title
+	{
+		font-size: 2.25em;
+	}
+	.det-div-wrapper-sec
+	{
+		font-size: 1em;
+	}
+	.det-p-subtitle
+	{
+		font-size: 2.2em;
+	}
+}
+@media(max-width: 520px)
+{
+	.det-div-wrapper-sec
+	{
+		font-size: 0.8em;
+	}
+	.det-p-subtitle
+	{
+		font-size: 1.2em;
+	}
 }
