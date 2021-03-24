@@ -285,7 +285,8 @@
 }
 .home-div-st
 {
-	padding: 4%;
+	padding: 1%;
+	background-color: #6200EE ;
 }
 .home-div-show-wrapper, .home-div-show-wrapper-2
 {
@@ -363,10 +364,6 @@
 	width: 100%;
 }
 
-.home-div-st
-{
-	background-color: #6200EE ;
-}
 .home-div-show-details
 {
 	width: 70%;
@@ -599,7 +596,7 @@
 	}
 	.home-div-show-wrapper-2
 	{
-		font-size: 0.5em;
+		font-size: 0.55em;
 	}
 	.home-img-avatar{
 		height: 200px;
@@ -654,7 +651,7 @@
 	}
 	.home-div-show-details
 	{
-		font-size: 0.7em;
+		font-size: 0.78em;
 		margin-left: 5%;
 	}
 	.home-div-st
@@ -681,6 +678,10 @@
 	.home-div-ter{
 		margin-top: 42%;
 		height: 10.5%;
+	}
+	.home-div-show-details
+	{
+		font-size: 0.45em;
 	}
 }
 @media (max-width:330px){

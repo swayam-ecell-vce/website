@@ -269,13 +269,13 @@ function HomeComponent(props)
 										<p className="home-div-show-title">
 											Cure Cloud India
 										</p>
-										Cure Cloud India is dedicated to providing excellent patient’s hospital experience seamless,
-										privacy and security of the customer’s data is the foremost priority and bridge between
-										Electronic Health Record (EHR) hospitals and non-EHR hospitals via its responsive application CUON,
-										which provides a digital platform for individuals to store their medical documents on the cloud,
-										accessible at one’s convenience and keeping the conventional doctor-patient connect as alive as possible.
-										Now Cure Clod India is acqui-hired by a company named Conscious AI Pvt Ltd.,
-										which is building a similar but more sophisticated to a wider set of audience.
+											Cure Cloud India is dedicated to providing excellent patient’s hospital experience seamless,
+											privacy and security of the customer’s data is the foremost priority and bridge between
+											Electronic Health Record (EHR) hospitals and non-EHR hospitals via its responsive application CUON,
+											which provides a digital platform for individuals to store their medical documents on the cloud,
+											accessible at one’s convenience and keeping the conventional doctor-patient connect as alive as possible.
+											Now Cure Cloud India is acqui-hired by a company named Conscious AI Pvt Ltd.,
+											which is building a similar but more sophisticated to a wider set of audience.
 									</p>
 								</div>
 							</div>

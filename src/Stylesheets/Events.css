@@ -159,6 +159,7 @@
     .ev-p-btn
     {
         font-size: 1em;
+        margin-bottom: 5%;
     }
     
 }
@@ -191,6 +192,7 @@
     .ev-p-btn
     {
         font-size: 0.6em;
+        margin-bottom: 15%;
     }
 }
 
