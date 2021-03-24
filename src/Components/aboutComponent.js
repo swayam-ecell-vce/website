@@ -22,7 +22,7 @@ const aboutComponent = (props) =>
 	return(
 		<div className='home-div-abt'>
 			<div className='home-div-abt-title'>
-				Everything You Need to Know About Swayam?
+				Everything You Need to Know About Swayam
 			</div>
 			<div className='home-div-abt-vid'>
 			<ReactPlayer

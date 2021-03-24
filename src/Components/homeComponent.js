@@ -74,7 +74,6 @@ function HomeComponent(props)
 				<p className="home-p-title">
 					<span className="home-span-Swayam">Swayam</span>{" "}
 					<br />
-					<br />
 					The <br />
 					<span className="home-span-titledecor">
 						Entrepreneurship
