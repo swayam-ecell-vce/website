@@ -1,6 +1,15 @@
 /* Main Wrapper for Incubator Page */
 .inc-div-main {
 	padding-top: 0.5%;
+	display: none;
+}
+.coming-soon
+{
+	display: block !important;
+	margin-top: 5%;
+	font-size: 90px;
+	text-align: center;
+	margin-bottom: 15%;
 }
 /* Style for heading */
 

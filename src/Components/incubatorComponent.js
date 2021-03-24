@@ -26,6 +26,10 @@ const incubatorComponent = (props) => {
 	};
 
 	return (
+		<React.Fragment>
+		<div className= 'inc-div-main coming-soon' >
+			Coming Soon...
+		</div>
 		<div className="inc-div-main">
 			{/* <div className='inc-head-div-main'> */}
 			<p className="inc-p-head">Swayam Incubator</p>
@@ -115,6 +119,7 @@ const incubatorComponent = (props) => {
 				</div>
 			</div>
 		</div>
+		</React.Fragment>
 	);
 };
 

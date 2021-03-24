@@ -27,7 +27,7 @@ const aboutComponent = (props) =>
 			<div className='home-div-abt-vid'>
 			<ReactPlayer
 				className='react-player'
-				url='https://youtu.be/PsVk5nZ0weE'
+				url='https://www.youtube.com/watch?v=-8e9RjTn7Lg'
 				light = {true}
 				width='100%'
 				height='100%'
@@ -35,8 +35,8 @@ const aboutComponent = (props) =>
 			</div>
 			<div>
 				<p className='home-p-abt-details'>
-				Swayam is the entrepreneurship cell of Vasavi College of Engineering. It's a manifestation of the effort, ideas, dreams, and aspirations of all associated with it. It exists to develop and nourish the latent entrepreneurial spirit which is inherent in every student. It helps them gain a diverse perspective of life and teaches them how to use design thinking in life's everyday aspects. It empowers them to become independent thinkers who pitch their unique ideas and work in teams to watch them come alive. 
-Swayam takes curious, insightful, and hard-working students and shapes them into competent Entrepreneurs.
+					Swayam is the entrepreneurship cell of Vasavi College of Engineering. It's a manifestation of the effort, ideas, dreams, and aspirations of all associated with it. It exists to develop and nourish the latent entrepreneurial spirit which is inherent in every student. It helps them gain a diverse perspective of life and teaches them how to use design thinking in life's everyday aspects. It empowers them to become independent thinkers who pitch their unique ideas and work in teams to watch them come alive. 
+					Swayam takes curious, insightful, and hard-working students and shapes them into competent Entrepreneurs.
 				</p>
 			</div>
 			<div className='home-div-abt-sec'>
