@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "../Stylesheets/HomeContainer.css";
 import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
 import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
@@ -14,9 +15,16 @@ import SliderWrapper from "../UI/sliderdots";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
-const homeComponent = (props) => {
-	const divclickhandler = (event) => {
-		//configure the click handler user React.history.push or something better
+function HomeComponent(props)
+{
+	var history = useHistory()
+	const incubatorclicker = () => 
+	{
+		history.push('/incubator')
+	};
+
+	const eventclicker = (event) => {
+		history.push('/events')
 	};
 
 	//settings needed for the testimonials carousel to run
@@ -43,8 +51,8 @@ const homeComponent = (props) => {
 		autoplay: true,
 		autoplaySpeed: 4000,
 		infinite: true,
-		slidesToShow: 2,
-		slidesToScroll: 2,
+		slidesToShow: 1,
+		slidesToScroll: 0,
 		initialSlide: 0,
 		speed: 500,
 		adaptiveHeight: true,
@@ -64,7 +72,8 @@ const homeComponent = (props) => {
 		<div className="home-wrapper">
 			<div className="home-div-header">
 				<p className="home-p-title">
-					<span className="home-span-Swayam">//Swayam Logo//</span>{" "}
+					<span className="home-span-Swayam">Swayam</span>{" "}
+					<br />
 					<br />
 					The <br />
 					<span className="home-span-titledecor">
@@ -77,12 +86,12 @@ const homeComponent = (props) => {
 				<p className="home-p-tagline">"Students to Innovators"</p>
 			</div>
 			<div className="home-div-main">
-				<div className="home-div-sec" onClick={divclickhandler}>
+				<div className="home-div-sec" onClick={incubatorclicker} values = 'incubator'>
 					<div className="home-div-ter">
 						Incubator
 					</div>
 				</div>
-				<div className="home-div-sec home-div-sec-bg">
+				<div className="home-div-sec home-div-sec-bg" onClick={eventclicker} values = 'events'>
 					<div className="home-div-ter">Swayam Events</div>
 				</div>
 			</div>
@@ -185,67 +194,68 @@ const homeComponent = (props) => {
 				</div>
 			</div>
 
-			<div className="home-div-caro-title">
+			<div className = 'home-div-show-comingsoon'>
+				<div className="home-div-caro-title">
 				Here’s What Some of Our Prominent Visitors had to Say
-			</div>
-
-			<div className="home-div-show">
-				<SliderWrapper>
-					<Slider {...settings}>
-						<div className="home-div-show-wrapper">
-							<div className="home-img-avatar"></div>
-							<div className="home-div-show-quote">
-								<FormatQuoteIcon
-									style={{ fontSize: 55, color: "black" }}
-								/>
-							</div>
-							<div className="home-div-show-text">
-								<br />
-								<p className="home-p-show-text">
-									You guys provided young enthusiasts exposure
-									to experts with various initiatives,
-									successes and failures, and that is truly
-									Amazing.
+				</div>
+				<div className="home-div-show">
+					<SliderWrapper>
+						<Slider {...settings}>
+							<div className="home-div-show-wrapper">
+								<div className="home-img-avatar"></div>
+								<div className="home-div-show-quote">
+									<FormatQuoteIcon
+										style={{ fontSize: 55, color: "black" }}
+									/>
+								</div>
+								<div className="home-div-show-text">
 									<br />
-									<p className="home-p-show-author">
-										Sri Charan Lakkaraju
+									<p className="home-p-show-text">
+										You guys provided young enthusiasts exposure
+										to experts with various initiatives,
+										successes and failures, and that is truly
+										Amazing.
 										<br />
-										<p className="home-p-show-title">
-											Forbes 30 Under30 Asia 2018 |
-											Founder, stuMagz
+										<p className="home-p-show-author">
+											Sri Charan Lakkaraju
+											<br />
+											<p className="home-p-show-title">
+												Forbes 30 Under30 Asia 2018 |
+												Founder, stuMagz
+											</p>
 										</p>
 									</p>
-								</p>
+								</div>
 							</div>
-						</div>
-						<div className="home-div-show-wrapper">
-							<div className="home-img-avatar"></div>
-							<div className="home-div-show-quote">
-								<FormatQuoteIcon
-									style={{ fontSize: 55, color: "black" }}
-								/>
-							</div>
-							<div className="home-div-show-text">
-								<br />
-								<p className="home-p-show-text">
-									You guys provided young enthusiasts exposure
-									to experts with various initiatives,
-									successes and failures, and that is truly
-									Amazing.
+							<div className="home-div-show-wrapper">
+								<div className="home-img-avatar"></div>
+								<div className="home-div-show-quote">
+									<FormatQuoteIcon
+										style={{ fontSize: 55, color: "black" }}
+									/>
+								</div>
+								<div className="home-div-show-text">
 									<br />
-									<p className="home-p-show-author">
-										Sri Charan Lakkaraju
+									<p className="home-p-show-text">
+										You guys provided young enthusiasts exposure
+										to experts with various initiatives,
+										successes and failures, and that is truly
+										Amazing.
 										<br />
-										<p className="home-p-show-title">
-											Forbes 30 Under30 Asia 2018 |
-											Founder, stuMagz
+										<p className="home-p-show-author">
+											Sri Charan Lakkaraju
+											<br />
+											<p className="home-p-show-title">
+												Forbes 30 Under30 Asia 2018 |
+												Founder, stuMagz
+											</p>
 										</p>
 									</p>
-								</p>
+								</div>
 							</div>
-						</div>
-					</Slider>
-				</SliderWrapper>
+						</Slider>
+					</SliderWrapper>
+				</div>
 			</div>
 
 			<div className="home-div-startups">
@@ -260,57 +270,13 @@ const homeComponent = (props) => {
 										<p className="home-div-show-title">
 											Cure Cloud India
 										</p>
-										Lorem ipsum dolor sit amet, consetetur
-										sadipscing elitr, sed diam nonumy eirmod
-										tempor invidunt ut labore et dolore
-										magna aliquyam erat, sed diam voluptua.
-										At vero eos et accusam et justo duo ...
-										Read More
-									</p>
-								</div>
-							</div>
-							<div className="home-div-show-wrapper-2">
-								<div className="home-img-avatar-2"></div>
-								<div className="home-div-show-details">
-									<p>
-										Lorem ipsum dolor sit amet, consetetur
-										sadipscing elitr, sed diam nonumy eirmod
-										tempor invidunt ut labore et dolore
-										magna aliquyam erat, sed diam voluptua.
-										At vero eos et accusam et justo duo ...
-										Read More
-									</p>
-								</div>
-							</div>
-							<div className="home-div-show-wrapper-2">
-								<div className="home-img-avatar-2"></div>
-								<div className="home-div-show-details">
-									<p>
-										<p className="home-div-show-title">
-											Cure Cloud India
-										</p>
-										Lorem ipsum dolor sit amet, consetetur
-										sadipscing elitr, sed diam nonumy eirmod
-										tempor invidunt ut labore et dolore
-										magna aliquyam erat, sed diam voluptua.
-										At vero eos et accusam et justo duo ...
-										Read More
-									</p>
-								</div>
-							</div>
-							<div className="home-div-show-wrapper-2">
-								<div className="home-img-avatar-2"></div>
-								<div className="home-div-show-details">
-									<p>
-										<p className="home-div-show-title">
-											Cure Cloud India
-										</p>
-										Lorem ipsum dolor sit amet, consetetur
-										sadipscing elitr, sed diam nonumy eirmod
-										tempor invidunt ut labore et dolore
-										magna aliquyam erat, sed diam voluptua.
-										At vero eos et accusam et justo duo ...
-										Read More
+										Cure Cloud India is dedicated to providing excellent patient’s hospital experience seamless,
+										privacy and security of the customer’s data is the foremost priority and bridge between
+										Electronic Health Record (EHR) hospitals and non-EHR hospitals via its responsive application CUON,
+										which provides a digital platform for individuals to store their medical documents on the cloud,
+										accessible at one’s convenience and keeping the conventional doctor-patient connect as alive as possible.
+										Now Cure Clod India is acqui-hired by a company named Conscious AI Pvt Ltd.,
+										which is building a similar but more sophisticated to a wider set of audience.
 									</p>
 								</div>
 							</div>
@@ -322,4 +288,4 @@ const homeComponent = (props) => {
 	);
 };
 
-export default homeComponent;
+export default HomeComponent;

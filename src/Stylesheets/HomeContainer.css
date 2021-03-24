@@ -16,15 +16,14 @@
 }
 .home-p-title
 {
-	
-	font-size: 2rem !important;
+	font-size: 2rem;
 }
 .home-span-Swayam
 {
 	color: #37d68c;
-	font-family:cursive;
 	font-size: 3rem !important;
-	margin-bottom: 3%;
+	margin: 0px auto;
+	padding-bottom: 2%;
 }
 .home-span-titledecor
 {
@@ -271,6 +270,10 @@
 	opacity: 1;
 	cursor: pointer;
 }
+.home-div-show-comingsoon
+{
+	display: none;
+}
 .home-div-show
 {
 	background-color: white;
@@ -280,6 +283,7 @@
 	margin: 0px auto;
 	margin-top: 5%;
 	position: static;
+	z-index: 110;
 }
 .home-div-st
 {
@@ -314,12 +318,14 @@
 
 .home-img-avatar-2
 {
-	height: 240px;
+	height: 300px;
 	width: 240px;
 	position: relative;
 	padding-right: 3%;
 	border: 4px solid white;
 	margin: 0;
+	margin-top: 1%;
+	margin-left: -3%;
 }
 .home-p-show-text
 {
@@ -358,9 +364,11 @@
 }
 .home-div-show-details
 {
-	width: 50%;
+	width: 70%;
 	margin-left: 3%;
 	color : #0d0538;
+	font-size: 1.5em;
+	margin-bottom: 1%;
 }
 .home-div-show-title
 {
@@ -423,6 +431,10 @@
 	.home-div-ter{
 		font-size: 1.35rem;
 		width: 85%;
+	}
+	.home-div-show-details
+	{
+		font-size: 1.2em;
 	}
 }
 @media (max-width: 880px)
@@ -541,6 +553,10 @@
 		font-size: 1.2rem;
 		height: 11%;
 	}
+	.home-div-show-details
+	{
+		font-size: 1em;
+	}
 }
 @media (max-width:665px){
 	.home-div-ter{
@@ -555,6 +571,10 @@
 		margin-top: 29%;
 		font-size: 0.9rem;
 		border: 1px solid;
+	}
+	.home-div-show-details
+	{
+		font-size: 0.8em;
 	}
 }
 @media (max-width: 490px)
@@ -629,7 +649,7 @@
 	}
 	.home-div-show-details
 	{
-		font-size: 0.4em;
+		font-size: 0.7em;
 		margin-left: 5%;
 	}
 	.home-div-st
@@ -663,6 +683,10 @@
 		font-size: 0.5rem;
 		margin-top: 35%;
 		border: 1px solid;
+	}
+	.home-div-show-details
+	{
+		font-size: 0.2em;
 	}
 }
 @media (max-width:280px){

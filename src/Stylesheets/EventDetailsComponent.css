@@ -24,7 +24,7 @@
 {
 	text-align: center;
 }
-.det-a-btn, .det-a-btn-sec
+.det-a-btn
 {
 	display: flex;
 	font-size: larger;
@@ -39,6 +39,7 @@
 	transition: background 0.5s ease-in-out;
 	color: black;
 	font-weight: 700;
+	text-decoration: none;
 }
 .det-a-btn-sec
 {

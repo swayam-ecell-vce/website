@@ -2,7 +2,7 @@ import React from 'react'
 import Loader from 'react-loader-spinner'
 import '../Stylesheets/loader.css'
 
-const loader = (props) =>
+const comingsoon = (props) =>
 {
     return(
 
@@ -18,7 +18,7 @@ const loader = (props) =>
                 />
                 </div>
                 <h3 className='Loading-H3'>
-                    Made with <span className = 'Red-Span'>React</span> ... And <span className = 'Red-Span'>Luv</span>
+                    Coming <span className = 'Red-Span'>Soon</span>
                 </h3>
             </div>
         </div>
@@ -26,4 +26,4 @@ const loader = (props) =>
     )
 }
 
-export default loader
+export default comingsoon

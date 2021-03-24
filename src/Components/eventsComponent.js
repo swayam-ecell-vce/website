@@ -1,25 +1,34 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 //import other components here
 import '../Stylesheets/Events.css'
 
 const eventComponent = (props) =>
 {
-  const eventsmapped  = props.eventdb.map((event) => {
+  const eventclickhandler = (event) =>
+  {
+    console.log(event.target)
+  }
+  const eventsmapped  = props.eventdb.map((event) => 
+  {
     const urlid = event.title
     const baseurl = '/events/'
     const finalurl = baseurl.concat(urlid)
-		return(
-			<React.Fragment>
-        <div className={event.status ? "ev-div-card pastevent" : "ev-div-card"}>
-        <p className='ev-p-title'>{event.title} </p>
+    return(
+      <React.Fragment>
+        <div className={event.status ? "ev-div-card pastevent" : "ev-div-card"} onClick = {eventclickhandler}>
+          <p className='ev-p-title'>{event.title} </p>
           <p className='ev-p-date'>{event.date}</p>
           <p className='ev-p-info'>{event.tagline}</p>
-          <p className={event.status ? "ev-p-btn disabled" : "ev-p-btn hidden"}>Registrations closed</p>   
-          <NavLink to= {finalurl} className={event.status ? "ev-p-btn hidden" : "ev-p-btn"} exact>Register Now</NavLink>     
+          <div className='ev-btn-grp'>
+            <NavLink to= {finalurl} className="ev-p-btn" exact>More Details</NavLink>
+            <p className={event.status ? "ev-p-btn disabled" : "ev-p-btn hidden"}>Registrations closed</p>
+            <a href ='https://forms.office.com/Pages/ResponsePage.aspx?id=2gmg8pG0u02U6FgJFiVJzUlO1dwao5NGoawk9C6n8HlUMzYxNEQwSlBEUDNBTlpaNjRUS0YySzVDMy4u' className={event.status ? "ev-p-btn ev-btn-register hidden" : "ev-p-btn ev-btn-register"} target='blank'>Register Now</a>
+          </div>
         </div>
-        </React.Fragment>
+      </React.Fragment>
 		)
   })
 
