@@ -35,8 +35,28 @@ const eventDetails = (props) =>
 		height: 90px
 	  }
 
-`
+	`
 	const eventfound = props.eventdetails
+
+	let questionsmapped
+	if(eventfound.questions)
+	{
+		let questionnumber = 0
+		questionsmapped = eventfound.questions.map(ques =>
+		{
+			questionnumber++
+			return(
+				<React.Fragment>
+					<div className='det-p-subtitle det-div-questions'>
+						{questionnumber}. {ques.questiontext}
+					</div>
+					<div className='det-div-wrapper-sec det-div-answer'>
+						{ques.answer}
+					</div>
+				</React.Fragment>
+			)
+		})
+	}
 	return(
 		<React.Fragment>
 			<div className='det-div-main'>
@@ -96,6 +116,12 @@ const eventDetails = (props) =>
 						<a href ='https://forms.office.com/Pages/ResponsePage.aspx?id=2gmg8pG0u02U6FgJFiVJzUlO1dwao5NGoawk9C6n8HlUMzYxNEQwSlBEUDNBTlpaNjRUS0YySzVDMy4u' className='det-a-btn det-a-btn-sec' className={eventfound.status ? "det-a-btn det-a-btn-sec hidden" : "det-a-btn det-a-btn-sec"} target = 'blank'>
 							Register	
 						</a>
+					</div>
+					<div className='det-div-details'>
+						<div className='det-p-subtitle'>
+							Frequently Asked Questions
+						</div>
+						{questionsmapped}
 					</div>
 				</div>
 			</React.Fragment>
