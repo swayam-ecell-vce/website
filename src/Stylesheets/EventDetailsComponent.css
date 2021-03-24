@@ -94,6 +94,11 @@
 	margin-top: 3%;
 }
 
+.hidden
+{
+    display: none;
+}
+
 @media(max-width: 520px)
 {
 	.det-div-tnd

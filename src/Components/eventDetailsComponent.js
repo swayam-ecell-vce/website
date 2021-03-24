@@ -60,7 +60,7 @@ const eventDetails = (props) =>
 				<p className='det-p-tagline'>
 					{eventfound.tagline}
 				</p>
-				<a href ='https://forms.office.com/Pages/ResponsePage.aspx?id=2gmg8pG0u02U6FgJFiVJzUlO1dwao5NGoawk9C6n8HlUMzYxNEQwSlBEUDNBTlpaNjRUS0YySzVDMy4u' className='det-a-btn' target = 'blank'>
+				<a href ='https://forms.office.com/Pages/ResponsePage.aspx?id=2gmg8pG0u02U6FgJFiVJzUlO1dwao5NGoawk9C6n8HlUMzYxNEQwSlBEUDNBTlpaNjRUS0YySzVDMy4u' className={eventfound.status ? "det-a-btn hidden" : "det-a-btn"} target = 'blank'>
 						Register
 				</a>
 			</div>
@@ -93,7 +93,7 @@ const eventDetails = (props) =>
 						</div>
 					</div>
 					<div className='det-div-details'>
-						<a href ='https://forms.office.com/Pages/ResponsePage.aspx?id=2gmg8pG0u02U6FgJFiVJzUlO1dwao5NGoawk9C6n8HlUMzYxNEQwSlBEUDNBTlpaNjRUS0YySzVDMy4u' className='det-a-btn det-a-btn-sec' target = 'blank'>
+						<a href ='https://forms.office.com/Pages/ResponsePage.aspx?id=2gmg8pG0u02U6FgJFiVJzUlO1dwao5NGoawk9C6n8HlUMzYxNEQwSlBEUDNBTlpaNjRUS0YySzVDMy4u' className='det-a-btn det-a-btn-sec' className={eventfound.status ? "det-a-btn det-a-btn-sec hidden" : "det-a-btn det-a-btn-sec"} target = 'blank'>
 							Register	
 						</a>
 					</div>
