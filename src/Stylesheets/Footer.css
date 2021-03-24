@@ -107,6 +107,10 @@
     width: 30%;
 }
 
+ .foo-link{
+        color: white;
+    }
+
 @media (max-width: 880px){
     .foo-div-det{
         flex-direction: column;       
@@ -130,6 +134,7 @@
     .foo-div-logos{
         transform: scale(0.5  );
     }
+
 
     .foo-div-form{
         margin: auto;

@@ -27,98 +27,100 @@ const incubatorComponent = (props) => {
 
 	return (
 		<React.Fragment>
-		<div className= 'inc-div-main coming-soon' >
-			Coming Soon...
-		</div>
-		<div className="inc-div-main">
-			{/* <div className='inc-head-div-main'> */}
-			<p className="inc-p-head">Swayam Incubator</p>
-			{/* <div className='slider-div-main'> */}
-			<div className="slider-wrapper">
-				<Slider {...settings}>
-					{images.map((image_src, index) => (
-						<div className="slider" key={index}>
-							<img src={image_src} className="img" />
-						</div>
-					))}
-				</Slider>
-			</div>
-			{/* </div> */}
-			{/* </div> */}
-			<div className="inc-div-jumbo-main">
-				<div className="inc-div-jumbo">
-					<div className="inc-abt-wrapper">
-						<div className="inc-img-abt"></div>
-						<p className="inc-p-content">
-							<p className="inc-p-abt-head">
-								What is Swayam Incubator?
+			<div className="inc-div-main coming-soon">Coming Soon...</div>
+			<div className="inc-div-main">
+				{/* <div className='inc-head-div-main'> */}
+				<p className="inc-p-head">Swayam Incubator</p>
+				{/* <div className='slider-div-main'> */}
+				<div className="slider-wrapper">
+					<Slider {...settings}>
+						{images.map((image_src, index) => (
+							<div className="slider" key={index}>
+								<img src={image_src} className="img" />
+							</div>
+						))}
+					</Slider>
+				</div>
+				{/* </div> */}
+				{/* </div> */}
+				<div className="inc-div-jumbo-main">
+					<div className="inc-div-jumbo">
+						<div className="inc-abt-wrapper">
+							<div
+								className="inc-img-abt"
+								aria-labelledby="Swayam E-Cell Vasavi"
+							></div>
+							<p className="inc-p-content">
+								<p className="inc-p-abt-head">
+									What is Swayam Incubator?
+								</p>
+								Enim esse elit cupidatat laborum Sint labore
+								minim officia aliquip aliquip cillum voluptate
+								et do dolor Lorem. Aliquip minim in incididunt
+								ut elit non cillum consectetur cupidatat anim id
+								qui
 							</p>
-							Enim esse elit cupidatat laborum Sint labore minim
-							officia aliquip aliquip cillum voluptate et do dolor
-							Lorem. Aliquip minim in incididunt ut elit non
-							cillum consectetur cupidatat anim id qui
-						</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className="inc-div-facility">
-				<div className="inc-fac-card">
-					<div className="inc-fac-image">
-						<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
-					</div>
+				<div className="inc-div-facility">
+					<div className="inc-fac-card">
+						<div className="inc-fac-image">
+							<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+						</div>
 
-					<div className="inc-fac-details">
-						<div className="inc-fac-content">
-							<h1>
-								Mentors
-								<br />
-								<span>team leader</span>
-							</h1>
-							<p>
-								Lorem ipsum is simple dummy text on the printing
-								and typesetting industry.
-							</p>
+						<div className="inc-fac-details">
+							<div className="inc-fac-content">
+								<h1>
+									Mentors
+									<br />
+									<span>team leader</span>
+								</h1>
+								<p>
+									Lorem ipsum is simple dummy text on the
+									printing and typesetting industry.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className="inc-fac-card">
-					<div className="inc-fac-image">
-						<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
-					</div>
-					<div className="inc-fac-details">
-						<div className="inc-fac-content">
-							<h1>
-								Mentors
-								<br />
-								<span>team leader</span>
-							</h1>
-							<p>
-								Lorem ipsum is simple dummy text on the printing
-								and typesetting industry.
-							</p>
+					<div className="inc-fac-card">
+						<div className="inc-fac-image">
+							<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+						</div>
+						<div className="inc-fac-details">
+							<div className="inc-fac-content">
+								<h1>
+									Mentors
+									<br />
+									<span>team leader</span>
+								</h1>
+								<p>
+									Lorem ipsum is simple dummy text on the
+									printing and typesetting industry.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div className="inc-fac-card">
-					<div className="inc-fac-image">
-						<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
-					</div>
-					<div className="inc-fac-details">
-						<div className="inc-fac-content">
-							<h1>
-								Mentors
-								<br />
-								<span>team leader</span>
-							</h1>
-							<p>
-								Lorem ipsum is simple dummy text on the printing
-								and typesetting industry.
-							</p>
+					<div className="inc-fac-card">
+						<div className="inc-fac-image">
+							<img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
+						</div>
+						<div className="inc-fac-details">
+							<div className="inc-fac-content">
+								<h1>
+									Mentors
+									<br />
+									<span>team leader</span>
+								</h1>
+								<p>
+									Lorem ipsum is simple dummy text on the
+									printing and typesetting industry.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</React.Fragment>
 	);
 };

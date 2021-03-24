@@ -65,7 +65,7 @@ const eventDetails = (props) =>
 				</a>
 			</div>
 				<div className='det-div-sec'>
-					<Div imageurl = {eventfound.imageurl}>
+					<Div imageurl = {eventfound.imageurl} aria-labelledby="Swayam E-Cell Vasavi">
 						{/* Just a placeholder for the image*/}
 					</Div>
 					<div className='det-div-details'>
