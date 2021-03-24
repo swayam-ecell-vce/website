@@ -50,8 +50,8 @@ const homeComponent = (props) => {
 		adaptiveHeight: true,
 		responsive: [
 			{
-				breakpoint: 700,
-				settings: {
+				  breakpoint: 700,
+				  settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					infinite: true,
