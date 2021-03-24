@@ -67,10 +67,11 @@ const homeComponent = (props) =>
 		<div className='home-wrapper'>
 		<div className='home-div-header'>
 			<p className='home-p-title'>
-			<span className='home-span-Swayam'>//Swayam Logo//</span> <br />
-			The <br />
-			<span className='home-span-titledecor'>Entrepreneurship</span> cell  <br />
-			of <span className='home-span-titledecor'>Vasavi</span> College of Engineering
+				<span className='home-span-Swayam'>Swayam</span> <br /> <br />
+				The <br />
+				<span className='home-span-titledecor'>Entrepreneurship</span> cell  <br />
+				of <span className='home-span-titledecor'>Vasavi </span> 
+				College of Engineering
 			</p>
 			<p className='home-p-tagline'>
 				"Students to Innovators"

@@ -80,7 +80,6 @@
 .disabled
 {
     background: linear-gradient(to right, rgb(247, 74, 218), rgb(202, 0, 50));
-    color: #01041e;
 }
 
 .disabled:hover
