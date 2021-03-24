@@ -35,11 +35,8 @@ const aboutComponent = (props) =>
 			</div>
 			<div>
 				<p className='home-p-abt-details'>
-				Between 1961 and 1970, Emanuele Severino was subjected to a thorough investigation by the Vatican Inquisition.
-				The “fundamental incompatibility” identified between his thought and Christian doctrine ejected him from his position
-				as Professor of Philosophy at the Catholic University in Milan. The Essence of Nihilism, published in 1972,
-				was the first book to follow his expulsion, and it established Severino’s preeminent position within the the
-				constellation of contemporary philosophy.
+				Swayam is the entrepreneurship cell of Vasavi College of Engineering. It's a manifestation of the effort, ideas, dreams, and aspirations of all associated with it. It exists to develop and nourish the latent entrepreneurial spirit which is inherent in every student. It helps them gain a diverse perspective of life and teaches them how to use design thinking in life's everyday aspects. It empowers them to become independent thinkers who pitch their unique ideas and work in teams to watch them come alive. 
+Swayam takes curious, insightful, and hard-working students and shapes them into competent Entrepreneurs.
 				</p>
 			</div>
 			<div className='home-div-abt-sec'>
@@ -53,9 +50,7 @@ const aboutComponent = (props) =>
 						</p>
 						<br />
 						<p className='home-p-content-alt'>
-						Contrary to popular belief, Lorem Ipsum is not simply random text.
-						It has roots in a piece of classical Latin literature from 45 BC,
-						making it over 2000 years old. Richard McClintock, a Latin professor at
+						To develop confidence by creating an ecosystem that encourages and supports the entrepreneurial potential of students.
 						</p>
 					</div>
 					<div className='home-img-abt-2'>
@@ -77,9 +72,7 @@ const aboutComponent = (props) =>
 						</p>
 						<br />
 						<p className='home-p-content'>
-						Contrary to popular belief, Lorem Ipsum is not simply random text.
-						It has roots in a piece of classical Latin literature from 45 BC,
-						making it over 2000 years old. Richard McClintock, a Latin professor at
+						To inculcate the spirit of entrepreneurship among students and to provide them with all necessary support and mentoring. Helping students by equipping them with the right skills and attitude to convert an idea into a successful business venture.
 						</p>
 					</div>
 				</div>
@@ -102,9 +95,9 @@ const aboutComponent = (props) =>
 						</p>
 						<p className='home-div-abt-cert-det'>
 						But be aware slick-carousel has a peer-dependancy on jQuery which you,
-						or your colleagues may not like to see in your console output,
+						But be aware slick-carousel has a peer-dependancy on jQuery which you
 						so you can always grab the CSS from there and convert it
-						into any CSS in JS solution that you might be using.
+						
 						</p>
 					</div>
 				</div>
