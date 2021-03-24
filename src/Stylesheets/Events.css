@@ -122,11 +122,23 @@
 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ev-btn-register
 {
     background-image: linear-gradient(to right, rgb(27, 204, 71), rgb(1, 41, 3));
+}
+
+@media (max-width: 1180px){
+    .ev-p-btn
+    {
+        font-size: small !important;
+    }
+    .ev-p-btn-grp
+    {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 980px){
