@@ -28,7 +28,7 @@ const footerComponent = (props) =>
 					<br />
 					<p className='foo-p-address foo-p-contact'>
 						Swayam@vce.ac.in <br />
-						+91 728-782-8919
+						+91 9642000800
 					</p>
 					<br />
 					<div className='foo-div-logos'>
