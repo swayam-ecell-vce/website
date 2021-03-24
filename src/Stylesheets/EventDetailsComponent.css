@@ -24,6 +24,7 @@
 .det-p-tagline
 {
 	text-align: center;
+	color: #2ff5e8
 }
 .det-a-btn
 {
@@ -99,6 +100,18 @@
     display: none;
 }
 
+.det-div-questions
+{
+	color: #2ff5e8;
+	margin-top: 3%;
+}
+.det-div-answer
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-bottom: 10%;
+}
+
 @media(max-width: 520px)
 {
 	.det-div-tnd
@@ -112,21 +125,17 @@
 	}
 	.det-div-wrapper-sec
 	{
-		font-size: 1em;
-	}
-	.det-p-subtitle
-	{
-		font-size: 2.2em;
-	}
-}
-@media(max-width: 520px)
-{
-	.det-div-wrapper-sec
-	{
 		font-size: 0.8em;
 	}
 	.det-p-subtitle
 	{
 		font-size: 1.2em;
+	}
+}
+@media(max-width: 400px)
+{
+	.det-div-questions
+	{
+		margin-top: 6%;
 	}
 }
