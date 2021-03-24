@@ -44,7 +44,7 @@
 }
 .home-div-sec
 {
-	background-color: #37d68c;
+	background-color: #6200EE;
 	height: 10vh;
     width: 28%;
     text-align: center;
@@ -136,7 +136,7 @@
 .home-div-collage
 {
 	margin-top: 5%;
-	background-color: #37d68c;
+	background-color: #6200EE ;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2%;
@@ -226,7 +226,7 @@
 {
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #37d68c;
+	background-color: #6200EE ;
 	text-align: center;
 	height: 100%;
 	width: 100%;
@@ -279,7 +279,7 @@
 	background-color: white;
 	padding: 4%;
 	width: 60%;
-	box-shadow: 10px 10px 0px #37d68c;
+	box-shadow: 10px 10px 0px #6200EE ;
 	margin: 0px auto;
 	margin-top: 5%;
 	position: static;
@@ -360,7 +360,7 @@
 
 .home-div-st
 {
-	background-color: #37d68c;
+	background-color: #6200EE ;
 }
 .home-div-show-details
 {
