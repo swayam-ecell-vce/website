@@ -16,7 +16,7 @@ const footerComponent = (props) =>
 				<div classname='foo-div-mapaddress'>
 					<div className= 'foo-div-map'>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6508028487688!2d78.3804256148477!3d17.3805281880827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb942a2497f349%3A0x5c30ca8d2ffb8734!2sVasavi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1615702592047!5m2!1sen!2sin"
-					width="100%" height="100%" allowfullscreen="true" loading="lazy"></iframe>
+					width="100%" height="100%" allowfullscreen="true" loading="lazy" passive = {true}></iframe>
 					</div>
 					<br />
 					<p className='foo-p-address'>
@@ -40,11 +40,11 @@ const footerComponent = (props) =>
 				</div>
 				<div className='foo-div-form'>
 					<form>
-						<TextField  required id='standard-required' label='Name' defaultValue='' autoComplete='false'/> <br/> <br/>
-						<TextField required id='standard-required' label='Email' defaultValue=''/> <br/> <br/>
-						<TextField required id='standard-required' label='Phone Number' defaultValue=''/> <br/> <br/>
-						<TextField required id='standard-required' label='Subject' defaultValue=''/> <br/> <br/>
-						<TextField required id='standard-required' label='Message' multiline rows={7} defaultValue='' />
+						<TextField required id='standard-required' label='Name' defaultValue='' autoComplete='false' aria-label = 'user name'/> <br/> <br/>
+						<TextField required id='standard-required' label='Email' defaultValue='' aria-label = 'user email'/> <br/> <br/>
+						<TextField required id='standard-required' label='Phone Number' defaultValue='' aria-label = 'user number'/> <br/> <br/>
+						<TextField required id='standard-required' label='Subject' defaultValue='' aria-label = 'user subject'/> <br/> <br/>
+						<TextField required id='standard-required' label='Message' multiline rows={7} defaultValue='' aria-label = 'user comment'/>
 						<button className='foo-btn-submit'>Submit</button>
 					</form>
 				</div>

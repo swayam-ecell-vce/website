@@ -71,7 +71,7 @@ function HomeComponent(props)
 	return (
 		<div className="home-wrapper">
 			<div className="home-div-header">
-				<p className="home-p-title">
+				<h1 className="home-p-title">
 					<span className="home-span-Swayam">Swayam</span>{" "}
 					<br />
 					The <br />
@@ -81,7 +81,7 @@ function HomeComponent(props)
 					cell <br />
 					of <span className="home-span-titledecor">Vasavi</span>{" "}
 					College of Engineering
-				</p>
+				</h1>
 				<p className="home-p-tagline">"Students to Innovators"</p>
 			</div>
 			<div className="home-div-main">
