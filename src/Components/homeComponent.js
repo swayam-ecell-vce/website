@@ -15,16 +15,14 @@ import SliderWrapper from "../UI/sliderdots";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
-function HomeComponent(props)
-{
-	var history = useHistory()
-	const incubatorclicker = () => 
-	{
-		history.push('/incubator')
+function HomeComponent(props) {
+	var history = useHistory();
+	const incubatorclicker = () => {
+		history.push("/incubator");
 	};
 
 	const eventclicker = (event) => {
-		history.push('/events')
+		history.push("/events");
 	};
 
 	//settings needed for the testimonials carousel to run
@@ -58,8 +56,8 @@ function HomeComponent(props)
 		adaptiveHeight: true,
 		responsive: [
 			{
-				  breakpoint: 700,
-				  settings: {
+				breakpoint: 700,
+				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					infinite: true,
@@ -85,12 +83,20 @@ function HomeComponent(props)
 				<p className="home-p-tagline">"Students to Innovators"</p>
 			</div>
 			<div className="home-div-main">
-				<div className="home-div-sec" onClick={incubatorclicker} values = 'incubator'>
-					<div className="home-div-ter">
-						Incubator
-					</div>
+				<div
+					className="home-div-sec"
+					onClick={incubatorclicker}
+					values="incubator"
+					aria-labelledby="Swayam E-Cell Incubator"
+				>
+					<div className="home-div-ter">Incubator</div>
 				</div>
-				<div className="home-div-sec home-div-sec-bg" onClick={eventclicker} values = 'events'>
+				<div
+					className="home-div-sec home-div-sec-bg"
+					aria-labelledby="Swayam E-Cell Vasavi College of Engineering"
+					onClick={eventclicker}
+					values="events"
+				>
 					<div className="home-div-ter">Swayam Events</div>
 				</div>
 			</div>
@@ -102,12 +108,20 @@ function HomeComponent(props)
 				<div className="wrapper">
 					<div className="one num">
 						<div className="overlay">
-							<p className="text">Swayam Internship Drive 2019</p>
+							<p
+								className="text"
+								aria-labelledby="Swayam Internship Drive 2019"
+							>
+								Swayam Internship Drive 2019
+							</p>
 						</div>
 					</div>
 					<div className="two num">
 						<div className="overlay">
-							<p className="text">
+							<p
+								className="text"
+								aria-labelledby="Swayam E-Cell TiE MoU and Ideation"
+							>
 								TiE MoU &amp; Ideation
 								<br />
 								28-Aug-2019
@@ -116,23 +130,43 @@ function HomeComponent(props)
 					</div>
 					<div className="three num">
 						<div className="overlay">
-							<p className="text">T Tribe MoU with T-Hub</p>
+							<p
+								className="text"
+								aria-labelledby="Swayam E-Cell T Tribe MoU with T-Hub"
+							>
+								T Tribe MoU with T-Hub
+							</p>
 						</div>
 					</div>
 					<div className="four num">
 						<div className="overlay">
-							<p className="text">Design Thinking Workshop</p>
+							<p
+								className="text"
+								aria-labelledby="Swayam E-Cell Design Thinking Workshop"
+							>
+								Design Thinking Workshop
+							</p>
 						</div>
 					</div>
 
 					<div className="five num">
 						<div className="overlay">
-							<p className="text">Swayam E Summit</p>
+							<p
+								className="text"
+								aria-labelledby="Swayam E Summit"
+							>
+								Swayam E Summit
+							</p>
 						</div>
 					</div>
 					<div className="six num">
 						<div className="overlay">
-							<p className="text">E-Leader Workshop 2k19</p>
+							<p
+								className="text"
+								aria-labelledby="Swayam E-Leader Workshop 2k19"
+							>
+								E-Leader Workshop 2k19
+							</p>
 						</div>
 					</div>
 				</div>
@@ -193,15 +227,18 @@ function HomeComponent(props)
 				</div>
 			</div>
 
-			<div className = 'home-div-show-comingsoon'>
+			<div className="home-div-show-comingsoon">
 				<div className="home-div-caro-title">
-				Here’s What Some of Our Prominent Visitors had to Say
+					Here’s What Some of Our Prominent Visitors had to Say
 				</div>
 				<div className="home-div-show">
 					<SliderWrapper>
 						<Slider {...settings}>
 							<div className="home-div-show-wrapper">
-								<div className="home-img-avatar"></div>
+								<div
+									className="home-img-avatar"
+									aria-labelledby="Swayam E-cell Vasavi"
+								></div>
 								<div className="home-div-show-quote">
 									<FormatQuoteIcon
 										style={{ fontSize: 55, color: "black" }}
@@ -210,10 +247,10 @@ function HomeComponent(props)
 								<div className="home-div-show-text">
 									<br />
 									<p className="home-p-show-text">
-										You guys provided young enthusiasts exposure
-										to experts with various initiatives,
-										successes and failures, and that is truly
-										Amazing.
+										You guys provided young enthusiasts
+										exposure to experts with various
+										initiatives, successes and failures, and
+										that is truly Amazing.
 										<br />
 										<p className="home-p-show-author">
 											Sri Charan Lakkaraju
@@ -236,10 +273,10 @@ function HomeComponent(props)
 								<div className="home-div-show-text">
 									<br />
 									<p className="home-p-show-text">
-										You guys provided young enthusiasts exposure
-										to experts with various initiatives,
-										successes and failures, and that is truly
-										Amazing.
+										You guys provided young enthusiasts
+										exposure to experts with various
+										initiatives, successes and failures, and
+										that is truly Amazing.
 										<br />
 										<p className="home-p-show-author">
 											Sri Charan Lakkaraju
@@ -263,7 +300,10 @@ function HomeComponent(props)
 					<SliderWrapper>
 						<Slider {...settings2}>
 							<div className="home-div-show-wrapper-2">
-								<div className="home-img-avatar-2"></div>
+								<div
+									className="home-img-avatar-2"
+									aria-labelledby="Swayam E-Cell Vasavi"
+								></div>
 								<div className="home-div-show-details">
 									<p>
 										<p className="home-div-show-title">
@@ -285,6 +325,6 @@ function HomeComponent(props)
 			</div>
 		</div>
 	);
-};
+}
 
 export default HomeComponent;
