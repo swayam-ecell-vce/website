@@ -53,14 +53,14 @@ const aboutComponent = (props) =>
 						To develop confidence by creating an ecosystem that encourages and supports the entrepreneurial potential of students.
 						</p>
 					</div>
-					<div className='home-img-abt-2'>
+					<div className='home-img-abt-2' aria-labelledby="Swayam E-Cell Vasavi">
 
 					</div>
 				</div>
 			</div>
 			<div className='home-div-abt-sec'>
 				<div className='home-abt-wrapper-alt'>
-				<div className='home-img-abt'>
+				<div className='home-img-abt' aria-labelledby="Swayam E-Cell Vasavi">
 
 				</div>
 					<div className='home-div-abt-text'>
