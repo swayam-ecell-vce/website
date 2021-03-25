@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import { useHistory } from "react-router-dom";
 import "../Stylesheets/HomeContainer.css";
 import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
@@ -8,12 +8,12 @@ import LocalAtmRoundedIcon from "@material-ui/icons/LocalAtmRounded";
 import EmojiPeopleRoundedIcon from "@material-ui/icons/EmojiPeopleRounded";
 import BusinessRoundedIcon from "@material-ui/icons/BusinessRounded";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
-import Slider from "react-slick";
 import SliderWrapper from "../UI/sliderdots";
-
 //import the css files here
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+const Slider = lazy(() => import("react-slick"))
 
 function HomeComponent(props) {
 	var history = useHistory();
@@ -233,6 +233,7 @@ function HomeComponent(props) {
 				</div>
 				<div className="home-div-show">
 					<SliderWrapper>
+						<Suspense fallback = {<div>Loading...</div>}>
 						<Slider {...settings}>
 							<div className="home-div-show-wrapper">
 								<div
@@ -290,6 +291,7 @@ function HomeComponent(props) {
 								</div>
 							</div>
 						</Slider>
+						</Suspense>
 					</SliderWrapper>
 				</div>
 			</div>
@@ -298,6 +300,7 @@ function HomeComponent(props) {
 				<p className="home-div-caro-title">Our College Start-ups</p>
 				<div className="home-div-st">
 					<SliderWrapper>
+					<Suspense fallback = {<div>Loading...</div>}>
 						<Slider {...settings2}>
 							<div className="home-div-show-wrapper-2">
 								<div
@@ -320,6 +323,7 @@ function HomeComponent(props) {
 								</div>
 							</div>
 						</Slider>
+						</Suspense>
 					</SliderWrapper>
 				</div>
 			</div>
