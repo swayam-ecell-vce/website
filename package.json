@@ -19,6 +19,7 @@
     "material-auto-rotating-carousel": "^3.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-hot-toast": "^1.0.2",
     "react-icons": "^4.2.0",
     "react-loader-spinner": "^4.0.0",
     "react-material-ui-carousel": "^2.2.1",

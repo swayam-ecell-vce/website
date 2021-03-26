@@ -77,6 +77,8 @@
     padding-bottom: 3%;
     box-shadow: 5px 5px #5a29ca;
     width: 100%;
+    border-radius: 7px;
+    color: #5a29ca !important;
 }
 .foo-btn-submit:hover
 {
@@ -149,7 +151,6 @@
     .foo-btn-submit{
         display: flex;
         width: 100%;
-
     }
 
     .foo-div-main{
