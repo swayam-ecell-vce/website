@@ -65,13 +65,35 @@ const footerComponent = (props) =>
 					</div>
 				</div>
 				<div className="foo-div-form">
-					<form>
-						<TextField required id='standard-required' label='Name' defaultValue='' autoComplete='false' aria-label = 'user name'/> <br/> <br/>
-						<TextField required id='standard-required' label='Email' defaultValue='' aria-label = 'user email'/> <br/> <br/>
-						<TextField required id='standard-required' label='Phone Number' defaultValue='' aria-label = 'user number'/> <br/> <br/>
-						<TextField required id='standard-required' label='Subject' defaultValue='' aria-label = 'user subject'/> <br/> <br/>
-						<TextField required id='standard-required' label='Message' multiline rows={7} defaultValue='' aria-label = 'user comment'/>
-						<button className='foo-btn-submit'>Submit</button>
+
+					<form onSubmit={props.formhandler}>
+						<TextField required id='standard-required name'
+						label='Name' name='name' defaultValue=''
+						autoComplete='false' aria-label = 'user name'
+						onChange={props.changehandler} error = {false}
+						helperText = 'Please enter a valid name'/> <br/> <br/>
+
+						<TextField required id='standard-required mail'
+						label='Email' name='mail' defaultValue=''
+						aria-label = 'user email'
+						onChange={props.changehandler}/> <br/> <br/>
+
+						<TextField required id='standard-required number' 
+						label='Phone Number' name='number' defaultValue='' 
+						aria-label = 'user number' 
+						onChange={props.changehandler}/> <br/> <br/>
+
+						<TextField required id='standard-required subject' 
+						label='Subject' name='subject' defaultValue='' 
+						aria-label = 'user subject' 
+						onChange={props.changehandler}/> <br/> <br/>
+
+						<TextField required id='standard-required message' 
+						label='Message' name='message' multiline rows={7} 
+						defaultValue='' aria-label = 'user comment' 
+						onChange={props.changehandler}/>
+
+						<button type='submit' className='foo-btn-submit'> Submit </button>
 					</form>
 				</div>
 			</div>
@@ -81,7 +103,7 @@ const footerComponent = (props) =>
 				</div>
 				<ul className="Nav-ul-main foot-ul">
 					<NavLink
-						to="/incubator"
+						to="/about"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
@@ -89,7 +111,7 @@ const footerComponent = (props) =>
 						About Us &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/about"
+						to="/#"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
@@ -97,7 +119,7 @@ const footerComponent = (props) =>
 						Initiatives &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/"
+						to="/#"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
@@ -105,7 +127,7 @@ const footerComponent = (props) =>
 						Resources &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/"
+						to="/#"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
@@ -113,7 +135,7 @@ const footerComponent = (props) =>
 						Partners &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/"
+						to="/#"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
@@ -121,7 +143,7 @@ const footerComponent = (props) =>
 						Join Us &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/"
+						to="/#"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
