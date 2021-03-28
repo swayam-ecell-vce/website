@@ -10,19 +10,35 @@ import {
 import { NavLink, Link } from "react-router-dom";
 import "../Stylesheets/Footer.css";
 
-const footerComponent = (props) =>
-{
 
-	return(
-		<div className='footer'>
-			<p className='foo-p-title'>
-				Have a Query? Get in Touch
-			</p>
-			<div className='foo-div-det'>
-				<div classname='foo-div-mapaddress'>
-					<div className= 'foo-div-map'>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6508028487688!2d78.3804256148477!3d17.3805281880827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb942a2497f349%3A0x5c30ca8d2ffb8734!2sVasavi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1615702592047!5m2!1sen!2sin"
-					width="100%" height="100%" allowfullscreen="true" loading="lazy" passive = {true}></iframe>
+const nameRegularExpression = /^[a-zA-Z]{2,15}$/;
+const emailRegularExpression = /^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z]{2,5})$/;
+const numberRegularExpression = /^[0-9]{10}$/;
+const subjectRegularExpression = /^[a-zA-z0-9 ]{3,30}$/;
+const messageRegularExpression = /^[a-zA-Z0-9 ]{5,100}$/;
+
+
+
+const footerComponent = (props,details) =>
+{
+	const errors = props.error
+	// console.log(errors)
+	console.log(props.f)
+
+	return (
+		<div className="footer">
+			<p className="foo-p-title">Have a Query? Get in Touch</p>
+			<div className="foo-div-det">
+				<div classname="foo-div-mapaddress">
+					<div className="foo-div-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6508028487688!2d78.3804256148477!3d17.3805281880827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb942a2497f349%3A0x5c30ca8d2ffb8734!2sVasavi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1615702592047!5m2!1sen!2sin"
+							width="100%"
+							height="100%"
+							allowfullscreen="true"
+							loading="lazy"
+							passive={true}
+						></iframe>
 					</div>
 					<br />
 					<p className="foo-p-address">
@@ -65,35 +81,81 @@ const footerComponent = (props) =>
 					</div>
 				</div>
 				<div className="foo-div-form">
-
 					<form onSubmit={props.formhandler}>
-						<TextField required id='standard-required name'
-						label='Name' name='name' defaultValue=''
-						autoComplete='false' aria-label = 'user name'
-						onChange={props.changehandler} error = {false}
-						helperText = 'Please enter a valid name'/> <br/> <br/>
-
-						<TextField required id='standard-required mail'
-						label='Email' name='mail' defaultValue=''
-						aria-label = 'user email'
-						onChange={props.changehandler}/> <br/> <br/>
-
-						<TextField required id='standard-required number' 
-						label='Phone Number' name='number' defaultValue='' 
-						aria-label = 'user number' 
-						onChange={props.changehandler}/> <br/> <br/>
-
-						<TextField required id='standard-required subject' 
-						label='Subject' name='subject' defaultValue='' 
-						aria-label = 'user subject' 
-						onChange={props.changehandler}/> <br/> <br/>
-
-						<TextField required id='standard-required message' 
-						label='Message' name='message' multiline rows={7} 
-						defaultValue='' aria-label = 'user comment' 
-						onChange={props.changehandler}/>
-
-						<button type='submit' className='foo-btn-submit'> Submit </button>
+						<TextField
+							required
+							id="standard-required name"
+							label="Name"
+							name="name"
+							defaultValue=""
+							autoComplete="false"
+							aria-label="user name"
+							onChange={props.changehandler}
+							error={nameRegularExpression.test(props.formhandler.details.name)?false:true}
+							helperText="Please enter a valid name"
+						/>{" "}
+						<br /> <br />
+						<TextField
+							required
+							id="standard-required mail"
+							label="Email"
+							name="mail"
+							defaultValue=""
+							error={
+								emailRegularExpression.test(emailRegularExpression.test(props.formhandler.details))? false: true
+							}
+							helperText="PLease enter valid email"
+							aria-label="user email"
+							onChange={props.changehandler}
+						/>{" "}
+						<br /> <br />
+						<TextField
+							required
+							id="standard-required number"
+							label="Phone Number"
+							name="number"
+							defaultValue=""
+							aria-label="user number"
+							onChange={props.changehandler}
+							// error={
+							// 	numberRegularExpression.test("")? false: true
+							// }
+							// helperText="Please enter valid details"
+						/>{" "}
+						<br /> <br />
+						<TextField
+							required
+							id="standard-required subject"
+							label="Subject"
+							name="subject"
+							defaultValue=""
+							aria-label="user subject"
+							onChange={props.changehandler}
+							// error={
+							// 	subjectRegularExpression.test("")? false: true
+							// }
+							// helperText="Please enter valid details"
+						/>{" "}
+						<br /> <br />
+						<TextField
+							required
+							id="standard-required message"
+							label="Message"
+							name="message"
+							multiline
+							rows={7}
+							defaultValue=""
+							aria-label="user comment"
+							onChange={props.changehandler}
+							// error={
+							// 	messageRegularExpression.test("i have a issue regarding")? false: true
+							// }
+							// helperText="Please enter valid details"
+						/>
+						<button type="submit" className="foo-btn-submit">
+							{" "}
+							Submit{" "}
+						</button>
 					</form>
 				</div>
 			</div>
