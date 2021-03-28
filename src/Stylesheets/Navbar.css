@@ -2,10 +2,11 @@
 {
     display: flex;
     justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .Nav-li
 {
-    float: right;
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
@@ -26,7 +27,7 @@
 {
     color: white;
     background-color: rgb(27, 27, 27);
-    height: 55px;
+    height:fit-content;
     position: fixed;
     top: 0;
     left: 0px;
@@ -42,4 +43,28 @@
 {
     font-weight: 800;
     border: 0px;
+}
+@media (max-width: 490px)
+{
+	.Nav-li{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 360px)
+{
+	.Nav-li{
+        font-size: 0.65rem;
+    }
+}
+@media (max-width: 250px)
+{
+	.Nav-li{
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 200px)
+{
+	.Nav-li{
+        font-size: 0.45rem;
+    }
 }
