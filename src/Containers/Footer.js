@@ -1,5 +1,6 @@
 import React, { Component, Container } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import emailjs from 'emailjs-com'
 import instance from "../axios/instance";
 
 //import components here
@@ -56,7 +57,20 @@ class Footer extends Component {
 									color: "white",
 								},
 							}
-						);
+						)
+						let templatevalues = {
+							from_name: this.state.name,
+							from_mail: this.state.mail,
+							subject: this.state.subject,
+							message: this.state.message,
+						}
+						emailjs.send('service_0o5riss', 'template_mgd006b', templatevalues, 'user_DhBWVrqL2P3RiErJBASmS').then(res =>
+							{
+								console.log('email sent succesfully')
+							}).catch(err =>
+								{
+									console.log('there is an error sending the email')
+								})
 						event.target.reset();
 						console.log(res.data);
 					})
