@@ -6,11 +6,11 @@ import instance from "../axios/instance";
 import FooterComponent from "../Components/footerComponent";
 import "../Stylesheets/Footer.css";
 
-const nameRegularExpression = /^[a-zA-Z ]{2,30}$/;
-const emailRegularExpression = /^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z]{2,5})$/;
-const numberRegularExpression = /^[0-9]{10}$/;
-const subjectRegularExpression = /^[a-zA-z0-9.\ ]{3,30}$/;
-const messageRegularExpression = /^[a-zA-Z0-9.\ ]{5,100}$/;
+const nameRegularExpression = /^[a-zA-Z ]{3,15}$/;
+const emailRegularExpression = /^$|^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z ]{2,})$/;
+const numberRegularExpression = /^[0][1-9]\d{9}$|^[1-9]\d{9}$/;
+const subjectRegularExpression = /^[a-zA-z0-9.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\# ]{3,30}$/;
+const messageRegularExpression = /^[a-zA-Z0-9.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#\ ]{5,100}$/;
 
 class Footer extends Component {
 	
@@ -21,13 +21,7 @@ class Footer extends Component {
 		subject: null,
 		message: null,
 		valid: true,
-		// error: {
-		// 	nameError: false,
-		// 	emailError: false,
-		// 	numberError: false,
-		// 	subjectError: false,
-		// 	messageError:false
-		// }
+		details:{}
 	};
 	render() {
 		const formhandler = (event) => {
@@ -40,6 +34,9 @@ class Footer extends Component {
 				subject: this.state.subject,
 				message: this.state.message,
 			};
+			this.setState({ details: details }, () => {
+				console.log(this.state.details)
+			})
 			if (
 				nameRegularExpression.test(this.state.name) &&
 				emailRegularExpression.test(this.state.mail) &&
@@ -77,9 +74,7 @@ class Footer extends Component {
 						console.log(err);
 					});
 			} else {
-				toast.error(
-					"Please Enter valid Details "
-				)
+				toast.error("Please Enter valid Details ");
 			}
 		};
 		const handlechange = (event) => {
@@ -98,6 +93,7 @@ class Footer extends Component {
 					<FooterComponent
 						formhandler={formhandler}
 						changehandler={handlechange}
+						details = {this.state.details}
 					/>
 				</div>
 				<Toaster />

@@ -11,20 +11,16 @@ import { NavLink, Link } from "react-router-dom";
 import "../Stylesheets/Footer.css";
 
 
-const nameRegularExpression = /^[a-zA-Z]{2,15}$/;
-const emailRegularExpression = /^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z]{2,5})$/;
-const numberRegularExpression = /^[0-9]{10}$/;
-const subjectRegularExpression = /^[a-zA-z0-9 ]{3,30}$/;
-const messageRegularExpression = /^[a-zA-Z0-9 ]{5,100}$/;
+const nameRegularExpression = /^[a-zA-Z ]{3,15}$/;
+const emailRegularExpression = /^$|^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z ]{2,})$/;
+const numberRegularExpression = /^[0][1-9]\d{9}$|^[1-9]\d{9}$/; 
+const subjectRegularExpression = /^[a-zA-z0-9.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#\ ]{3,30}$/;
+const messageRegularExpression = /^[a-zA-Z0-9.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#\ ]{5,100}$/;
 
 
 
 const footerComponent = (props,details) =>
 {
-	const errors = props.error
-	// console.log(errors)
-	console.log(props.f)
-
 	return (
 		<div className="footer">
 			<p className="foo-p-title">Have a Query? Get in Touch</p>
@@ -91,8 +87,10 @@ const footerComponent = (props,details) =>
 							autoComplete="false"
 							aria-label="user name"
 							onChange={props.changehandler}
-							error={nameRegularExpression.test(props.formhandler.details.name)?false:true}
-							helperText="Please enter a valid name"
+							error={nameRegularExpression.test(props.details.name)?false:true}
+							helperText={
+								nameRegularExpression.test(props.details.name) ? "" : "Please Enter correct details"
+							}
 						/>{" "}
 						<br /> <br />
 						<TextField
@@ -101,12 +99,14 @@ const footerComponent = (props,details) =>
 							label="Email"
 							name="mail"
 							defaultValue=""
-							error={
-								emailRegularExpression.test(emailRegularExpression.test(props.formhandler.details))? false: true
-							}
-							helperText="PLease enter valid email"
 							aria-label="user email"
 							onChange={props.changehandler}
+							error={
+								!props.details.mail?false:(emailRegularExpression.test(props.details.mail)?false:true)
+							}
+							helperText={
+								!props.details.mail?false:(emailRegularExpression.test(props.details.mail)?"":"PLease enter valid email.")
+							}
 						/>{" "}
 						<br /> <br />
 						<TextField
@@ -117,10 +117,12 @@ const footerComponent = (props,details) =>
 							defaultValue=""
 							aria-label="user number"
 							onChange={props.changehandler}
-							// error={
-							// 	numberRegularExpression.test("")? false: true
-							// }
-							// helperText="Please enter valid details"
+							error={
+								!props.details.number?false:(numberRegularExpression.test(props.details.number)?false:true)
+							}
+							helperText={
+								!props.details.number?false:(numberRegularExpression.test(props.details.number)?"":"PLease enter valid phone number")
+							}
 						/>{" "}
 						<br /> <br />
 						<TextField
@@ -131,10 +133,13 @@ const footerComponent = (props,details) =>
 							defaultValue=""
 							aria-label="user subject"
 							onChange={props.changehandler}
-							// error={
-							// 	subjectRegularExpression.test("")? false: true
-							// }
-							// helperText="Please enter valid details"
+							error={
+								subjectRegularExpression.test(props.details.subject)? false: true
+							}
+							helperText={
+								subjectRegularExpression.test(props.details.subject) ? "" : "Please Enter correct details. Subject should not exceed 30 characters"
+							}
+							
 						/>{" "}
 						<br /> <br />
 						<TextField
@@ -147,10 +152,12 @@ const footerComponent = (props,details) =>
 							defaultValue=""
 							aria-label="user comment"
 							onChange={props.changehandler}
-							// error={
-							// 	messageRegularExpression.test("i have a issue regarding")? false: true
-							// }
-							// helperText="Please enter valid details"
+							error={
+								messageRegularExpression.test(props.details.message) ? false : true
+							}
+							helperText={
+								messageRegularExpression.test(props.details.message) ? "" : "Please Enter correct details. Message should not exceed 100 characters"
+							}
 						/>
 						<button type="submit" className="foo-btn-submit">
 							{" "}
