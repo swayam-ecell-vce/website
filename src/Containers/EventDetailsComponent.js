@@ -12,7 +12,7 @@ class EventDetails extends Component
 	state = {
 		foundevent: {},
 		eventdatastate: [],
-		loading: true
+		loading: true,
 	}
 
 	componentDidMount()
