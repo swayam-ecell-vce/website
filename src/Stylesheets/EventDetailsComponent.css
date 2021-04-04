@@ -12,6 +12,7 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 4%;
+	flex-wrap: wrap;
 }
 .det-p-title
 {
@@ -23,8 +24,9 @@
 .det-p-tagline
 {
 	text-align: center;
+	color: #2ff5e8
 }
-.det-a-btn, .det-a-btn-sec
+.det-a-btn
 {
 	display: flex;
 	font-size: larger;
@@ -39,6 +41,7 @@
 	transition: background 0.5s ease-in-out;
 	color: black;
 	font-weight: 700;
+	text-decoration: none;
 }
 .det-a-btn-sec
 {
@@ -59,17 +62,6 @@
 .det-div-sec
 {
 	margin-top: 5%;
-}
-.det-div-img
-{
-	background-image: url('https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 70%;
-	height: 500px;
-	margin: 0px auto;
-	border-radius: 15px;
 }
 .det-p-subtitle
 {
@@ -95,5 +87,55 @@
 }
 .det-p-time
 {
+	margin-top: 0%;
 	margin-bottom: 4px;
+}
+.det-p-date
+{
+	margin-top: 3%;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.det-div-questions
+{
+	color: #2ff5e8;
+	margin-top: 3%;
+}
+.det-div-answer
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-bottom: 10%;
+}
+
+@media(max-width: 520px)
+{
+	.det-div-tnd
+	{
+		font-size: small;
+		margin-top: 8%;
+	}
+	.det-p-title
+	{
+		font-size: 2.25em;
+	}
+	.det-div-wrapper-sec
+	{
+		font-size: 0.8em;
+	}
+	.det-p-subtitle
+	{
+		font-size: 1.2em;
+	}
+}
+@media(max-width: 400px)
+{
+	.det-div-questions
+	{
+		margin-top: 6%;
+	}
 }

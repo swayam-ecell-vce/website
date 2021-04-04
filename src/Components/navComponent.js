@@ -52,17 +52,17 @@ const Navcomponent = (props) =>
 	{
 		return(
 		<ul className='Nav-ul-main'>
-			<NavLink to='/events' className='Nav-li' activeClassName='selected' exact>
-				Events
+			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
+				Swayam
 			</NavLink>
 			<NavLink to='/incubator' className='Nav-li' activeClassName='selected' exact>
 				Incubator
 			</NavLink>
+			<NavLink to='/events' className='Nav-li' activeClassName='selected' exact>
+				Events
+			</NavLink>
 			<NavLink to='/about' className='Nav-li' activeClassName='selected' exact>
 				About Us
-			</NavLink>
-			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
-				Swayam
 			</NavLink>
 		</ul>
 		)

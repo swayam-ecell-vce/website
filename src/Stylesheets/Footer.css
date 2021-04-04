@@ -77,6 +77,8 @@
     padding-bottom: 3%;
     box-shadow: 5px 5px #5a29ca;
     width: 100%;
+    border-radius: 7px;
+    color: #5a29ca !important;
 }
 .foo-btn-submit:hover
 {
@@ -107,6 +109,10 @@
     width: 30%;
 }
 
+ .foo-link{
+        color: white;
+    }
+
 @media (max-width: 880px){
     .foo-div-det{
         flex-direction: column;       
@@ -131,6 +137,7 @@
         transform: scale(0.5  );
     }
 
+
     .foo-div-form{
         margin: auto;
         width:50%;
@@ -144,7 +151,6 @@
     .foo-btn-submit{
         display: flex;
         width: 100%;
-
     }
 
     .foo-div-main{

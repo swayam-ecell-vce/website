@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, lazy, Suspense} from 'react'
 
 //import other containters here
 import Navbar from './Navbar'
