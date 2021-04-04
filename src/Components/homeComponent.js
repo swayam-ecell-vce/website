@@ -1,4 +1,4 @@
-simport React, {lazy, Suspense} from "react";
+import React, {lazy, Suspense} from "react";
 import { useHistory } from "react-router-dom";
 import "../Stylesheets/HomeContainer.css";
 import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
@@ -66,11 +66,7 @@ function HomeComponent(props) {
 			},
 		],
 	};
-<<<<<<< HEAD
-	return (
-=======
 	return(
->>>>>>> 53b3b3200be09aeb32dbae4b4ffdfcde3d744e68
 		<div className="home-wrapper">
 			<div className="home-div-header">
 				<h1 className="home-p-title">
