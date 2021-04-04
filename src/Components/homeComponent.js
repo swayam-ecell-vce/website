@@ -19,6 +19,12 @@ function HomeComponent(props) {
 
 	var history = useHistory();
 
+const homeComponent = (props) =>
+{
+	const divclickhandler = (event) =>
+	{
+		//configure the click handler user React.history.push or something better
+	}
 	const incubatorclicker = () => {
 		history.push("/incubator");
 	};
@@ -58,16 +64,18 @@ function HomeComponent(props) {
 		adaptiveHeight: true,
 		responsive: [
 			{
-				breakpoint: 700,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: true,
-					dots: true,
-				},
-			},
-		],
-	};
+			  breakpoint: 700,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			  }
+			}
+		  ]
+	  }
+	  const visitors=props.visitorsdetails
+	  const startups=props.startupsdetails
 	return(
 		<div className="home-wrapper">
 			<div className="home-div-header">
@@ -228,105 +236,120 @@ function HomeComponent(props) {
 					</p>
 				</div>
 			</div>
+		
+		<div className='home-div-caro-title'>
+			Here’s What Some of Our Prominent Visitors had to Say
+		</div>
 
-			<div className="home-div-show-comingsoon">
-				<div className="home-div-caro-title">
-					Here’s What Some of Our Prominent Visitors had to Say
-				</div>
-				<div className="home-div-show">
-					<SliderWrapper>
-						<Suspense fallback = {<div>Loading...</div>}>
-						<Slider {...settings}>
-							<div className="home-div-show-wrapper">
-								<div
-									className="home-img-avatar"
-									aria-labelledby="Swayam E-cell Vasavi"
-								></div>
-								<div className="home-div-show-quote">
-									<FormatQuoteIcon
-										style={{ fontSize: 55, color: "black" }}
-									/>
-								</div>
-								<div className="home-div-show-text">
-									<br />
-									<p className="home-p-show-text">
-										You guys provided young enthusiasts
-										exposure to experts with various
-										initiatives, successes and failures, and
-										that is truly Amazing.
-										<br />
-										<p className="home-p-show-author">
-											Sri Charan Lakkaraju
-											<br />
-											<p className="home-p-show-title">
-												Forbes 30 Under30 Asia 2018 |
-												Founder, stuMagz
-											</p>
-										</p>
-									</p>
-								</div>
-							</div>
-							<div className="home-div-show-wrapper">
-								<div className="home-img-avatar"></div>
-								<div className="home-div-show-quote">
-									<FormatQuoteIcon
-										style={{ fontSize: 55, color: "black" }}
-									/>
-								</div>
-								<div className="home-div-show-text">
-									<br />
-									<p className="home-p-show-text">
-										You guys provided young enthusiasts
-										exposure to experts with various
-										initiatives, successes and failures, and
-										that is truly Amazing.
-										<br />
-										<p className="home-p-show-author">
-											Sri Charan Lakkaraju
-											<br />
-											<p className="home-p-show-title">
-												Forbes 30 Under30 Asia 2018 |
-												Founder, stuMagz
-											</p>
-										</p>
-									</p>
-								</div>
-							</div>
-						</Slider>
-						</Suspense>
-					</SliderWrapper>
-				</div>
-			</div>
+		<div className='home-div-show'>
+			<SliderWrapper>
+			<Slider {...settings}>
+				<div className='home-div-show-wrapper'>
+					<div className='home-img-avatar' style={{backgroundImage:`url(${visitors.visitor1.img})`}}>
 
-			<div className="home-div-startups">
-				<p className="home-div-caro-title">Our College Start-ups</p>
-				<div className="home-div-st">
-					<SliderWrapper>
-					<Suspense fallback = {<div>Loading...</div>}>
-						<Slider {...settings2}>
-							<div className="home-div-show-wrapper-2">
-								<div
-									className="home-img-avatar-2"
-									aria-labelledby="Swayam E-Cell Vasavi"
-								></div>
-								<div className="home-div-show-details">
-									<p>
-										<p className="home-div-show-title">
-											Cure Cloud India
-										</p>
-											Cure Cloud India is dedicated to providing excellent patient’s hospital experience seamless,
-											privacy and security of the customer’s data is the foremost priority and bridge between
-											Electronic Health Record (EHR) hospitals and non-EHR hospitals via its responsive application CUON,
-											which provides a digital platform for individuals to store their medical documents on the cloud,
-											accessible at one’s convenience and keeping the conventional doctor-patient connect as alive as possible.
-											Now Cure Cloud India is acqui-hired by a company named Conscious AI Pvt Ltd.,
-											which is building a similar but more sophisticated to a wider set of audience.
-									</p>
-								</div>
-							</div>
-						</Slider>
-						</Suspense>
-					</SliderWrapper>
+					</div>
+					<div className='home-div-show-quote'>
+						<FormatQuoteIcon style={{ fontSize: 55, color: 'black' }}/>
+					</div>
+					<div className='home-div-show-text'>
+						<br />
+						<p className='home-p-show-text'>
+							{visitors.visitor1.text}
+							<br />
+							<p className='home-p-show-author'>
+								{visitors.visitor1.author}
+								<br />
+								<p className='home-p-show-title'>
+								{visitors.visitor1.title}
+								</p>
+							</p>
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper'>
+					<div className='home-img-avatar' style={{backgroundImage:`url(${visitors.visitor2.img})`}}>
+
+					</div>
+					<div className='home-div-show-quote'>
+						<FormatQuoteIcon style={{ fontSize: 55, color: 'black' }}/>
+					</div>
+					<div className='home-div-show-text'>
+						<br />
+						<p className='home-p-show-text'>
+							{visitors.visitor2.text}
+							<br />
+							<p className='home-p-show-author'>
+								{visitors.visitor2.author}
+								<br />
+								<p className='home-p-show-title'>
+								{visitors.visitor2.title}
+								</p>
+							</p>
+						</p>
+					</div>
+				</div>
+			</Slider>
+			</SliderWrapper>
+      	</div>
+
+		<div className='home-div-startups'>
+			<p className = 'home-div-caro-title'>
+				Our College Start-ups
+			</p>
+			<div className = 'home-div-st'>
+			<SliderWrapper>
+			<Slider {...settings2}>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup1.img})`}}>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								{startups.startup1.title}
+							</p>
+							{startups.startup1.text}
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup2.img})`}}>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								{startups.startup2.title}
+							</p>
+							{startups.startup2.text}
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup3.img})`}}>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								{startups.startup3.title}
+							</p>
+							{startups.startup3.text}
+						</p>
+					</div>
+				</div>
+				<div className='home-div-show-wrapper-2'>
+					<div className='home-img-avatar-2' style={{backgroundImage:`url(${startups.startup4.img})`}}>
+
+					</div>
+					<div className = 'home-div-show-details'>
+						<p>
+							<p className = 'home-div-show-title'>
+								{startups.startup4.title}
+							</p>
+							{startups.startup4.text}
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
