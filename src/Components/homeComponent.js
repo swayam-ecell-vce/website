@@ -16,7 +16,9 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 const Slider = lazy(() => import("react-slick"))
 
 function HomeComponent(props) {
+
 	var history = useHistory();
+
 	const incubatorclicker = () => {
 		history.push("/incubator");
 	};
@@ -66,7 +68,7 @@ function HomeComponent(props) {
 			},
 		],
 	};
-	return (
+	return(
 		<div className="home-wrapper">
 			<div className="home-div-header">
 				<h1 className="home-p-title">
