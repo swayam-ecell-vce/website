@@ -16,9 +16,7 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 const Slider = lazy(() => import("react-slick"))
 
 function HomeComponent(props) {
-
 	var history = useHistory();
-
 	const incubatorclicker = () => {
 		history.push("/incubator");
 	};
