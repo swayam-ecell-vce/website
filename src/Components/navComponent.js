@@ -75,7 +75,7 @@ const Navcomponent = (props) =>
 					<Link to='#' className='toggle-menu-bars'>
 						<FaBars onClick={showSidebar} />
 					</Link>
-					<span className='nav-toggle-title'>TITLE</span>
+					<span className='nav-toggle-title'>Swayam</span>
 				</div>
 				<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
 					<ul className='nav-menu-items' onClick={showSidebar}>
