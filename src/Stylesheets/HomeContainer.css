@@ -5,12 +5,12 @@
 .Home-Main-Div
 {
 	color: rgb(255, 255, 255);
-	margin-top: 10vh;
 }
 .home-div-header
 {
 	display: block;
-	margin-top: 5%;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
 	text-align: center;
 	font-size: 2rem !important;
 }
@@ -20,20 +20,19 @@
 }
 .home-span-Swayam
 {
-	color: #2ff5e8;
-	font-size: 3rem !important;
-	margin: 0px auto;
+	color: #d5ff45;
+	font-size: 5rem !important;
 	padding-bottom: 2%;
 }
 .home-span-titledecor
 {
-	color: #2ff5e8;
+	color: #83a344;
 	font-style: oblique;
 }
 .home-p-tagline
 {
 	font-size: 1.6rem;
-	color: #2ff5e8;
+	color: #83a344;
 	font-weight: 1000;	
 }
 .home-div-main
@@ -44,7 +43,7 @@
 }
 .home-div-sec
 {
-	background-color: #6200EE;
+	background-color: #83a344;
 	height: 10vh;
     width: 28%;
     text-align: center;
@@ -67,7 +66,7 @@
 	padding-left: 2%;
 	font-size: 1.5rem; 
 	padding-bottom: 8%;
-	background-color: #040739;
+	background-color: #001b29;
 	height: 0.6%;
 	width: 75%;
 	border: 3px solid white;
@@ -133,8 +132,8 @@
 }
 .home-div-collage
 {
-	margin-top: 5%;
-	background-color: #6200EE ;
+	margin-top: 1.5%;
+	background-color: #d5ff45 ;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2%;
@@ -148,7 +147,7 @@
 {
 	font-size: 2rem;
 	text-align: center;
-	color: white;
+	color: #001b29;
 	font-weight: bold;
 	
 }
@@ -224,14 +223,14 @@
 {
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #6200EE ;
+	background-color: #001b29 ;
 	text-align: center;
 	height: 100%;
 	width: 100%;
 }
 .text
 {
-	color: white;
+	color: #fff;
 	font-size: 1.5rem;
 	font-weight: 800;
 	text-align: center;
@@ -277,7 +276,7 @@
 	background-color: white;
 	padding: 4%;
 	width: 60%;
-	box-shadow: 10px 10px 0px #6200EE ;
+	box-shadow: 10px 10px 0px #d5ff45 ;
 	margin: 0px auto;
 	margin-top: 5%;
 	position: static;
@@ -286,7 +285,7 @@
 .home-div-st
 {
 	padding: 1%;
-	background-color: #6200EE ;
+	background-color: #d5ff45 ;
 }
 .home-div-show-wrapper, .home-div-show-wrapper-2
 {
@@ -295,7 +294,7 @@
 }
 .home-div-show-wrapper-2
 {
-	border: 5px solid #040739;
+	border: 5px solid #001b29;
 	width: 80% !important;
 	height: 25vh;
 	margin: 5%;
@@ -311,7 +310,7 @@
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	box-shadow: 10px 10px #37d68c;
+	box-shadow: 10px 10px #001b29;
 	margin: 0.4%;
 }
 
@@ -368,7 +367,7 @@
 {
 	width: 70%;
 	margin-left: 3%;
-	color : white;
+	color : #001b29;
 	font-size: 1.2em;
 	margin-bottom: 1%;
 }

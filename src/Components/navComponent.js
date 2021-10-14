@@ -51,9 +51,12 @@ const Navcomponent = (props) =>
 	if(width > 720)
 	{
 		return(
+		<div className="Nav-Bar">
+		<div className="Nav-front"></div>
+			
 		<ul className='Nav-ul-main'>
 			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
-				Swayam
+				Home
 			</NavLink>
 			<NavLink to='/incubator' className='Nav-li' activeClassName='selected' exact>
 				Incubator
@@ -65,6 +68,7 @@ const Navcomponent = (props) =>
 				About Us
 			</NavLink>
 		</ul>
+		</div>
 		)
 	}
 	else

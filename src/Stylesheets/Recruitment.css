@@ -1,0 +1,127 @@
+.hexagon-bulbs{
+    position:absolute;
+    top:10%;
+    left:30%;
+}
+.bulb{
+    filter:invert(100%);
+    position:relative;
+    top: -5.7rem;
+    left:2.9rem;
+}
+.hexagon-outer{
+    color:#d5ff45;
+    position: relative;
+    transform: rotate(45deg);
+}
+#hiring{
+  font-family: rosewood-std,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+  opacity:89%;
+}
+.card-container{
+  background-color: #d5ff45;
+  position:absolute;
+  top:80%;
+  perspective: 1000;
+  margin:0;
+  width: 100%;
+  height:500px;
+  padding:1rem;
+  overflow: hidden;
+}
+  
+.card{
+    position:relative;
+    left:90px;
+    width:300px;
+    height:347px;
+    font-family: helvetica, arial, sans-serif;
+    color:#000;
+    cursor:pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.2s;
+    -moz-backface-visibility: hidden;
+  }
+  .card.flipped{
+    transform: rotateY( 180deg );
+  }
+    
+    .card.flipped.front{
+      z-index:2
+    }
+    
+    .card.flipped.back{
+      z-index:3
+    }
+
+
+
+.hexagon {
+  position: absolute;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #001b29;
+  margin: 86.60px 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  transition:transform 0.5s;
+  z-index:3;
+}
+  
+  .hexagon:hover{
+    transform:translateY(-3px);
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 212.13px;
+    height: 212.13px;
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 43.9340px;
+  }
+  
+  .hexagon:before {
+    top: -106.0660px;
+
+  }
+  
+  .hexagon:after {
+    bottom: -106.0660px;
+  }
+  
+  .hexagon.back{
+    transform: rotateY( 180deg );
+    background-color:#000;
+    color:gray;
+    z-index:2;
+    }
+
+
+.card-content{
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+.see-more{
+  position:absolute;
+  bottom:-75px;
+  left:150px;
+  margin-left:-14px;
+  font-size:28px;
+  z-index: 2;
+  transition:color 0.2s, transform 0.2s;
+}
+
+.card:hover .see-more{
+  color:#fff;
+  transform:rotate(45deg);
+}
