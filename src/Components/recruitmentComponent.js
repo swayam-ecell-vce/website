@@ -64,7 +64,7 @@ const HexagonCards = (props) => {
 
 const recruitmentComponent = () => {
 	return(
-		 <div>
+		 <div className='container'>
 			<HexagonBulbs className="bulb1" top="50" left="10" />
 			<HexagonBulbs className="bulb2" top="10" left="80" />
 			<h1 id="hire">We're Hiring!</h1>

@@ -1,4 +1,7 @@
-
+.container{
+   background-image: url("../src/media/rocky-wall.png");
+   background-color: #182034;
+}
 #hire {
   font-family: rosewood-std, sans-serif;
   font-weight: 400;
