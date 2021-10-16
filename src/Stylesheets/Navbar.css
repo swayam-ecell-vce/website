@@ -1,9 +1,22 @@
+.Nav-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.Nav-front{
+    background-image: url("../media/swayam_logo-removebg-preview.png");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height:30px;
+    width:100px;
+}
 .Nav-ul-main
 {
     display: flex;
-    justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
+    justify-content: flex-end;   
 }
 .Nav-li
 {
@@ -12,7 +25,7 @@
     margin-right: 10px;
     margin: 0px;
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 1rem;
     text-decoration: none;
     color: white;
     transition: color 0.2s ease-in-out
@@ -26,14 +39,10 @@
 .Nav-Div-Main
 {
     color: white;
-    background-color: rgb(27, 27, 27);
     height:fit-content;
-    position: fixed;
     top: 0;
     left: 0px;
     width: 100%;
-    box-shadow: 5px 5px 10px #000000;
-    z-index: 100;
 }
 .selected
 {
