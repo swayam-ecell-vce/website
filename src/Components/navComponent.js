@@ -5,6 +5,7 @@ import {Link, NavLink} from 'react-router-dom'
 import '../Stylesheets/Navbar.css'
 import {FaBars} from "react-icons/fa"
 import {AiOutlineClose} from "react-icons/ai";
+import swayamLogo from "../media/swayam_logo-removebg-preview.png";
 
 function useWindowSize() {
   const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
@@ -52,7 +53,11 @@ const Navcomponent = (props) =>
 	{
 		return(
 		<div className="Nav-Bar">
-		<div className="Nav-front"></div>
+		<div className="Nav-front">
+			<NavLink to="/" className="">
+				<img src={swayamLogo} alt="swayam-logo"></img>
+			</NavLink>
+		</div>
 			
 		<ul className='Nav-ul-main'>
 			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>

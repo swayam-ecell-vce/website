@@ -1,17 +1,23 @@
 .Nav-bar{
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
 }
 .Nav-front{
-    background-image: url("../media/swayam_logo-removebg-preview.png");
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    height:30px;
-    width:100px;
+    height:1rem;
+    width:2rem;
+    padding-left:2%;
+}
+.Nav-front img{
+    height:6rem;
+    width:8rem;
+    box-shadow: #fff;
+}
+.Nav-front img:hover{
+    transform: translateY(-3%);
 }
 .Nav-ul-main
 {
