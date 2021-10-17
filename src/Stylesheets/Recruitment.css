@@ -82,7 +82,7 @@
 	transform: rotateY(180deg);
 }
 .cards {
-	background-color: #d5ff45;
+	background-image:linear-gradient(90deg,#d5ff45,#d5dd45);
 	width: 100%;
 	position: absolute;
 	top: 95%;
@@ -164,7 +164,7 @@
 .hexagon.back {
 	transform: rotateY(180deg);
 	background-color: #001b29;
-	color: gray;
+	color: rgb(239, 246, 209);
 	z-index: 2;
 }
 
