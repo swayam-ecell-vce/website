@@ -31,7 +31,7 @@
     margin-right: 10px;
     margin: 0px;
     font-weight: 600;
-    padding-right: 1rem;
+    padding-right: 1em;
     text-decoration: none;
     color: white;
     transition: color 0.2s ease-in-out
@@ -61,7 +61,7 @@
 }
 .nav-toggle-main
 {
-    background-color: rgb(27, 27, 27);
+    background-color: #001b29;
     height: fit-content;
     display: flex;
     justify-content: start;
@@ -73,23 +73,24 @@
     margin-left: 1.5rem;
     font-size: 2rem;
     background: none;
-    color: #2ff5e8;
+    color: #d5ff45;
 }
 .toggle-menu-bars
 {
     font-size: 1.5rem;
     padding-left: 10px;
-    color: #2ff5e8;
+    color: #d5ff45;
 }
 .nav-toggle-title
 {
     margin: auto;
+    color:#fff;
     padding-bottom:5px;
     font-weight: 600;
 }
 .nav-menu
 {
-    background-color: rgb(27, 27, 27);
+    background-color: #001b29;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -116,7 +117,7 @@
 .nav-text a
 {
     text-decoration: none;
-    color: white;
+    color: #d5ff45;
     font-size: 18px;
     width: 95%;
     height: 100%;
@@ -127,7 +128,8 @@
 }
 .nav-text a:hover
 {
-    background-color: #6200EE;
+    background-color: #83a344;
+    color:#fff;
     font-weight: 900;
 }
 .nav-menu-items
@@ -137,7 +139,7 @@
 }
 .navbar-toggle
 {
-    background-color: rgb(27, 27, 27);
+    background-color: #001b29;
     width: 100%;
     height: 80px;
     display: flex;
