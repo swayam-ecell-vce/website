@@ -22,7 +22,7 @@ function useWindowSize() {
 
 const slidebarData = [
     {
-        title: 'Swayam',
+        title: 'Home',
         path: '/',
         cNAme: 'nav-text'
     },
