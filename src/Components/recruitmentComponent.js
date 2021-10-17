@@ -1,7 +1,42 @@
 import React, { useState } from "react";
 import "../Stylesheets/Recruitment.css";
-import hexagon from "../meida/rocky-wall.png";
+import hexagon from "../media/rocky-wall.png";
 import bulb from "../media/bulb.gif";
+
+const departmentContent = [
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+	{
+		name: "Incubation",
+		description: "We help startups in our college grow",
+	},
+];
 
 const HexagonBulbs = (props) => {
 	const topBulb = props.top + "%";
@@ -70,25 +105,32 @@ const HexagonCards = (props) => {
 const recruitmentComponent = () => {
 	return (
 		<div className="container">
-			<HexagonBulbs className="bulb1" top="50" left="10" />
-			<HexagonBulbs className="bulb2" top="10" left="80" />
-			<h1 id="hire">We're Hiring!</h1>
+			<div className="bulbs">
+				<HexagonBulbs className="bulb1" top="50" left="10" />
+				<HexagonBulbs className="bulb2" top="10" left="80" />
+			</div>
+			<div className="header">
+				<h1 id="hire">We're Hiring!</h1>
+				<h2 className="headerDescription">
+					You are just one step away from future you! <br />
+					<i class="fas fa-arrow-to-right"></i>
+					<button className="applyButton">Apply Here</button>
+					<i class="fas fa-arrow-to-left"></i>
+				</h2>
+			</div>
 			<div className="line"></div>
 			<div className="cards">
-				<HexagonCards
-					className="card1"
-					deptName="Dept"
-					deptDesc="Something"
-					top="10%"
-					left="65%"
-				/>
-				<HexagonCards
-					className="card2"
-					deptName="Dept"
-					deptDesc="Something"
-					top="10%"
-					left="15%"
-				/>
+				{departmentContent.map((department) => {
+					return (
+						<HexagonCards
+						className="card"
+						deptName={department.name}
+						deptDesc={department.description}
+						top="10%"
+						left="15%"
+					/>
+					)
+				})}
 			</div>
 		</div>
 	);
