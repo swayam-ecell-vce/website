@@ -30,7 +30,7 @@
 	font-size: 4em;
 	font-style: normal;
 	color: aliceblue;
-	opacity: 89%;
+	opacity: 87%;
 }
 .line {
 	width: 30%;
@@ -67,16 +67,19 @@
 	margin-right: 0.75em;
 }
 
-.bulbs{
+.planes{
 	display: flex;
 }
-.bulb {
-	filter: invert(100%);
-	position: relative;
+#plane1{
+	position:absolute;
+	top:14%;
+	left:10%;
 }
-.hexagon-outer {
-	position: abso;
-	transform: rotate(45deg);
+#plane2{
+	position:absolute;
+	top:80%;
+	left:80%;
+	transform: rotateY(180deg);
 }
 .cards {
 	background-color: #d5ff45;
