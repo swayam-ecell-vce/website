@@ -1,135 +1,186 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.container{
+	display: flex;
+	/* flex-direction: column; */
+	background-image: url('../media/rocky-wall.png');
+	background-color: #001b29;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: relative;
+}
+.header{
+	margin: auto 0;
+	position: relative;
+	justify-content:flex-start; 
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 0.25em;
+	transform: translateX(-50%);
+}
 #hire {
-  font-family: rosewood-std, sans-serif;
-  font-weight: 400;
-  font-size: 4rem;
-  font-style: normal;
-  color: aliceblue;
-  opacity: 89%;
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  transform: translateX(-50%);
+	font-family: rosewood-std, sans-serif;
+	font-weight: 400;
+	font-size: 4em;
+	font-style: normal;
+	color: aliceblue;
+	opacity: 89%;
 }
 .line {
-  width: 30%;
-  height: 1%;
-  background-color: #d5ff45;
-  position: absolute;
-  top: 30%;
-  left: 35%;
+	width: 30%;
+	height: 1%;
+	background-color: #d5ff45;
+	position: absolute;
+	top: 50%;
+	left: 35%;
 }
 
+.applyButton{
+	padding: 0.5em;
+	font-size: 1.25em;
+	margin-top: 0.5em;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+	border-radius: 0.5em;
+	font-family: 'Caveat', cursive;
+	cursor: pointer;
+	font-weight: 900;
+	color: #d5ff45;
+	background-color: #001b29;
+	border: 0.05em solid #d5ff45;
+}
+
+.fas{
+	/* font-family: 'Caveat', cursive; */
+	color: #d5ff45;
+}
+
+.applyButton:hover{
+	transform: scale(1.2);
+	margin-left: 0.75em;
+	margin-right: 0.75em;
+}
+
+.bulbs{
+	display: flex;
+}
 .bulb {
-  filter: invert(100%);
-  position: absolute;
+	filter: invert(100%);
+	position: relative;
 }
 .hexagon-outer {
-  position: absolute;
-  transform: rotate(45deg);
+	position: abso;
+	transform: rotate(45deg);
 }
 .cards {
-  background-color: #d5ff45;
-  width: 100%;
-  position: absolute;
-  top: 95%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+	background-color: #d5ff45;
+	width: 100%;
+	position: absolute;
+	top: 95%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .card-container {
-  perspective: 1000;
-  margin: 0;
-  padding: 8rem;
-  overflow: hidden;
+	perspective: 1000;
+	margin: 0;
+	padding: 8em;
+	overflow: hidden;
 }
 
 .card {
-  position: relative;
-  left: 90px;
-  width: 300px;
-  height: 347px;
-  font-family: helvetica, arial, sans-serif;
-  color: #d5ff45;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transition: transform 0.2s;
-  -moz-backface-visibility: hidden;
+  display: flex;
+	position: relative;
+	left: 5.625em;
+	width: 18.75em;
+	height: 21.688em;
+	font-family: helvetica, arial, sans-serif;
+	color: #d5ff45;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transition: transform 0.2s;
+	-moz-backface-visibility: hidden;
 }
 .card.flipped {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .card.flipped.front {
-  z-index: 2;
+	z-index: 2;
 }
 
 .card.flipped.back {
-  z-index: 3;
+	z-index: 3;
 }
 
 .hexagon {
-  position: absolute;
-  width: 300px;
-  height: 173.21px;
-  background-color: #001b29;
-  margin: 86.6px 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  transition: transform 0.5s;
-  z-index: 3;
+	position: absolute;
+	width: 300px;
+	height: 173.21px;
+	background-color: #001b29;
+	margin: 86.6px 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	transition: transform 0.5s;
+	z-index: 3;
 }
 
 .hexagon:hover {
-  transform: translateY(-3px);
+	transform: translateY(-3px);
 }
 
 .hexagon:before,
 .hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 212.13px;
-  height: 212.13px;
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 43.934px;
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 212.13px;
+	height: 212.13px;
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 43.934px;
 }
 
 .hexagon:before {
-  top: -106.066px;
+	top: -106.066px;
 }
 
 .hexagon:after {
-  bottom: -106.066px;
+	bottom: -106.066px;
 }
 
 .hexagon.back {
-  transform: rotateY(180deg);
-  background-color: #001b29;
-  color: gray;
-  z-index: 2;
+	transform: rotateY(180deg);
+	background-color: #001b29;
+	color: gray;
+	z-index: 2;
 }
 
 .card-content {
-  text-align: center;
-  position: relative;
-  z-index: 2;
+	text-align: center;
+	position: relative;
+	z-index: 2;
 }
 .see-more {
-  position: absolute;
-  bottom: -75px;
-  left: 150px;
-  margin-left: -14px;
-  font-size: 28px;
-  z-index: 2;
-  transition: color 0.2s, transform 0.2s;
+	position: absolute;
+	bottom: -75px;
+	left: 150px;
+	margin-left: -14px;
+	font-size: 28px;
+	z-index: 2;
+	transition: color 0.2s, transform 0.2s;
 }
 
 .card:hover .see-more {
-  color: #fff;
-  transform: rotate(45deg);
+	color: #fff;
+	transform: rotate(45deg);
 }

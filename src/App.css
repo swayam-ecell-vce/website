@@ -1,6 +1,6 @@
 body{
   background-color: #001b29;
-  background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+   background-image: url("../src/media/rocky-wall.png");
   overflow-y: scroll;
   color:white;
 }
