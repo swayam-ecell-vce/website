@@ -9,32 +9,32 @@ const departmentContent = [
 		description: "We help startups in our college grow",
 	},
 	{
-		name: "Incubation",
-		description: "We help startups in our college grow",
+		name: "Event Management",
+		description: "we organize all the cool events in our college",
 	},
 	{
-		name: "Incubation",
-		description: "We help startups in our college grow",
+		name: "Marketing",
+		description: "We ensure everyone knows the work we do",
 	},
 	{
-		name: "Incubation",
-		description: "We help startups in our college grow",
+		name: "HR",
+		description: "We take care of people and problems",
 	},
 	{
-		name: "Incubation",
-		description: "We help startups in our college grow",
+		name: "PR",
+		description: "We keep our vast network alive",
 	},
 	{
-		name: "Incubation",
-		description: "We help startups in our college grow",
+		name: "Content Creation and Resource Management",
+		description: "We make awesome content for swayam",
 	},
 	{
-		name: "Incubation",
-		description: "We help startups in our college grow",
+		name: "Web development",
+		description: "We are the geek batch in the club taking care of all things technical",
 	},
 	{
-		name: "Incubation",
-		description: "We help startups in our college grow",
+		name: "Design and arts",
+		description: "We add the creative spices to the club",
 	},
 ];
 
