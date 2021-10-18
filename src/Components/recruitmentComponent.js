@@ -17,7 +17,7 @@ const departmentContent = [
 		description: "We ensure everyone knows the work we do",
 	},
 	{
-		name: "HR",
+		name: "Human Resource",
 		description: "We take care of people and problems",
 	},
 	{
@@ -30,7 +30,8 @@ const departmentContent = [
 	},
 	{
 		name: "Web development",
-		description: "We are the geek batch in the club taking care of all things technical",
+		description:
+			"We are the geek batch in the club taking care of all things technical",
 	},
 	{
 		name: "Design and arts",
@@ -66,37 +67,19 @@ const HexagonBulbs = (props) => {
 	);
 };
 
-const HexagonCards = (props) => {
-	const [isActive, setActive] = useState("false");
+const Cards = (props) => {
+	// const [isActive, setActive] = useState("false");
 
-	const handleToggle = () => {
-		setActive(!isActive);
-	};
+	// const handleToggle = () => {
+	// 	setActive(!isActive);
+	// };
 	return (
-		<div
-			className="card-container"
-			style={{ top: props.top, left: props.left }}
-		>
-			<div
-				className={isActive ? "card" : "card flipped"}
-				onClick={handleToggle}
-			>
-				<figure className="hexagon front">
-					<div className="card-content">
-						<h1>{props.deptName}</h1>
-					</div>
-					<span className="see-more">
-						<i className="fa fa-repeat"></i>
-					</span>
-				</figure>
-				<figure className="hexagon back">
-					<div className="card-content">
-						<p>{props.deptDesc}</p>
-					</div>
-					<span className="see-more">
-						<i className="fa fa-repeat"></i>
-					</span>
-				</figure>
+		<div className="main">
+			<div className="cardContainer">
+				<div className='content'>
+					<h3 className='deptTitle'>{props.deptName}</h3>
+					<h5 className='hidden'>{props.deptDesc}</h5>
+				</div>
 			</div>
 		</div>
 	);
@@ -122,14 +105,14 @@ const recruitmentComponent = () => {
 			<div className="cards">
 				{departmentContent.map((department) => {
 					return (
-						<HexagonCards
-						className="card"
-						deptName={department.name}
-						deptDesc={department.description}
-						top="10%"
-						left="15%"
-					/>
-					)
+						<Cards
+							className="card"
+							deptName={department.name}
+							deptDesc={department.description}
+							top="10%"
+							left="15%"
+						/>
+					);
 				})}
 			</div>
 		</div>
