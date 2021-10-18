@@ -53,8 +53,8 @@ class Footer extends Component {
 							{
 								style: {
 									borderRadius: "10px",
-									background: "#6200EE",
-									color: "white",
+									background: "#d5ff45",
+									color: "#001b29",
 								},
 							}
 						)

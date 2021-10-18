@@ -9,19 +9,19 @@
 .home-div-header
 {
 	display: block;
-	font-family: 'Amatic SC', cursive;
 	font-weight: bold;
 	text-align: center;
 	font-size: 2rem !important;
 }
 .home-p-title
 {
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .home-span-Swayam
 {
 	color: #d5ff45;
-	font-size: 5rem !important;
+	font-family: 'Cinzel', serif;
+	font-size: 3.7rem !important;
 	padding-bottom: 2%;
 }
 .home-span-titledecor
@@ -31,7 +31,7 @@
 }
 .home-p-tagline
 {
-	font-size: 1.6rem;
+	font-size: 1rem;
 	color: #83a344;
 	font-weight: 1000;	
 }
@@ -132,7 +132,7 @@
 }
 .home-div-collage
 {
-	margin-top: 1.5%;
+	margin-top: 7%;
 	background-color: #d5ff45 ;
 	display: flex;
 	flex-wrap: wrap;

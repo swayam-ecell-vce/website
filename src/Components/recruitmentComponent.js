@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Stylesheets/Recruitment.css";
-import hexagon from "../media/rocky-wall.png";
 import bulb from "../media/bulb.gif";
 
 const departmentContent = [
@@ -39,34 +38,6 @@ const departmentContent = [
 	},
 ];
 
-const HexagonBulbs = (props) => {
-	const topBulb = props.top + "%";
-	const leftBulb = props.left + "%";
-	const topHex = props.top - 4 + "%";
-	const leftHex = props.left - 2 + "%";
-	return (
-		<div>
-			<div
-				className="hexagon-outer"
-				style={{ top: topHex, left: leftHex, position: "absolute" }}
-			>
-				<img src={hexagon} alt="hexagon" height="110px" width="110px" />
-			</div>
-			<div
-				className="bulb"
-				style={{ top: topBulb, left: leftBulb, position: "absolute" }}
-			>
-				<img
-					src={bulb}
-					alt="Bulb on and off"
-					height="50px"
-					width="50px"
-				/>
-			</div>
-		</div>
-	);
-};
-
 const Cards = (props) => {
 	const [isActive, setActive] = useState("false");
 
@@ -97,9 +68,9 @@ const Cards = (props) => {
 const recruitmentComponent = () => {
 	return (
 		<div className="container">
-			<div className="bulbs">
-				<HexagonBulbs className="bulb1" top="50" left="10" />
-				<HexagonBulbs className="bulb2" top="10" left="80" />
+			<div className="planes">
+				<i className="fas fa-paper-plane fa-3x" id="plane1"></i>
+				<i className="fas fa-paper-plane fa-3x" id="plane2"></i>
 			</div>
 			<div className="header">
 				<h1 id="hire">We're Hiring!</h1>

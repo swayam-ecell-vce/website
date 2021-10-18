@@ -1,7 +1,6 @@
 .ev-div-main
 {
 	padding-top: 2%;
-    background-color: #01041e;
 }
 .ev-p-head
 {
@@ -17,7 +16,7 @@
 	width: 25%;
     max-height: 50%;
     margin: 60px auto;
-    background-color: #4328d1;
+    background-color: #d5ff45;
     box-shadow: 15px 15px 10px rgb(0 0 0);
     transition: 0.25s;
     padding: 2.08%;
@@ -32,22 +31,22 @@
 }
 .pastevent
 {
-    background-color: #4328d1 !important;
+    background-color: #d5ff45 !important;
 }
 .ev-p-title{
 	font-size: 2em;
-    color: white;
+    color: #001b29;
     font-weight: bold;
 }
 .ev-p-date{
     text-align: center;
     font-weight: 800;
-    color: #2ff5e8
+    color: #000;
 }
 
 .ev-p-info {
     font-size: small;
-    color: white;
+    color: #001;
     text-align: center;
     font-weight: 600;
 }
@@ -67,7 +66,7 @@
     border-radius: 7px;
     width: -moz-fit-content;
     width: fit-content;
-    background: linear-gradient(to right, rgb(111, 74, 247), rgb(0, 24, 202));
+    background: linear-gradient(to right, rgb(12, 12, 144), rgb(2, 9, 61));
     transition: all 0.5s ease-in-out;
     color: white;
 }
@@ -79,7 +78,7 @@
 
 .disabled
 {
-    background: linear-gradient(to right, rgb(247, 74, 218), rgb(202, 0, 50));
+    background: linear-gradient(to right, rgb(98, 2, 82), rgb(56, 3, 16));
 }
 
 .disabled:hover
@@ -101,7 +100,7 @@
     max-height: 50%;
     display: inline-block;
     margin: 60px auto;
-    background-color: #4328d1;
+    background-color: #d5ff45;
     box-shadow: 15px 15px 10px rgb(0 0 0);
     transition: 0.25s;
     padding: 2.08%;
@@ -113,7 +112,6 @@
 .ev-div-event-list{
     display: flex;
     padding: 1%;
-    background-color: #01041e;
     flex-wrap: wrap;
     justify-content: center;
 }
