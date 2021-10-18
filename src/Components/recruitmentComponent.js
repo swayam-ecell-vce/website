@@ -68,17 +68,26 @@ const HexagonBulbs = (props) => {
 };
 
 const Cards = (props) => {
-	// const [isActive, setActive] = useState("false");
+	const [isActive, setActive] = useState("false");
 
-	// const handleToggle = () => {
-	// 	setActive(!isActive);
-	// };
+	const handleToggle = () => {
+		setActive(!isActive);
+	};
+
 	return (
 		<div className="main">
 			<div className="cardContainer">
-				<div className='content'>
-					<h3 className='deptTitle'>{props.deptName}</h3>
-					<h5 className='hidden'>{props.deptDesc}</h5>
+				<div
+					className="content"
+					onMouseEnter={handleToggle}
+					onMouseLeave={handleToggle}
+				>
+					<h3 className={isActive ? "deptTitle" : "hidden"}>
+						{props.deptName}
+					</h3>
+					<h5 className={isActive ? "hidden" : ""}>
+						{props.deptDesc}
+					</h5>
 				</div>
 			</div>
 		</div>
