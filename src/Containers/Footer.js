@@ -1,16 +1,17 @@
 import React, { Component, Container } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import emailjs from 'emailjs-com'
 import instance from "../axios/instance";
 
 //import components here
 import FooterComponent from "../Components/footerComponent";
 import "../Stylesheets/Footer.css";
 
-const nameRegularExpression = /^[a-zA-Z ]{3,15}$/;
+const nameRegularExpression = /^([a-zA-Z]+[\s]*){3,15}$/;
 const emailRegularExpression = /^$|^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z ]{2,})$/;
 const numberRegularExpression = /^[0][1-9]\d{9}$|^[1-9]\d{9}$/;
-const subjectRegularExpression = /^[a-zA-z0-9.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\# ]{3,30}$/;
-const messageRegularExpression = /^[a-zA-Z0-9.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#\ ]{5,100}$/;
+const subjectRegularExpression = /^([a-zA-Z0-9]+[\s\.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#]*){3,30}$/;
+const messageRegularExpression = /^([a-zA-Z0-9]+[\s\.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#]*){5,100}$/;
 
 class Footer extends Component {
 	
@@ -52,11 +53,24 @@ class Footer extends Component {
 							{
 								style: {
 									borderRadius: "10px",
-									background: "#6200EE",
-									color: "white",
+									background: "#d5ff45",
+									color: "#001b29",
 								},
 							}
-						);
+						)
+						let templatevalues = {
+							from_name: this.state.name,
+							from_mail: this.state.mail,
+							subject: this.state.subject,
+							message: this.state.message,
+						}
+						emailjs.send('service_0o5riss', 'template_mgd006b', templatevalues, 'user_DhBWVrqL2P3RiErJBASmS').then(res =>
+							{
+								console.log('email sent succesfully')
+							}).catch(err =>
+								{
+									console.log('there is an error sending the email')
+								})
 						event.target.reset();
 						console.log(res.data);
 					})

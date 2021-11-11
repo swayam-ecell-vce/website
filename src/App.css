@@ -1,6 +1,6 @@
-body
-{
-  color: white;
+body{
   background-color: #121212;
+   /* background-image: url("../src/media/rocky-wall.png"); */
   overflow-y: scroll;
+  color:white;
 }

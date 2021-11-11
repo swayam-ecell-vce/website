@@ -1,9 +1,28 @@
+.Nav-bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.Nav-front{
+    height:1rem;
+    width:2rem;
+    padding-left:2%;
+}
+.Nav-front img{
+    height:6rem;
+    width:8rem;
+    filter: drop-shadow(1px 1px #fff);
+}
+.Nav-front img:hover{
+    transform: translateY(-3%);
+}
 .Nav-ul-main
 {
     display: flex;
-    justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
+    justify-content: flex-end;   
 }
 .Nav-li
 {
@@ -12,7 +31,7 @@
     margin-right: 10px;
     margin: 0px;
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 1em;
     text-decoration: none;
     color: white;
     transition: color 0.2s ease-in-out
@@ -26,14 +45,10 @@
 .Nav-Div-Main
 {
     color: white;
-    background-color: rgb(27, 27, 27);
     height:fit-content;
-    position: fixed;
     top: 0;
     left: 0px;
     width: 100%;
-    box-shadow: 5px 5px 10px #000000;
-    z-index: 100;
 }
 .selected
 {
@@ -43,6 +58,93 @@
 {
     font-weight: 800;
     border: 0px;
+}
+.nav-toggle-main
+{
+    background-color: #001b29;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 2%;
+}
+.menu-bars
+{
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    background: none;
+    color: #d5ff45;
+}
+.toggle-menu-bars
+{
+    font-size: 1.5rem;
+    padding-left: 10px;
+    color: #d5ff45;
+}
+.nav-toggle-title
+{
+    margin: auto;
+    color:#fff;
+    padding-bottom:5px;
+    font-weight: 600;
+}
+.nav-menu
+{
+    background-color: #001b29;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 850ms ease-in-out;
+}
+.nav-menu.active
+{
+    left:0;
+    transition: 550ms;
+}
+.nav-text
+{
+    display: flex;
+    justify-content: start;
+    align-items:left;
+
+    list-style: none;
+    height: 60px;
+}
+.nav-text a
+{
+    text-decoration: none;
+    color: #d5ff45;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 4px;
+}
+.nav-text a:hover
+{
+    background-color: #83a344;
+    color:#fff;
+    font-weight: 900;
+}
+.nav-menu-items
+{
+    width: 100%;
+    padding-inline-start: 0px;
+}
+.navbar-toggle
+{
+    background-color: #001b29;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 @media (max-width: 490px)
 {

@@ -1,6 +1,8 @@
 .ev-div-main {
 	padding-top: 2%;
-	background-color: #01041e;
+	margin-top: 2rem;
+	/* background-color: #01041e; */
+	background-color: #000;
 }
 .ev-p-head {
 	font-size: 3em;
@@ -130,7 +132,8 @@
 .ev-div-event-list {
 	display: flex;
 	padding: 1%;
-	background-color: #01041e;
+	/* background-color: #01041e; */
+	background-color: #000;
 	flex-wrap: wrap;
 	justify-content: center;
 }

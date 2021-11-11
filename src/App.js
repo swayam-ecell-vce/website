@@ -7,6 +7,7 @@ import Incubator from './Containers/Incubator'
 import EventsConatiner from './Containers/Events'
 import EventDetails from './Containers/EventDetailsComponent'
 import AboutUs from './Containers/About'
+import Recruitment from './Containers/Recruitment'
 
 function App()
 {
@@ -18,7 +19,8 @@ function App()
         <Route path='/incubator' component = {Incubator} exact />
         <Route path='/events' component = {EventsConatiner} exact />
         <Route path='/events/:id' component = {EventDetails} exact />
-        <Route path='/about' component = {AboutUs} exact />
+          <Route path='/about' component={AboutUs} exact />
+          <Route path='/hiring' component={Recruitment} />
       </Switch>
     </div>
     </BrowserRouter>
