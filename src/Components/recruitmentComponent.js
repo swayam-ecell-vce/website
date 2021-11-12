@@ -45,22 +45,31 @@ const Cards = (props) => {
 		setActive(!isActive);
 	};
 
+	// return (
+	// 	<div className="main">
+	// 		<div className="cardContainer">
+	// 			<div
+	// 				className="content"
+	// 				onMouseEnter={handleToggle}
+	// 				onMouseLeave={handleToggle}
+	// 			>
+	// 				<h3 className={isActive ? "deptTitle" : "hidden"}>
+	// 					{props.deptName}
+	// 				</h3>
+	// 				<h5 className={isActive ? "hidden" : ""}>
+	// 					{props.deptDesc}
+	// 				</h5>
+	// 			</div>
+	// 		</div>
+	// 	</div>
+	// );
 	return (
-		<div className="main">
-			<div className="cardContainer">
-				<div
-					className="content"
-					onMouseEnter={handleToggle}
-					onMouseLeave={handleToggle}
-				>
-					<h3 className={isActive ? "deptTitle" : "hidden"}>
-						{props.deptName}
-					</h3>
-					<h5 className={isActive ? "hidden" : ""}>
-						{props.deptDesc}
-					</h5>
-				</div>
-			</div>
+		<div class="main">
+			<div className="circle"></div>
+			<div className="circle"></div>
+			<div className="circle"></div>
+			<div className="circle"></div>
+			<div className="circle"></div>
 		</div>
 	);
 };
@@ -72,29 +81,37 @@ const recruitmentComponent = () => {
 				<i className="fas fa-paper-plane fa-3x" id="plane1"></i>
 				<i className="fas fa-paper-plane fa-3x" id="plane2"></i>
 	</div>*/}
-			<div className="header">
-				<h1 id="hire">We're Hiring!</h1>
-				<h2 className="headerDescription">
-					You are just one step away from future you! <br />
-					<i className="fas fa-arrow-to-right"></i>
-					<button className="applyButton">Apply Here</button>
-					<i className="fas fa-arrow-to-left"></i>
-				</h2>
+			<div class="main">
+				<div className="circle"></div>
+				<div className="circle"></div>
+				<div className="circle"></div>
+				<div className="circle"></div>
+				<div className="circle"></div>
+				<div className="header">
+					<h1 id="hire">We're Hiring!</h1>
+					<h2 className="headerDescription">
+						You are just one step away from future you! <br />
+						<i className="fas fa-arrow-to-right"></i>
+						<button className="applyButton">Apply Here</button>
+						<i className="fas fa-arrow-to-left"></i>
+					</h2>
+				</div>
 			</div>
 			{/*<div className="line"></div>*/}
-			<div className="cards">
-				{departmentContent.map((department) => {
-					return (
-						<Cards
-							className="card"
-							deptName={department.name}
-							deptDesc={department.description}
-							top="10%"
-							left="15%"
-						/>
-					);
-				})}
-			</div>
+			{
+				// <div className="cards">
+				// 	{
+				// 		/*departmentContent.map((department) => {*/
+				// 		<Cards
+				// 			className="card"
+				// 			deptName={"Web DEV"}
+				// 			deptDesc={"Dev"}
+				// 			top="10%"
+				// 			left="15%"
+				// 		/>
+				// 	}
+				// </div>
+			}
 		</div>
 	);
 };
