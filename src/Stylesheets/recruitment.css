@@ -2,9 +2,8 @@
 .container {
 	display: flex;
 	/* flex-direction: column; */
-	/* background-image: url("../media/rocky-wall.png"); */
-	background-color: #121212;
-	/* background-color: #001b29; */
+	background-image: url("../media/rocky-wall.png");
+	background-color: #001b29;
 	height: 100vh;
 	width: 100%;
 	top: 0;
@@ -24,20 +23,19 @@
 	text-align: center;
 	gap: 0.25em;
 	transform: translateX(-50%);
-	color: #fc0b67;
 }
 #hire {
-	/* font-family: rosewood-std, sans-serif; */
+	font-family: rosewood-std, sans-serif;
 	font-weight: 400;
-	font-size: 4.5em;
+	font-size: 4em;
 	font-style: normal;
-	color: #37d68c;
+	color: aliceblue;
 	opacity: 87%;
 }
 .line {
 	width: 30%;
 	height: 1%;
-	background-color: #00ff88;
+	background-color: #d5ff45;
 	position: absolute;
 	top: 50%;
 	left: 35%;
@@ -53,14 +51,14 @@
 	font-family: "Caveat", cursive;
 	cursor: pointer;
 	font-weight: 900;
-	color: #00ff88;
+	color: #d5ff45;
 	background-color: #001b29;
-	border: 0.05em solid #00ff88;
+	border: 0.05em solid #d5ff45;
 }
 
 .fas {
-	font-family: 'Caveat', cursive;
-	color: #00ff88;
+	/* font-family: 'Caveat', cursive; */
+	color: #d5ff45;
 }
 
 .applyButton:hover {
@@ -76,18 +74,15 @@
 	position:absolute;
 	top:14%;
 	left:10%;
-	color: #37d68c;
 }
 #plane2{
 	position:absolute;
 	top:80%;
 	left:80%;
 	transform: rotateY(180deg);
-	color: #37d68c;
 }
 .cards {
-	/* background-image:linear-gradient(90deg,#d5ff45,#d5dd45); */
-	background-color: #37d68c;
+	background-image:linear-gradient(90deg,#d5ff45,#d5dd45);
 	width: 100%;
 	position: absolute;
 	top: 95%;
@@ -101,7 +96,7 @@
 	--s: 14em; /* size  */
 	--m: 3.25em; /* margin */
 	--f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
-	background-color: #37d68c;
+	background-color: #d5ff45;
 	/* height: 100vh; */
 	gap: 20em;
 	flex: 3;
