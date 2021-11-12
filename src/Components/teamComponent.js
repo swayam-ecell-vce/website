@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Stylesheets/team.css";
-
 const Cards = (props) => {
     return (
         <div class="card">
@@ -28,31 +27,26 @@ const teamComponent = () => {
             image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
             name: "Hod",
             designation: "hod_",
-            quote: "work hard, party harder",
         },
         {
             image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
             name: "Hod",
             designation: "hod_",
-            quote: "work hard, party harder",
         },
         {
             image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
             name: "Hod",
             designation: "hod_",
-            quote: "work hard, party harder",
         },
         {
             image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
             name: "Hod",
             designation: "hod_",
-            quote: "work hard, party harder",
         },
         {
             image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80",
             name: "Hod",
             designation: "hod_",
-            quote: "work hard, party harder",
         },
     ] 
 
