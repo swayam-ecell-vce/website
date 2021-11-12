@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Stylesheets/Recruitment.css";
+import "../Stylesheets/recruitment.css";
 // import bulb from "../media/bulb.gif";
 
 const departmentContent = [
