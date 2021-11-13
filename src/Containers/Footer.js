@@ -1,4 +1,4 @@
-import React, { Component, Container } from "react";
+import React, { Component } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import emailjs from 'emailjs-com'
 import instance from "../axios/instance";
@@ -8,10 +8,10 @@ import FooterComponent from "../Components/footerComponent";
 import "../Stylesheets/Footer.css";
 
 const nameRegularExpression = /^([a-zA-Z]+[\s]*){3,15}$/;
-const emailRegularExpression = /^$|^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z ]{2,})$/;
+const emailRegularExpression = /^$|^([a-zA-Z0-9_.-]+)@([a-zA-Z0-9_.-]+)\.([a-zA-Z ]{2,})$/;
 const numberRegularExpression = /^[0][1-9]\d{9}$|^[1-9]\d{9}$/;
-const subjectRegularExpression = /^([a-zA-Z0-9]+[\s\.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#]*){3,30}$/;
-const messageRegularExpression = /^([a-zA-Z0-9]+[\s\.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#]*){5,100}$/;
+const subjectRegularExpression = /^([a-zA-Z0-9]+[\s.?_\-!,\\/<>:;"'[\]{}()*&#]*){3,30}$/;
+const messageRegularExpression = /^([a-zA-Z0-9]+[\s.?_\-!,\\/<>:;"'[\]{}()*&#]*){5,100}$/;
 
 class Footer extends Component {
 	

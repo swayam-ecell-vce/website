@@ -42,7 +42,7 @@
 {
     height: 45%;
     width: 100%;
-    box-shadow: 10px 10px #d5ff45;
+    box-shadow: 10px 10px #37d68c;
 }
 .MuiInput-underline
 {
@@ -75,7 +75,7 @@
     padding: 2%;
     padding-top: 3%;
     padding-bottom: 3%;
-    box-shadow: 5px 5px #d5ff45;
+    box-shadow: 5px 5px #37d68c;
     width: 100%;
     border-radius: 7px;
     color: #000 !important;
@@ -83,6 +83,9 @@
 .foo-btn-submit:hover
 {
     cursor: pointer;
+}
+.foo-li{
+    font-size: 1.2rem;
 }
 .foo-p-address
 {
@@ -119,7 +122,7 @@
     }
 
     .foo-div-map{
-        box-shadow: 0px 0px #d5ff45;
+        box-shadow: 0px 0px #37d68c;
         width:60%;
         margin: auto;
        
@@ -172,8 +175,7 @@
         padding-top: 2%;
     }
     .Nav-li{
-        padding: 0%;
-        
+        padding: 0%;        
     }
     .foo-li{
         font-size: 0.9rem;

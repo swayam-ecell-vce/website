@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 .container {
 	display: flex;
-	/* flex-direction: column; */
-	background-image: url("../media/rocky-wall.png");
-	background-color: #001b29;
+	background-color: #121221;
 	height: 100vh;
 	width: 100%;
 	top: 0;
@@ -23,43 +21,33 @@
 	text-align: center;
 	gap: 0.25em;
 	transform: translateX(-50%);
+    margin-bottom: 15rem;
 }
 #hire {
-	font-family: rosewood-std, sans-serif;
+	/* font-family: rosewood-std, sans-serif; */
 	font-weight: 400;
 	font-size: 4em;
 	font-style: normal;
-	color: aliceblue;
+	color: #37d68c;
 	opacity: 87%;
-}
-.line {
-	width: 30%;
-	height: 1%;
-	background-color: #d5ff45;
-	position: absolute;
-	top: 50%;
-	left: 35%;
 }
 
 .applyButton {
 	padding: 0.5em;
 	font-size: 1.25em;
-	margin-top: 0.5em;
+	margin-top: 2em;
 	margin-left: 0.25em;
 	margin-right: 0.25em;
 	border-radius: 0.5em;
 	font-family: "Caveat", cursive;
 	cursor: pointer;
 	font-weight: 900;
-	color: #d5ff45;
+	color: #37d68c;
 	background-color: #001b29;
-	border: 0.05em solid #d5ff45;
+	border: 0.05em solid #37d68c;
 }
 
-.fas {
-	/* font-family: 'Caveat', cursive; */
-	color: #d5ff45;
-}
+
 
 .applyButton:hover {
 	transform: scale(1.2);
@@ -67,36 +55,26 @@
 	margin-right: 0.75em;
 }
 
-.planes{
-	display: flex;
-}
-#plane1{
-	position:absolute;
-	top:14%;
-	left:10%;
-}
-#plane2{
-	position:absolute;
-	top:80%;
-	left:80%;
-	transform: rotateY(180deg);
-}
 .cards {
-	background-image:linear-gradient(90deg,#d5ff45,#d5dd45);
+	/* background-image:linear-gradient(90deg,#d5ff45,#d5dd45); */
 	width: 100%;
 	position: absolute;
 	top: 95%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+    left: 0;
+    flex: 1;
+    gap: 3;
 }
 
-.main {
+
+.Cardsmain {
 	display: flex;
 	--s: 14em; /* size  */
 	--m: 3.25em; /* margin */
 	--f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
-	background-color: #d5ff45;
+	background-color: #37d68c;
 	/* height: 100vh; */
 	gap: 20em;
 	flex: 3;
