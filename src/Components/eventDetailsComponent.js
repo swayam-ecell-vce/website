@@ -2,6 +2,7 @@ import React from 'react'
 import '../Stylesheets/EventDetailsComponent.css'
 import styled from 'styled-components'
 
+
 const eventDetails = (props) =>
 {
 	const Div = styled.div `
