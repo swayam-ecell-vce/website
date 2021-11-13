@@ -2,25 +2,23 @@ import React from "react";
 import TextField from "@material-ui/core/TextField";
 import {
 	FaInstagram,
-	FaLinkedin,
 	FaLinkedinIn,
 	FaYoutube,
 	FaSpotify,
 } from "react-icons/fa";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Stylesheets/Footer.css";
 
-
 const nameRegularExpression = /^([a-zA-Z]+[\s]*){3,15}$/;
-const emailRegularExpression = /^$|^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z ]{2,})$/;
-const numberRegularExpression = /^[0][1-9]\d{9}$|^[1-9]\d{9}$/; 
-const subjectRegularExpression = /^([a-zA-Z0-9]+[\s\.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#]*){3,30}$/;
-const messageRegularExpression = /^([a-zA-Z0-9]+[\s\.\?\_\-\!\,\\\/\<\>\:\;\"\'\[\]\{\}\(\)\*\&\#]*){5,100}$/;
+const emailRegularExpression =
+	/^$|^([a-zA-Z0-9_.-]+)@([a-zA-Z0-9_.-]+)\.([a-zA-Z ]{2,})$/;
+const numberRegularExpression = /^[0][1-9]\d{9}$|^[1-9]\d{9}$/;
+const subjectRegularExpression =
+	/^([a-zA-Z0-9]+[\s.?_\-!,\\/<>:;"'[\]{}()*&#]*){3,30}$/;
+const messageRegularExpression =
+	/^([a-zA-Z0-9]+[\s.?_\-!,\\/<>:;"'[\]{}()*&#]*){5,100}$/;
 
-
-
-const footerComponent = (props,details) =>
-{
+const footerComponent = (props, details) => {
 	return (
 		<div className="footer">
 			<p className="foo-p-title">Have a Query? Get in Touch</p>
@@ -34,6 +32,7 @@ const footerComponent = (props,details) =>
 							allowfullscreen="true"
 							loading="lazy"
 							passive={true}
+							title="swayam-video"
 						></iframe>
 					</div>
 					<br />
@@ -87,9 +86,15 @@ const footerComponent = (props,details) =>
 							autoComplete="false"
 							aria-label="user name"
 							onChange={props.changehandler}
-							error={nameRegularExpression.test(props.details.name)?false:true}
+							error={
+								nameRegularExpression.test(props.details.name)
+									? false
+									: true
+							}
 							helperText={
-								nameRegularExpression.test(props.details.name) ? "" : "Please Enter correct details"
+								nameRegularExpression.test(props.details.name)
+									? ""
+									: "Please Enter correct details"
 							}
 						/>{" "}
 						<br /> <br />
@@ -102,10 +107,22 @@ const footerComponent = (props,details) =>
 							aria-label="user email"
 							onChange={props.changehandler}
 							error={
-								!props.details.mail?false:(emailRegularExpression.test(props.details.mail)?false:true)
+								!props.details.mail
+									? false
+									: emailRegularExpression.test(
+											props.details.mail
+									  )
+									? false
+									: true
 							}
 							helperText={
-								!props.details.mail?false:(emailRegularExpression.test(props.details.mail)?"":"PLease enter valid email.")
+								!props.details.mail
+									? false
+									: emailRegularExpression.test(
+											props.details.mail
+									  )
+									? ""
+									: "PLease enter valid email."
 							}
 						/>{" "}
 						<br /> <br />
@@ -118,10 +135,22 @@ const footerComponent = (props,details) =>
 							aria-label="user number"
 							onChange={props.changehandler}
 							error={
-								!props.details.number?false:(numberRegularExpression.test(props.details.number)?false:true)
+								!props.details.number
+									? false
+									: numberRegularExpression.test(
+											props.details.number
+									  )
+									? false
+									: true
 							}
 							helperText={
-								!props.details.number?false:(numberRegularExpression.test(props.details.number)?"":"PLease enter valid phone number")
+								!props.details.number
+									? false
+									: numberRegularExpression.test(
+											props.details.number
+									  )
+									? ""
+									: "PLease enter valid phone number"
 							}
 						/>{" "}
 						<br /> <br />
@@ -134,12 +163,19 @@ const footerComponent = (props,details) =>
 							aria-label="user subject"
 							onChange={props.changehandler}
 							error={
-								subjectRegularExpression.test(props.details.subject)? false: true
+								subjectRegularExpression.test(
+									props.details.subject
+								)
+									? false
+									: true
 							}
 							helperText={
-								subjectRegularExpression.test(props.details.subject) ? "" : "Please Enter correct details. Subject should not exceed 30 characters"
+								subjectRegularExpression.test(
+									props.details.subject
+								)
+									? ""
+									: "Please Enter correct details. Subject should not exceed 30 characters"
 							}
-							
 						/>{" "}
 						<br /> <br />
 						<TextField
@@ -153,10 +189,18 @@ const footerComponent = (props,details) =>
 							aria-label="user comment"
 							onChange={props.changehandler}
 							error={
-								messageRegularExpression.test(props.details.message) ? false : true
+								messageRegularExpression.test(
+									props.details.message
+								)
+									? false
+									: true
 							}
 							helperText={
-								messageRegularExpression.test(props.details.message) ? "" : "Please Enter correct details. Message should not exceed 100 characters"
+								messageRegularExpression.test(
+									props.details.message
+								)
+									? ""
+									: "Please Enter correct details. Message should not exceed 100 characters"
 							}
 						/>
 						<button type="submit" className="foo-btn-submit">
