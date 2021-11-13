@@ -204,7 +204,7 @@ const footerComponent = (props,details) =>
 						Partners &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/#"
+						to="/hiring"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
@@ -212,7 +212,7 @@ const footerComponent = (props,details) =>
 						Join Us &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/#"
+						to="/ourteam"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
