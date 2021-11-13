@@ -58,7 +58,7 @@ const footerComponent = (props, details) => {
 						</a>
 						<a
 							className="foo-link"
-							href="https://www.linkedin.com/in/swayamvce"
+							href="https://www.linkedin.com/company/entrepreneurship-cell-vasavi-college-of-engineering"
 							target="_blank"
 						>
 							<FaLinkedinIn size={30} />
