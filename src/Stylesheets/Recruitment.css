@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+.container {
+	display: flex;
+	background-color: #121221;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: relative;
+}
+.header {
+	margin: auto 0;
+	position: relative;
+	justify-content: flex-start;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 0.25em;
+	transform: translateX(-50%);
+    margin-bottom: 15rem;
+}
+#hire {
+	/* font-family: rosewood-std, sans-serif; */
+	font-weight: 400;
+	font-size: 4em;
+	font-style: normal;
+	color: #37d68c;
+	opacity: 87%;
+}
+
+.applyButton {
+	padding: 0.5em;
+	font-size: 1.25em;
+	margin-top: 2em;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+	border-radius: 0.5em;
+	font-family: "Caveat", cursive;
+	cursor: pointer;
+	font-weight: 900;
+	color: #37d68c;
+	background-color: #001b29;
+	border: 0.05em solid #37d68c;
+}
+
+
+
+.applyButton:hover {
+	transform: scale(1.2);
+	margin-left: 0.75em;
+	margin-right: 0.75em;
+}
+
+.cards {
+	/* background-image:linear-gradient(90deg,#d5ff45,#d5dd45); */
+	width: 100%;
+	position: absolute;
+	top: 95%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    left: 0;
+    flex: 1;
+    gap: 3;
+}
+
+
+.Cardsmain {
+	display: flex;
+	--s: 14em; /* size  */
+	--m: 3.25em; /* margin */
+	--f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+	background-color: #37d68c;
+	/* height: 100vh; */
+	gap: 20em;
+	flex: 3;
+	bottom: 0;
+}
+
+.cardContainer {
+	font-size: 0;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+}
+
+.cardContainer div {
+	width: var(--s);
+	margin: var(--m);
+	height: calc(var(--s) * 1.1547);
+	display: inline-block;
+	font-size: initial;
+	clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+	background: #001b29;
+	margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+}
+
+.cardContainer div:nth-child(odd) {
+	background: #001b29;
+	margin: 2em;
+}
+.cardContainer::before {
+	content: "";
+	width: calc(var(--s) / 2 + var(--m));
+	float: left;
+	height: 120%;
+	shape-outside: repeating-linear-gradient(
+		#001b29 0 calc(var(--f) - 0.188em),
+		#001b29 0 var(--f)
+	);
+}
+
+.cardContainer:hover {
+	transform: scale(1.2);
+	/* transform: rotateY(180deg); */
+}
+
+.content:hover{
+	transform: translateY(-3px);
+	/* transform: rotateY(-180deg); */
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.deptTitle {
+	font-size: 1em;
+	margin-top: calc(var(--s) * 0.57735);
+	text-align: center;
+}
+
+.content h5{
+	font-size: 1em;
+	margin-top: calc(var(--s) * 0.57735);
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.card {
+	display: flex;
+	position: relative;
+	left: 5.625em;
+	width: 18.75em;
+	height: 21.688em;
+	font-family: helvetica, arial, sans-serif;
+	color: #d5ff45;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transition: transform 0.2s;
+	-moz-backface-visibility: hidden;
+}
+.card.flipped {
+	transform: rotateY(180deg);
+}
+
+.card.flipped.front {
+	z-index: 2;
+}
+
+.card.flipped.back {
+	z-index: 3;
+}
+
+.hexagon {
+	position: absolute;
+	width: 300px;
+	height: 173.21px;
+	background-color: #001b29;
+	margin: 86.6px 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	transition: transform 0.5s;
+	z-index: 3;
+}
+
+.hexagon:hover {
+	transform: translateY(-3px);
+}
+
+.hexagon:before,
+.hexagon:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 212.13px;
+	height: 212.13px;
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 43.934px;
+}
+
+.hexagon:before {
+	top: -106.066px;
+}
+
+.hexagon:after {
+	bottom: -106.066px;
+}
+
+.hexagon.back {
+	transform: rotateY(180deg);
+	background-color: #001b29;
+	color: rgb(239, 246, 209);
+	z-index: 2;
+}
+
+.card-content {
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.see-more {
+	/* position: relative; */
+	/* margin-bottom:calc(var(--s) * 0.25);  */
+	margin-left: calc(var(--s)*0.3);
+	z-index: 2;
+	transition: color 0.2s, transform 0.2s;
+	font-size: 1.5em;
+	bottom: 3em;
+}
+
+.card:hover .see-more {
+	color: #fff;
+	transform: rotate(45deg);
+}
