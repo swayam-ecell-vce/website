@@ -5,35 +5,38 @@
 .Home-Main-Div
 {
 	color: rgb(255, 255, 255);
-	margin-top: 10vh;
 }
 .home-div-header
 {
 	display: block;
-	margin-top: 5%;
+	font-weight: bold;
 	text-align: center;
-	font-size: 2rem !important;
+	font-size: 2.5rem !important;
 }
 .home-p-title
 {
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 .home-span-Swayam
 {
-	color: #2ff5e8;
-	font-size: 3rem !important;
+	/* color: #BB86FC; */
+	color: #37d68c;
+	/* color: #2ff5e8; */
+	font-size: 3.5rem !important;
 	margin: 0px auto;
 	padding-bottom: 2%;
 }
 .home-span-titledecor
 {
-	color: #2ff5e8;
+	/* color: #2ff5e8; */
+	color: #00fdb1;
 	font-style: oblique;
 }
 .home-p-tagline
 {
 	font-size: 1.6rem;
-	color: #2ff5e8;
+	/* color: #2ff5e8; */
+	color: #fc0b67;
 	font-weight: 1000;	
 }
 .home-div-main
@@ -44,7 +47,8 @@
 }
 .home-div-sec
 {
-	background-color: #6200EE;
+	/* background-color: #6200EE; */
+	background-color: #37d68c;
 	height: 10vh;
     width: 28%;
     text-align: center;
@@ -67,7 +71,7 @@
 	padding-left: 2%;
 	font-size: 1.5rem; 
 	padding-bottom: 8%;
-	background-color: #040739;
+	background-color: #001b29;
 	height: 0.6%;
 	width: 75%;
 	border: 3px solid white;
@@ -81,7 +85,8 @@
 }
 .home-div-sec:hover
 {
-	box-shadow: 2.5px 2.5px 7.5px lightslategrey;
+	/* box-shadow: 2.5px 2.5px 7.5px lightslategrey; */
+	box-shadow: 2.5px 2.5px 7.5px #ff0a7c;
 	cursor: pointer;
 }
 .home-div-numb
@@ -97,11 +102,16 @@
 
 .home-div-numb-title
 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	text-align: center;
-	color: white;
+	/* color: white; */
+	color: #49f73e;
 	padding-top: 5%;
 	font-weight: bold;
+}
+
+.home-div-numb div p{
+	font-size: 1rem;
 }
 .home-div-numb-sec
 {
@@ -109,6 +119,7 @@
 	justify-content: space-around;
 	text-align: center;
 	padding-bottom: 3%;
+	color: #00ff88;
 }
 .home-div-caro-title
 {
@@ -116,6 +127,7 @@
 	font-size: 2rem;
 	text-align: center;
 	color: white;
+	/* color: #00ffff; */
   	padding-top: 2%;
 	font-size: 40px;
 	font-weight: bold;
@@ -124,6 +136,7 @@
 {
 	display: flex;
 	justify-content: center;
+	color: #00ffff;
 	
 }
 .home-div-grid-img-1
@@ -134,7 +147,8 @@
 .home-div-collage
 {
 	margin-top: 5%;
-	background-color: #6200EE ;
+	/* background-color: #6200EE ; */
+	background-color: #37d68c;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2%;
@@ -148,7 +162,8 @@
 {
 	font-size: 2rem;
 	text-align: center;
-	color: white;
+	/* color: white; */
+	color: #2c033f;
 	font-weight: bold;
 	
 }
@@ -159,6 +174,7 @@
 	gap: 1px;
 	grid-auto-rows: minmax(100px, auto);
 	width: 100%;
+	background-color: #37d68c;
 }
 .one {
 	grid-column: 1;
@@ -224,19 +240,22 @@
 {
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #6200EE ;
+	/* background-color: #6200EE ; */
+	background-color: #37d68c;
 	text-align: center;
 	height: 100%;
 	width: 100%;
 }
 .text
 {
-	color: white;
-	font-size: 1.5rem;
+	/* color: white; */
+	color: #2c033f;
+	font-size: 1.8rem;
 	font-weight: 800;
 	text-align: center;
 	margin: 0;
 	padding-top: 20%;
+	/* box-shadow: 10px 10px 0px #37d68c; */
 }
 .one:hover .overlay
 {
@@ -277,7 +296,7 @@
 	background-color: white;
 	padding: 4%;
 	width: 60%;
-	box-shadow: 10px 10px 0px #6200EE ;
+	box-shadow: 10px 10px 0px #d5ff45 ;
 	margin: 0px auto;
 	margin-top: 5%;
 	position: static;
@@ -286,7 +305,8 @@
 .home-div-st
 {
 	padding: 1%;
-	background-color: #6200EE ;
+	/* background-color: #6200EE ; */
+	background-color: #37d68c;
 }
 .home-div-show-wrapper, .home-div-show-wrapper-2
 {
@@ -295,7 +315,7 @@
 }
 .home-div-show-wrapper-2
 {
-	border: 5px solid #040739;
+	border: 5px solid #001b29;
 	width: 80% !important;
 	height: 25vh;
 	margin: 5%;
@@ -311,20 +331,22 @@
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	box-shadow: 10px 10px #37d68c;
+	box-shadow: 10px 10px #001b29;
 	margin: 0.4%;
+	border-radius: 5.25rem;
+	margin-bottom: 0.55rem;
 }
 
 .home-img-avatar-2
 {
-	height: 300px;
+	height: 275px;
 	width: 240px;
 	position: relative;
 	padding-right: 3%;
 	border: 4px solid white;
 	margin: 0;
-	margin-top: 1%;
-	margin-left: -3%;
+	margin-top: -4%;
+	margin-left: -3.75%;
 }
 @media(max-width: 650px) {
 	.home-img-avatar-2
@@ -368,7 +390,7 @@
 {
 	width: 70%;
 	margin-left: 3%;
-	color : white;
+	color : #001b29;
 	font-size: 1.2em;
 	margin-bottom: 1%;
 }

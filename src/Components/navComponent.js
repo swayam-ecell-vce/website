@@ -5,6 +5,7 @@ import {Link, NavLink} from 'react-router-dom'
 import '../Stylesheets/Navbar.css'
 import {FaBars} from "react-icons/fa"
 import {AiOutlineClose} from "react-icons/ai";
+import swayamLogo from "../media/swayam_logo-removebg-preview.png";
 
 function useWindowSize() {
   const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
@@ -21,7 +22,7 @@ function useWindowSize() {
 
 const slidebarData = [
     {
-        title: 'Swayam',
+        title: 'Home',
         path: '/',
         cNAme: 'nav-text'
     },
@@ -51,9 +52,16 @@ const Navcomponent = (props) =>
 	if(width > 720)
 	{
 		return(
+		<div className="Nav-Bar">
+		<div className="Nav-front">
+			<NavLink to="/" className="">
+				<img src={swayamLogo} alt="swayam-logo"></img>
+			</NavLink>
+		</div>
+			
 		<ul className='Nav-ul-main'>
 			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
-				Swayam
+				Home
 			</NavLink>
 			<NavLink to='/incubator' className='Nav-li' activeClassName='selected' exact>
 				Incubator
@@ -65,6 +73,7 @@ const Navcomponent = (props) =>
 				About Us
 			</NavLink>
 		</ul>
+		</div>
 		)
 	}
 	else

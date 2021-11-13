@@ -176,7 +176,7 @@ function HomeComponent(props) {
 			<div className="home-div-numb">
 				<div className="home-div-wrapicon">
 					<EmojiEventsOutlinedIcon
-						style={{ fontSize: 55 }}
+						style={{ fontSize: 75 }}
 						titleAccess="Event"
 					></EmojiEventsOutlinedIcon>
 					<p>
@@ -185,7 +185,7 @@ function HomeComponent(props) {
 				</div>
 				<div className="home-div-wrapicon">
 					<EmojiObjectsIcon
-						style={{ fontSize: 55 }}
+						style={{ fontSize: 75 }}
 					></EmojiObjectsIcon>
 					<p>
 						23+ Startups <br /> Incubated
@@ -193,7 +193,7 @@ function HomeComponent(props) {
 				</div>
 				<div className="home-div-wrapicon">
 					<PeopleOutlineRoundedIcon
-						style={{ fontSize: 55 }}
+						style={{ fontSize: 75 }}
 					></PeopleOutlineRoundedIcon>
 					<p>
 						5000+ Students <br /> Impacted
@@ -201,7 +201,7 @@ function HomeComponent(props) {
 				</div>
 				<div className="home-div-wrapicon">
 					<LocalAtmRoundedIcon
-						style={{ fontSize: 55 }}
+						style={{ fontSize: 75 }}
 					></LocalAtmRoundedIcon>
 
 					<p>
@@ -210,7 +210,7 @@ function HomeComponent(props) {
 				</div>
 				<div className="home-div-wrapicon">
 					<EmojiPeopleRoundedIcon
-						style={{ fontSize: 55 }}
+						style={{ fontSize: 75 }}
 					></EmojiPeopleRoundedIcon>
 
 					<p>
@@ -219,7 +219,7 @@ function HomeComponent(props) {
 				</div>
 				<div className="home-div-wrapicon">
 					<BusinessRoundedIcon
-						style={{ fontSize: 55 }}
+						style={{ fontSize: 75 }}
 					></BusinessRoundedIcon>
 					<p>
 						70+ <br /> Collaborations <br /> made
