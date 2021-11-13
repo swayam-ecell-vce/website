@@ -2,7 +2,7 @@
 .container {
 	display: flex;
 	/* flex-direction: column; */
-	background-image: url("../media/rocky-wall.png");
+	/*background-image: url("../media/rocky-wall.png");*/
 	background-color: #001b29;
 	height: 100vh;
 	width: 100%;
