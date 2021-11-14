@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-.container {
+.Hiringcontainer {
 	display: flex;
 	background-color: #121221;
 	height: 100vh;
@@ -21,7 +21,7 @@
 	text-align: center;
 	gap: 0.25em;
 	transform: translateX(-50%);
-    margin-bottom: 15rem;
+	margin-bottom: 15rem;
 }
 #hire {
 	/* font-family: rosewood-std, sans-serif; */
@@ -47,8 +47,6 @@
 	border: 0.05em solid #37d68c;
 }
 
-
-
 .applyButton:hover {
 	transform: scale(1.2);
 	margin-left: 0.75em;
@@ -60,14 +58,14 @@
 	width: 100%;
 	position: absolute;
 	top: 95%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-    left: 0;
-    flex: 1;
-    gap: 3;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: #37d68c;
+	overflow: hidden;
+	left: 0;
+	margin: 0 auto;
+	padding: 2rem;
 }
-
 
 .Cardsmain {
 	display: flex;
@@ -76,9 +74,11 @@
 	--f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 	background-color: #37d68c;
 	/* height: 100vh; */
-	gap: 20em;
-	flex: 3;
+	gap: 30em;
+	/* flex: 3; */
 	bottom: 0;
+	margin-left: 5rem;
+	/* overflow: hidden; */
 }
 
 .cardContainer {
@@ -86,6 +86,9 @@
 	cursor: pointer;
 	transform-style: preserve-3d;
 	transition: transform 0.5s;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	/* columns: 3; */
+	display: grid;
 }
 
 .cardContainer div {
@@ -115,11 +118,11 @@
 }
 
 .cardContainer:hover {
-	transform: scale(1.2);
+	/* transform: scale(1.2); */
 	/* transform: rotateY(180deg); */
 }
 
-.content:hover{
+.content:hover {
 	transform: translateY(-3px);
 	/* transform: rotateY(-180deg); */
 }
@@ -137,7 +140,7 @@
 	text-align: center;
 }
 
-.content h5{
+.content h5 {
 	font-size: 1em;
 	margin-top: calc(var(--s) * 0.57735);
 	text-align: center;
@@ -225,7 +228,7 @@
 .see-more {
 	/* position: relative; */
 	/* margin-bottom:calc(var(--s) * 0.25);  */
-	margin-left: calc(var(--s)*0.3);
+	margin-left: calc(var(--s) * 0.3);
 	z-index: 2;
 	transition: color 0.2s, transform 0.2s;
 	font-size: 1.5em;

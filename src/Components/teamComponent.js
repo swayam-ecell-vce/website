@@ -15,7 +15,7 @@ import sameeha from "../media/DeputyHeadWebDev.png";
 import anirudh from "../media/IncubationHead.jpeg";
 import sripriya from "../media/DeputyHeadWebDesign.png";
 import keerthana from "../media/MarketingHead.png";
-import suresh from "../media/PRHead.png";
+import suresh from "../media/PRHead.jpg";
 import linkedinlogo from "../media/linkedinlogo.png";
 
 import "../Stylesheets/team.css";
