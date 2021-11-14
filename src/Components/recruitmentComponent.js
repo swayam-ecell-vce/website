@@ -5,7 +5,7 @@ const departmentContent = [
 	{
 		name: "Incubation",
 		description: "We help startups in our college grow",
-		color: "#444444",
+		color: "#13182e",
 	},
 	{
 		name: "Event Management",
@@ -20,24 +20,31 @@ const departmentContent = [
 	{
 		name: "Human Resource",
 		description: "We take care of people and problems",
+		color: "#8c1440",
 	},
 
 	{
 		name: "PR",
 		description: "We keep our vast network alive",
+		color: "#040a2b",
 	},
 	{
 		name: "Content Creation and Resource Management",
 		description: "We make awesome content for swayam",
+		color: "#870b6a",
 	},
 	{
 		name: "Web development",
 		description:
 			"We are the geek batch in the club taking care of all things technical",
+		color: "#4f3e14",
+		id: 1
 	},
 	{
 		name: "Design and arts",
 		description: "We add the creative spices to the club",
+		color: "",
+		id:2
 	},
 ];
 
