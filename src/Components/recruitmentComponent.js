@@ -33,18 +33,26 @@ const departmentContent = [
 		description: "We make awesome content for swayam",
 		color: "#870b6a",
 	},
+
 	{
 		name: "Web development",
 		description:
 			"We are the geek batch in the club taking care of all things technical",
 		color: "#4f3e14",
-		id: 1
+		id: 1,
 	},
+
+	{
+		name: "Web Design",
+		description: "We make awesome design for swayam",
+		color: "#870b6a",
+	},
+
 	{
 		name: "Design and arts",
 		description: "We add the creative spices to the club",
 		color: "",
-		id:2
+		id: 2,
 	},
 ];
 
@@ -78,14 +86,14 @@ const Cards = (props) => {
 
 const recruitmentComponent = () => {
 	return (
-		<div className="container">
+		<div className="Hiringcontainer">
 			<div className="header">
 				<h1 id="hire">We're Hiring!</h1>
 				<h2 className="headerDescription">
 					You are just one step away from future you! <br />
-                    {/*<i className="fas fa-arrow-to-right"></i>*/}
+					{/*<i className="fas fa-arrow-to-right"></i>*/}
 					<button className="applyButton">Apply Here</button>
-                    {/*<i className="fas fa-arrow-to-left"></i>*/}
+					{/*<i className="fas fa-arrow-to-left"></i>*/}
 				</h2>
 			</div>
 			{/*<div className="planes">
