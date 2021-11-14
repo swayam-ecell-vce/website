@@ -2,32 +2,45 @@
     /* display:flex; */
 
     text-align:center;
-    max-width: 1320px;
+    max-width: 82.5rem;
     padding: 0 2rem;
     margin: 0 auto;
     height: 100%;
     background-color: #121212;
+    margin-right : 7rem;
 }
 
 .container1{
+    display: grid;
+    justify-content:center;
     text-align:center;
-    max-width: 1320px;
-    padding-left: 30rem;
     margin: 0 auto;
+    margin-top: 0;
+   margin-right : 10rem;
+
+
+    /* max-width: 1320px; */
+    /* transform:translateX(-10%);
+    transform:translateY(-40%); */
+    /* padding-left: 30rem; */
+    
 }
 
 .container2{
     text-align:center;
-    max-width: 1320px;
+    max-width: 82.5rem;
     padding-left: 18rem;
     padding-right: 25rem;
     margin: 0 auto;
 }
 
-.header{
+.teamheader{
+    
     text-align: center;
     justify-content: center;
-    padding-top:5rem;
+    /* padding: top 3rem; */
+    padding-top: 3rem;
+    color: #fc0b67;
 }
 
 .grid {
@@ -60,8 +73,8 @@
 }
 
 .linkedinlogo{
-    height : 24px;
-    width : 24px;
+    height : 1.5rem;
+    width : 1.5rem;
     border-radius :20%;
 }
 
@@ -82,19 +95,19 @@
     font-weight: 800;
     text-transform: capitalize;
     color: #25262C;
-    font-size: 24px;
-    padding-bottom: 15px;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .designation {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-top: -1rem;
 	font-style: oblique;
 }
 
 .call_btn {
-    margin: 140px 0 40px;
+    margin: 8.75rem 0 2.5;
     position: relative;
     display: inline-block;
     z-index: 99;
@@ -103,7 +116,7 @@
 
 .btn_icon i {
     position: relative;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #1F83FE;
     transition: all .3s ease-in-out;
 }
@@ -111,13 +124,13 @@
 .btn_icon i:after {
     content: '';
     position: absolute;
-    height: 55px;
-    width: 55px;
+    height: 3.438rem;
+    width: 3.438rem;
     background-color: white;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    left: -17px;
-    top: -18px;
+    left: -1.063rem;
+    top: -1.125rem;
     z-index: -1;
     transition: all .3s ease-in-out;
 }
@@ -127,10 +140,10 @@
     background: radial-gradient(45.14% 45.14% at 50% 50%, #BFDAFF 0%, #BDD9FD 26.59%, #D4E5FF 46.99%, #CCE0FF 71.36%, #A7CCFF 100%);
     box-shadow: 0px 4px 107px rgba(179, 211, 255, 0.5);
     border-radius: 50%;
-    left: -46px;
-    top: -46px;
-    height: 110px;
-    width: 110px;
+    left: -2.875rem;
+    top: -2.875rem;
+    height: 6.875rem;
+    width: 6.875rem;
     display: block;
     z-index: -2;
     transition: all .3s ease-in-out;
@@ -148,13 +161,13 @@
 .link {
     position: fixed;
     background-color: #D12322;
-    padding: 23px 40px;
-    right: -110px;
-    border-radius: 5px;
+    padding: 1.438rem 2.5rem;
+    right: -6.875rem;
+    border-radius: 0.313rem;
     top: 50%;
     transform: translateY(-50%);
     transform: rotate(-90deg);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     color: #FFF;
     text-decoration: none;
@@ -163,7 +176,7 @@
 }
 
 .link i {
-    padding-left: 7px;
+    padding-left: 0.438rem;
 }
 
 .link:hover {

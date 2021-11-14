@@ -26,7 +26,7 @@ const Cards = (props) => {
                     <img src={props.image} alt=""/>
                 </div>
                 <div class="card_body">
-                    <h2 class="card_title">{props.name} <span></span><a  href = {props.linkedinlink}><img class = "linkedinlogo" src = {linkedinlogo} alt ="logo" ></img></a>
+                    <h2 class="card_title">{props.name} <span></span><a  href = {props.linkedinlink} target="_blank"><img class = "linkedinlogo" src = {linkedinlogo} alt ="logo" ></img></a>
                     </h2>
                     <h6 class="designation">{props.designation}</h6>
                     {/* <div class="call_btn">
@@ -65,19 +65,20 @@ const teamComponent = () => {
         },
     ] 
 
-
+    
     const teamDetails_president = [
-        {
-            image: jaswanth,
-            name: "Sai Jaswanth Gudibandi",
-            designation: "President",
-            linkedinlink : "https://www.linkedin.com/in/sai-jaswanth-gudibandi-291226163/",
-        },
         {
             image: srikar,
             name: "Srikar Maddula",
-            designation: "Vice President",
+            designation: "President",
             linkedinlink : "https://www.linkedin.com/in/srikarmaddula/",
+        },
+        {
+            image: jaswanth,
+            name: "Sai Jaswanth Gudibandi",
+            designation: "Vice President",
+            linkedinlink : "https://www.linkedin.com/in/sai-jaswanth-gudibandi-291226163/",
+
         },
     ]  
 
@@ -160,7 +161,7 @@ const teamComponent = () => {
 
 	return (
         <>
-        <h1 className = "header"> MEET THE TEAM </h1>
+        <h1 className = "teamheader"> MEET THE TEAM </h1>
         <div class="container1">
             {/* <h1 className = "header"> OUR TEAM </h1> */}
             <div class="grid">
@@ -174,7 +175,7 @@ const teamComponent = () => {
             </div>
         </div>
         
-        <h1 className = "header"> FACULTY CO-ORDINATORS </h1>
+        <h1 className = "teamheader"> FACULTY CO-ORDINATORS </h1>
         <div class="container2">
             {/* <h1 className = "header"> OUR TEAM </h1> */}
             <div class="grid2">
@@ -189,7 +190,7 @@ const teamComponent = () => {
             </div>
         </div>
 
-        <h1 className = "header"> TEAM LEADERS </h1>
+        <h1 className = "teamheader"> TEAM LEADERS </h1>
         <div class="container2">
             {/* <h1 className = "header"> OUR TEAM </h1> */}
             <div class="grid2">
@@ -204,7 +205,7 @@ const teamComponent = () => {
             </div>
         </div>
         
-        <h1 className = "header"> THE CORE TEAM </h1>
+        <h1 className = "teamheader"> THE CORE TEAM </h1>
         <div class="container">
             {/* <h1 className = "header"> OUR TEAM </h1> */}
             <div class="grid">
