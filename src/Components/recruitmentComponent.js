@@ -92,7 +92,12 @@ const recruitmentComponent = () => {
 				<h2 className="headerDescription">
 					You are just one step away from future you! <br />
 					{/*<i className="fas fa-arrow-to-right"></i>*/}
-					<button className="applyButton">Apply Here</button>
+					<a
+						href="https://docs.google.com/forms/d/e/1FAIpQLSenPGNZsfzszUkgFaxBwDmJynVwsyMUZQV1PybamlfDs0475w/viewform"
+						target="_blank"
+					>
+						<button className="applyButton">Apply Here</button>
+					</a>
 					{/*<i className="fas fa-arrow-to-left"></i>*/}
 				</h2>
 			</div>
