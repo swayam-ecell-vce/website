@@ -151,9 +151,7 @@
 }
 
 .card {
-	display: flex;
 	position: relative;
-	left: 5.625em;
 	width: 18.75em;
 	height: 21.688em;
 	font-family: helvetica, arial, sans-serif;
