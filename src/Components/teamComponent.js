@@ -14,10 +14,10 @@ import srikar from "../media/srikar.png";
 import sameeha from "../media/DeputyHeadWebDev.png";
 import anirudh from "../media/IncubationHead.jpeg";
 import sripriya from "../media/DeputyHeadWebDesign.png";
-import keerthana from "../media/MarketingHead.png";
+import keerthana from "../media/MarketingHead.jpeg";
 import suresh from "../media/PRHead.jpg";
 import linkedinlogo from "../media/linkedinlogo.png";
-
+// import FaLinkedinIn from 'react-icons/fa'
 import "../Stylesheets/team.css";
 const Cards = (props) => {
     return (
