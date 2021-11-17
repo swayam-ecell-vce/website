@@ -85,6 +85,37 @@ const teamComponent = () => {
 
     const teamDetails_deptHead = [
         {
+            image: imran,
+            name: "Imran Mirza",
+            designation: "Web Development Head",
+            linkedinlink : "https://www.linkedin.com/in/imranmirza79/",
+        },
+        {
+            image: sameeha,
+            name: "Sameeha Mubeen",
+            designation: "Web Development Deputy Head",
+            linkedinlink : "https://www.linkedin.com/in/sameehamubeen/",
+        },
+        {
+            image: monishka,
+            name: "Monishka Das",
+            designation: "Content and Resource Management Head",
+            linkedinlink : "https://www.linkedin.com/in/monishka-das/",
+        },
+        {
+            image: sharat,
+            name: "Sharat Chandra MS",
+            designation: "Head of Web Design",
+            linkedinlink : "https://www.linkedin.com/in/sharat-chandra-ms-a17457197/",
+        },
+        {
+            image: sripriya,
+            name: "Sripriya Maturi",
+            designation: "Deputy Head of Web Design",
+            linkedinlink : "https://www.linkedin.com/in/sripriya-maturi/",
+        },
+
+        {
             image: aishwarya,
             name: "Aishwarya. P",
             designation: "Head of HR department",
@@ -113,36 +144,6 @@ const teamComponent = () => {
             name: "Shreya Mulukala",
             designation: "Deputy head of arts and design",
             linkedinlink : "https://www.linkedin.com/in/shreya-mulukala/",
-        },
-        {
-            image: monishka,
-            name: "Monishka Das",
-            designation: "Content and Resource Management Head",
-            linkedinlink : "https://www.linkedin.com/in/monishka-das/",
-        },
-        {
-            image: imran,
-            name: "Imran Mirza",
-            designation: "Web Development Head",
-            linkedinlink : "https://www.linkedin.com/in/imranmirza79/",
-        },
-        {
-            image: sameeha,
-            name: "Sameeha Mubeen",
-            designation: "Web Development Deputy Head",
-            linkedinlink : "https://www.linkedin.com/in/sameehamubeen/",
-        },
-        {
-            image: sharat,
-            name: "Sharat Chandra MS",
-            designation: "Head of Web Design",
-            linkedinlink : "https://www.linkedin.com/in/sharat-chandra-ms-a17457197/",
-        },
-        {
-            image: sripriya,
-            name: "Sripriya Maturi",
-            designation: "Deputy Head of Web Design",
-            linkedinlink : "https://www.linkedin.com/in/sripriya-maturi/",
         },
         {
             image: suresh,
