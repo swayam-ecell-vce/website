@@ -21,7 +21,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	box-shadow: 6px 6px #d5ff45;
+	box-shadow: 6px 6px #37d68c;
 }
 .home-p-abt-details
 {
@@ -54,7 +54,7 @@
 .home-div-abt-sec
 {
 	border-bottom: 1px white;
-	background-color: #83a344;
+	background-color: rgba(65, 90, 172, 0.26);
 	box-shadow: 3px 3px 6px black;
 	transition: all 0.6s;
 	margin-bottom: 3%;
@@ -108,7 +108,8 @@
 .home-div-abt-text
 {
 	width: 50%;
-	background-image: linear-gradient(#d5ff45, #d5cc45);
+	/* background-image: linear-gradient(#d5ff45, #d5cc45); */
+	background-color: #37d68c;
 	color:#121212;
 	padding: 4%;
 	margin: 0px auto;

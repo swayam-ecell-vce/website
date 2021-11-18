@@ -99,6 +99,7 @@
     top: 0;
     left: -100%;
     transition: all 850ms ease-in-out;
+    z-index: 200;
 }
 .nav-menu.active
 {
@@ -145,6 +146,15 @@
     display: flex;
     justify-content: start;
     align-items: center;
+}
+
+@media (max-width:880px){
+    .Nav-ul-main{
+        padding-right: 1rem;
+    }
+    .Nav-li{
+        padding-right: 2rem;
+    }
 }
 @media (max-width: 490px)
 {
