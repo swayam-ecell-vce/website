@@ -90,12 +90,12 @@ const teamComponent = () => {
             designation: "Web Development Head",
             linkedinlink : "https://www.linkedin.com/in/imranmirza79/",
         },
-        {
-            image: sameeha,
-            name: "Sameeha Mubeen",
-            designation: "Web Development Deputy Head",
-            linkedinlink : "https://www.linkedin.com/in/sameehamubeen/",
-        },
+        // {
+        //     image: sameeha,
+        //     name: "Sameeha Mubeen",
+        //     designation: "Web Development Deputy Head",
+        //     linkedinlink : "https://www.linkedin.com/in/sameehamubeen/",
+        // },
         {
             image: monishka,
             name: "Monishka Das",
@@ -108,12 +108,12 @@ const teamComponent = () => {
             designation: "Head of Web Design",
             linkedinlink : "https://www.linkedin.com/in/sharat-chandra-ms-a17457197/",
         },
-        {
-            image: sripriya,
-            name: "Sripriya Maturi",
-            designation: "Deputy Head of Web Design",
-            linkedinlink : "https://www.linkedin.com/in/sripriya-maturi/",
-        },
+        // {
+        //     image: sripriya,
+        //     name: "Sripriya Maturi",
+        //     designation: "Deputy Head of Web Design",
+        //     linkedinlink : "https://www.linkedin.com/in/sripriya-maturi/",
+        // },
 
         {
             image: aishwarya,
@@ -139,12 +139,12 @@ const teamComponent = () => {
             designation: "Head of arts and design",
             linkedinlink : "https://www.linkedin.com/in/vamshi-sai-awaru-01b258194/",
         },
-        {
-            image: shreya,
-            name: "Shreya Mulukala",
-            designation: "Deputy head of arts and design",
-            linkedinlink : "https://www.linkedin.com/in/shreya-mulukala/",
-        },
+        // {
+        //     image: shreya,
+        //     name: "Shreya Mulukala",
+        //     designation: "Deputy head of arts and design",
+        //     linkedinlink : "https://www.linkedin.com/in/shreya-mulukala/",
+        // },
         {
             image: suresh,
             name: "Suresh Nitin Govada",
