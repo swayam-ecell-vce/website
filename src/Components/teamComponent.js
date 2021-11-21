@@ -8,16 +8,16 @@ import pranathi from "../media/EventHead.png";
 import aishwarya from "../media/HR_Head.png";
 import imran from "../media/WebDevHead.jpg";
 import sharat from "../media/HeadWebDesign.jpg";
-import shreya from "../media/DeputyHeadArts.jpeg";
+// import shreya from "../media/DeputyHeadArts.jpeg";
 import jaswanth from "../media/President.png";
 import srikar from "../media/srikar.png";
-import sameeha from "../media/DeputyHeadWebDev.png";
+// import sameeha from "../media/DeputyHeadWebDev.png";
 import anirudh from "../media/IncubationHead.jpeg";
-import sripriya from "../media/DeputyHeadWebDesign.png";
+// import sripriya from "../media/DeputyHeadWebDesign.png";
 import keerthana from "../media/MarketingHead.jpeg";
 import suresh from "../media/PRHead.jpg";
-import linkedinlogo from "../media/linkedinlogo.png";
-// import FaLinkedinIn from 'react-icons/fa'
+// import linkedinlogo from "../media/linkedinlogo.png";
+import { FaLinkedinIn } from 'react-icons/fa'
 import "../Stylesheets/team.css";
 const Cards = (props) => {
     return (
@@ -26,15 +26,10 @@ const Cards = (props) => {
                     <img src={props.image} alt=""/>
                 </div>
                 <div class="card_body">
-                    <h2 class="card_title">{props.name} <span></span><a  href = {props.linkedinlink} target="_blank"><img class = "linkedinlogo" src = {linkedinlogo} alt ="logo" ></img></a>
+                <h2 class="card_title">{props.name} <span></span><a href={props.linkedinlink} rel="noreferrer" target="_blank"> <FaLinkedinIn size={20} color="#0077b5"/></a>
                     </h2>
                     <h6 class="designation">{props.designation}</h6>
-                    {/* <div class="call_btn">
-                        <a href="#" class="btn_icon">
-                            <i class="fas fa-phone-alt"></i>
-                            <span class="circle"></span>
-                        </a>
-                    </div> */}
+                    
                 </div>
             </div>
     );
