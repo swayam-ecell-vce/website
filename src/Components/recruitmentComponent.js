@@ -3,6 +3,7 @@ import "../Stylesheets/Recruitment.css";
 import Cards from './Cards'
 
 
+
 const recruitmentComponent = () => {
 	return (
 		<div className="Hiringcontainer">
