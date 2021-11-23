@@ -6,11 +6,11 @@ import Footer from "./Footer"
 class Team extends Component {
 	render() {
 		return (
-			<>
+			<React.Fragment>
 				<Navbar />
 				<TeamComponent />
 				<Footer/>
-			</>
+			</React.Fragment>
 		);
 	}
 }
