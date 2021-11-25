@@ -185,6 +185,7 @@
         margin-bottom: 3.5rem;
         margin-left: 11rem;
         margin: 0 auto;
+        overflow: hidden;
     }
 }
 
@@ -196,6 +197,7 @@
 
     .card {
         padding: 12px;
+        overflow: hidden;
     }
 
     .card_title {
@@ -217,13 +219,14 @@
         width: 15rem;
         height: 20rem;
         margin-bottom: 3rem;
+        overflow: hidden;
 	}
 
     .card_title{
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .designation{
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 }
