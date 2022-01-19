@@ -3,7 +3,6 @@ import instance from '../axios/instance'
 
 //import the components here
 import EventComponent from '../Components/eventsComponent'
-import Navbar from '../Containers/Navbar'
 import Loader from '../UI/loader'
 import Footer from './Footer'
 
@@ -37,7 +36,6 @@ class EventContainer extends Component
 		}
 		return(
 			<div>
-				<Navbar />
 				
 				<EventComponent eventdb = {this.state.totalevents} />
 

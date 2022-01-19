@@ -1,0 +1,97 @@
+.blog_container
+{   
+    overflow-x: hidden;
+    font-family: 'Finger Paint', cursive;
+}
+.blog_head_text
+{
+    font-size: 53px;
+    padding: 3%;
+    color: #00bec5;
+}
+.blog_main
+{
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, rgb(49, 0, 83), rgb(89, 0, 153));
+    margin-bottom: 2%;
+    overflow-y: hidden;
+    padding-bottom: 3%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.blog_main:hover
+{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.blog_main::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(25, 0, 43), rgb(89, 0, 153));
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.blog_main:hover::before
+{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.blog_title
+{
+    margin-left: 8%;
+    text-align: left;
+}
+.blog_content
+{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    height: 60%;
+}
+.blog_img
+{
+    width: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.blog_entry
+{
+    width: 70%;
+    padding: 0 2% 0 2%;
+}
+.blog_para
+{
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-align: justify;
+    text-justify: inner-word;
+}
+.blog_h3
+{
+    font-family: 'Finger Paint', cursive;
+}
+.blog_vert_line
+{
+    width: 5px;
+    background-color: indigo;
+    border-radius: 7px;
+}
+.blog_post_NavLink
+{
+    text-decoration: none;
+}

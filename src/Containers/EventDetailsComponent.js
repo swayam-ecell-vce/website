@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import instance from '../axios/instance'
 //import the other components here
-import Navbar from './Navbar'
+
 import Footer from './Footer'
 import Loader from '../UI/loader'
 import EventDeatilscomponent from '../Components/eventDetailsComponent'
@@ -55,7 +55,6 @@ class EventDetails extends Component
 		}
 		return(
 			<div className='det-div-wrapper'>
-				<Navbar />
 				<EventDeatilscomponent eventdetails = {this.state.foundevent} />
 				<Footer />
 			</div>
