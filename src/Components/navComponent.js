@@ -27,8 +27,8 @@ const slidebarData = [
         cNAme: 'nav-text'
     },
     {
-        title: 'Incubator',
-        path: '/incubator',
+        title: 'Blog',
+        path: '/blog',
         cNAme: 'nav-text'
     },
     {
@@ -63,8 +63,8 @@ const Navcomponent = (props) =>
 			<NavLink to='/' className='Nav-li' activeClassName='selected' exact>
 				Home
 			</NavLink>
-			<NavLink to='/incubator' className='Nav-li' activeClassName='selected' exact>
-				Incubator
+			<NavLink to='/blog' className='Nav-li' activeClassName='selected' exact>
+				Blog
 			</NavLink>
 			<NavLink to='/events' className='Nav-li' activeClassName='selected' exact>
 				Events
