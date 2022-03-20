@@ -46,7 +46,6 @@
     text-align: center;
     justify-content: center;
     /* padding: top 3rem; */
-    padding-top: 3rem;
     color: #fc0b67;
 }
 
@@ -55,7 +54,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
-    margin: 5% 0;
+    margin: 0 0;
     justify-content: center;
 }
 
@@ -64,52 +63,51 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
-    margin: 5% 0;
+    margin: 1% 0;
 }
 
 .card {
-    overflow-x: hidden;
+     overflow-x: hidden;
      padding: 1.25rem;
      /* background: linear-gradient(171.38deg, #F9FBFC 3.36%, #E2EAF5 95.69%); */
-     background: #01071d;
-     box-shadow: 0px 0px 30px rgb(2 245 231 / 46%);
-     border-radius: 20% 3% 20% 3%; 
      text-align: center;
-     width:20rem;
-     margin-top: 5%;
-     margin-bottom: 5%;
-    
-     }
-
-    
+     margin-top: 1%;
+     width: 20rem;
+     border-radius: 7px;
+}
 
 
 .card_img img {
     margin-top: 0.5rem;
-    width: 55%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.card_body {
-    margin-top:0;
-    padding: 0px 10px 36px 10px;
-	color: #fc0b67;
+    width: 100%;
+    height: 60%;
+    border-radius: 7px;
+    filter: grayscale(100%);
 }
 
 .card_title {
     font-weight: 800;
     text-transform: capitalize;
-    color: #6ae997;
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
 .designation {
     font-weight: 700;
-    font-size: 1.375rem;
+    font-size: 1rem;
     margin-top: -1rem;
-	font-style: oblique;
+    color: rgb(182, 182, 182);
+    margin-bottom: 0;
+}
+
+.card_links
+{
+    margin: 5% 3% 3% 3%;
+}
+
+.card_links_indi
+{
+    margin-right: 5%;
 }
 
 .call_btn {
@@ -123,7 +121,6 @@
 .btn_icon i {
     position: relative;
     font-size: 1.375rem;
-    color: #1F83FE;
     transition: all .3s ease-in-out;
 }
 
