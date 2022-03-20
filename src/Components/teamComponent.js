@@ -2,21 +2,12 @@ import React, { useState } from "react";
 import mechhod from "../media/MechHOD.jpg";
 import david from "../media/david.jpg";
 import spurgeon from "../media/spurgeon.png";
-import vamshi from "../media/ArtsHead.jpg";
-import monishka from "../media/ContentHead.jpg";
 import pranathi from "../media/EventHead.png";
 import aishwarya from "../media/HR_Head.png";
-import imran from "../media/WebDevHead.jpg";
-import sharat from "../media/HeadWebDesign.jpg";
-// import shreya from "../media/DeputyHeadArts.jpeg";
 import jaswanth from "../media/President.png";
 import srikar from "../media/srikar.png";
-// import sameeha from "../media/DeputyHeadWebDev.png";
-import anirudh from "../media/IncubationHead.jpeg";
-// import sripriya from "../media/DeputyHeadWebDesign.png";
 import keerthana from "../media/MarketingHead.jpeg";
 import suresh from "../media/PRHead.jpg";
-// import linkedinlogo from "../media/linkedinlogo.png";
 import { FaLinkedinIn } from 'react-icons/fa'
 import "../Stylesheets/team.css";
 const Cards = (props) => {
@@ -68,23 +59,17 @@ const teamComponent = () => {
             designation: "President",
             linkedinlink : "https://www.linkedin.com/in/srikarmaddula/",
         },
-        {
-            image: jaswanth,
-            name: "Sai Jaswanth Gudibandi",
-            designation: "Vice President",
-            linkedinlink : "https://www.linkedin.com/in/sai-jaswanth-gudibandi-291226163/",
 
+        {
+            image: aishwarya,
+            name: "Aishwarya. P",
+            designation: "Vice President",
+            linkedinlink : "https://www.linkedin.com/in/aishwarya-p-7437a6202/",
         },
     ]  
 
 
     const teamDetails_deptHead = [
-        {
-            image: imran,
-            name: "Imran Mirza",
-            designation: "Web Development Head",
-            linkedinlink : "https://www.linkedin.com/in/imranmirza79/",
-        },
         // {
         //     image: sameeha,
         //     name: "Sameeha Mubeen",
@@ -92,66 +77,37 @@ const teamComponent = () => {
         //     linkedinlink : "https://www.linkedin.com/in/sameehamubeen/",
         // },
         {
-            image: monishka,
-            name: "Monishka Das",
-            designation: "Content and Resource Management Head",
-            linkedinlink : "https://www.linkedin.com/in/monishka-das/",
-        },
-        {
-            image: sharat,
-            name: "Sharat Chandra MS",
-            designation: "Head of Web Design",
-            linkedinlink : "https://www.linkedin.com/in/sharat-chandra-ms-a17457197/",
-        },
-        // {
-        //     image: sripriya,
-        //     name: "Sripriya Maturi",
-        //     designation: "Deputy Head of Web Design",
-        //     linkedinlink : "https://www.linkedin.com/in/sripriya-maturi/",
-        // },
+            image: jaswanth,
+            name: "Sai Jaswanth Gudibandi",
+            designation: "Head of Web Design and Development",
+            linkedinlink : "https://www.linkedin.com/in/sai-jaswanth-gudibandi-291226163/",
 
-        {
-            image: aishwarya,
-            name: "Aishwarya. P",
-            designation: "Head of HR department",
-            linkedinlink : "https://www.linkedin.com/in/aishwarya-p-7437a6202/",
         },
+
         {
             image: pranathi,
             name: "M.Pranathi",
-            designation: "Event Management Team Head",
+            designation: "Head of Event Management",
             linkedinlink : "https://www.linkedin.com/in/pranathi28/",
         },
         {
             image: keerthana,
             name: "Keerthana Gunreddy",
-            designation: "Marketing Head",
+            designation: "Head of Marketing",
             linkedinlink : "https://www.linkedin.com/in/keerthana-gunreddy-b2494718b/",
         },
         {
-            image: vamshi,
-            name: "Vamshi Sai Awaru",
-            designation: "Head of arts and design",
+            image: suresh,
+            name: "Viveka",
+            designation: "Head of Arts",
             linkedinlink : "https://www.linkedin.com/in/vamshi-sai-awaru-01b258194/",
         },
-        // {
-        //     image: shreya,
-        //     name: "Shreya Mulukala",
-        //     designation: "Deputy head of arts and design",
-        //     linkedinlink : "https://www.linkedin.com/in/shreya-mulukala/",
-        // },
         {
             image: suresh,
             name: "Suresh Nitin Govada",
-            designation: "Head of PR",
+            designation: "Head of PR and HR",
             linkedinlink : "https://www.linkedin.com/in/suresh-nitin-3688421a9/",
         },
-        {
-            image: anirudh,
-            name: "CH V S Anirudh",
-            designation: "Incubation and Investment department lead",
-            linkedinlink : "https://www.linkedin.com/in/chvs-a-181871ba/",
-        }
     ] 
 
 

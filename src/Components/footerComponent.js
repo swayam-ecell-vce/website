@@ -58,7 +58,7 @@ const footerComponent = (props, details) => {
 						</a>
 						<a
 							className="foo-link"
-							href="https://www.linkedin.com/company/entrepreneurship-cell-vasavi-college-of-engineering"
+							href="https://www.linkedin.com/company/swayam-e-cell/mycompany/"
 							target="_blank"
 						>
 							<FaLinkedinIn size={30} />
@@ -224,36 +224,12 @@ const footerComponent = (props, details) => {
 						About Us &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
-						to="/#"
-						className="foo-li Nav-li"
-						activeClassName="selected"
-						exact
-					>
-						Initiatives &nbsp; | &nbsp;
-					</NavLink>
-					<NavLink
-						to="/#"
+						to="/blog"
 						className="foo-li Nav-li"
 						activeClassName="selected"
 						exact
 					>
 						Resources &nbsp; | &nbsp;
-					</NavLink>
-					<NavLink
-						to="/#"
-						className="foo-li Nav-li"
-						activeClassName="selected"
-						exact
-					>
-						Partners &nbsp; | &nbsp;
-					</NavLink>
-					<NavLink
-						to="/hiring"
-						className="foo-li Nav-li"
-						activeClassName="selected"
-						exact
-					>
-						Join Us &nbsp; | &nbsp;
 					</NavLink>
 					<NavLink
 						to="/ourteam"

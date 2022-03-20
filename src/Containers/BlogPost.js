@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import instance from "../axios/localInstance";
 import localinstance from "../axios/localInstance";
 import BlogPostComponent from "../Components/blogPostComponent";
+import Footer from '../Containers/Footer'
+
 
 class BlogEntry extends Component
 {
@@ -26,7 +28,10 @@ class BlogEntry extends Component
     render()
     {
         return(
-            <BlogPostComponent blogPost = {this.state.blogPost}/>
+            <React.Fragment>
+                <BlogPostComponent blogPost = {this.state.blogPost}/>
+                <Footer />
+            </React.Fragment>
         )
     }
 }

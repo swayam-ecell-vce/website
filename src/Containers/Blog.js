@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import localinstance from '../axios/localInstance'
 import BlogComponent from '../Components/blogComponent'
+import Footer from '../Containers/Footer'
 
 class Blog extends Component
 {
@@ -23,6 +24,7 @@ class Blog extends Component
         return(
             <div>
                 <BlogComponent entries = {this.state.entries} />
+                <Footer />
             </div>
         )
     }
