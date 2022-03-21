@@ -18,7 +18,7 @@ const Slider = lazy(() => import("react-slick"))
 function HomeComponent(props) {
 	var history = useHistory();
 	const incubatorclicker = () => {
-		history.push("/incubator");
+		history.push("/blog");
 	};
 
 	const eventclicker = (event) => {
@@ -86,10 +86,10 @@ function HomeComponent(props) {
 				<div
 					className="home-div-sec"
 					onClick={incubatorclicker}
-					values="incubator"
-					aria-labelledby="Swayam E-Cell Incubator"
+					values="blog"
+					aria-labelledby="Swayam Blog"
 				>
-					<div className="home-div-ter">Incubator</div>
+					<div className="home-div-ter">Blog</div>
 				</div>
 				<div
 					className="home-div-sec home-div-sec-bg"
