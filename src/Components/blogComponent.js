@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import '../Stylesheets/Blog.css'
 import styled from 'styled-components'
+import BlogNav from './blogNav'
 import { useHistory } from 'react-router-dom'
 import {Link, NavLink} from 'react-router-dom'
+import { withRouter } from "react-router";
 
 const ImgDiv = styled.div`
 
@@ -22,7 +24,6 @@ const FeatureDiv = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 3%;
     border-radius: 7px;
 
 `
@@ -101,9 +102,10 @@ const BlogComponent = (props) => {
     return(
         <div className='blog_container'>
             {featuredEntryPost}
+            <BlogNav />
             {entriesMapped}
         </div>
     )
 }
 
-export default BlogComponent
+export default withRouter(BlogComponent)

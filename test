@@ -1,0 +1,37 @@
+{
+  "value": {
+    "history": {
+      "length": 51,
+      "action": "PUSH",
+      "location": {
+        "pathname": "/blog/collections/Tech",
+        "search": "",
+        "hash": "",
+        "state": null,
+        "key": "ov8dq1"
+      },
+      "createHref": "ƒ createHref() {}",
+      "push": "ƒ push() {}",
+      "replace": "ƒ replace() {}",
+      "go": "ƒ go() {}",
+      "goBack": "ƒ goBack() {}",
+      "goForward": "ƒ goForward() {}",
+      "block": "ƒ block() {}",
+      "listen": "ƒ listen() {}"
+    },
+    "location": {
+      "pathname": "/blog/collections/Tech",
+      "search": "",
+      "hash": "",
+      "state": null,
+      "key": "ov8dq1"
+    },
+    "match": {
+      "path": "/blog/collections/:tag",
+      "url": "/blog/collections/Tech",
+      "isExact": true,
+      "params": "{tag: \"Tech\"}"
+    }
+  },
+  "children": "<BlogCollections />"
+}

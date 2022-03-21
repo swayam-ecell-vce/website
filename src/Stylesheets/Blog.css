@@ -2,6 +2,8 @@
 {   
     overflow-x: hidden;
     font-family: 'Finger Paint', cursive;
+    width: 90%;
+    margin: 0 auto;
 }
 .blog_head_text
 {
@@ -100,9 +102,15 @@
 
 .blog_featured
 {
-    width: 90%;
     margin: 2% auto;
+    margin-bottom: 0;
     border-radius: 7px;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 3%;
+}
+.blog_featured:hover
+{
+    transform: scale(1.05)
 }
 .blog_img_text
 {
@@ -127,4 +135,27 @@
     color: white;
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 5px;
+}
+
+.blog_nav_div
+{
+    padding: 1%;
+    background-color: rgba(44, 44, 44, 0.315);
+    margin: 0 auto;
+}
+
+.blog_nav_li
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.blog_nav_link
+{
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(190, 190, 190);
 }

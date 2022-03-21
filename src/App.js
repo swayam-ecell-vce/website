@@ -12,6 +12,7 @@ import Recruitment from './Containers/Recruitment'
 import Team from './Containers/team';
 import Blog from './Containers/Blog';
 import BlogPost from './Containers/BlogPost';
+import BlogCollections from './Containers/BlogCollections';
 import React from 'react';
 
 function App()
@@ -31,6 +32,7 @@ function App()
           <Route path='/ourteam' component={Team} exact/>
           <Route path='/blog' component={Blog} exact/>
           <Route path='/blog/:id' component={BlogPost} exact/>
+          <Route path = '/blog/collections/:tag' component={BlogCollections} exact />
       </Switch>
     </div>
     </BrowserRouter>

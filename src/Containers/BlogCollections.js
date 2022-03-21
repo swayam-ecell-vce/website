@@ -3,14 +3,15 @@ import localinstance from '../axios/localInstance'
 import BlogComponent from '../Components/blogComponent'
 import Footer from '../Containers/Footer'
 
-class Blog extends Component
+class BlogCollections extends Component
 {
     state = {
         entries: []
     }
     componentDidMount()
     {
-        const baseURL = '/blog'
+        const baseURL = '/blog/collections/' + this.props.match.params.tag
+        console.log(baseURL)
         localinstance.get(baseURL)
             .then(response => {
                 console.log(response.data)
@@ -31,4 +32,4 @@ class Blog extends Component
     }
 }
 
-export default Blog
+export default BlogCollections
