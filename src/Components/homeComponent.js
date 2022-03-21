@@ -68,10 +68,10 @@ function HomeComponent(props) {
 	};
 	return(
 		<div className="home-wrapper">
+			<div className="home-bg-img">
 			<div className="home-div-header">
 				<h1 className="home-p-title">
-					<span className="home-span-Swayam">Swayam</span>{" "}
-					<br />
+					<div className="home-span-Swayam"></div>{" "}
 					The <br />
 					<span className="home-span-titledecor">
 						Entrepreneurship
@@ -99,6 +99,7 @@ function HomeComponent(props) {
 				>
 					<div className="home-div-ter">Swayam Events</div>
 				</div>
+			</div>
 			</div>
 			{/* Add the numbers speak line after this */}
 			<div className="home-div-collage">

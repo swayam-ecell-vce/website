@@ -6,10 +6,11 @@
     margin: auto;
     margin-top: 5%;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, rgb(153, 0, 255), rgb(123, 0, 206), rgb(85, 0, 141), rgb(52, 0, 87));
+    background: linear-gradient(to right bottom, rgb(127, 0, 211), rgb(92, 0, 153), rgb(43, 0, 71), rgb(1, 0, 2));
     box-shadow: 0px 0px 5px #000;
     margin-bottom: 5%;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .post_p_content
 {
