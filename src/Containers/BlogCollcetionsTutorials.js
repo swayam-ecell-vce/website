@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import localinstance from '../axios/localInstance'
 import BlogComponent from '../Components/blogComponent'
-import Footer from '../Containers/Footer'
+import Footer from './Footer'
 
 class BlogCollections extends Component
 {
@@ -10,7 +10,7 @@ class BlogCollections extends Component
     }
     componentDidMount()
     {
-        const baseURL = '/blog/collections/' + this.props.match.params.tag
+        const baseURL = '/blog/collections/Tutorials'
         console.log(baseURL)
         localinstance.get(baseURL)
             .then(response => {
@@ -21,6 +21,8 @@ class BlogCollections extends Component
                 console.log(err)
             })
     }
+
+
     render()
     {
         return(

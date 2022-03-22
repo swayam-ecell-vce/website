@@ -102,7 +102,7 @@ const BlogComponent = (props) => {
     return(
         <div className='blog_container'>
             {featuredEntryPost}
-            <BlogNav />
+            <BlogNav key = '/blog/collections/'/>
             {entriesMapped}
         </div>
     )

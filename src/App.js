@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {BrowserRouter, Switch, Route, useParams} from 'react-router-dom'
 import Navbar from './Containers/Navbar'
 
 //import the application routes form here
@@ -12,14 +12,19 @@ import Recruitment from './Containers/Recruitment'
 import Team from './Containers/team';
 import Blog from './Containers/Blog';
 import BlogPost from './Containers/BlogPost';
-import BlogCollections from './Containers/BlogCollections';
+import BlogCollectionsTech from './Containers/BlogCollectionsTech';
+import BlogCollectionsBusiness from './Containers/BlogCollectionsBusiness';
+import BlogCollectionsTutorials from './Containers/BlogCollcetionsTutorials';
 import React from 'react';
 
 function App()
 {
+
+  var pathvar = Date.now()
+  console.log(pathvar)
+
   return(
     <React.Fragment>
-    <BrowserRouter>
     <Navbar />
     <div className = 'App-Body-Div'>
       <Switch>
@@ -32,10 +37,15 @@ function App()
           <Route path='/ourteam' component={Team} exact/>
           <Route path='/blog' component={Blog} exact/>
           <Route path='/blog/:id' component={BlogPost} exact/>
-          <Route path = '/blog/collections/:tag' component={BlogCollections} exact />
+
+          {/*Big shit right here*/}
+
+          <Route key={pathvar} path = '/blog/collections/Tech' component={BlogCollectionsTech} />
+          <Route key={pathvar} path = '/blog/collections/Business' component={BlogCollectionsBusiness} />
+          <Route key={pathvar} path = '/blog/collections/Tutorials' component={BlogCollectionsTutorials} />
+
       </Switch>
     </div>
-    </BrowserRouter>
     </React.Fragment>
   )
 }

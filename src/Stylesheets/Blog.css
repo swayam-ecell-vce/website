@@ -1,7 +1,7 @@
 .blog_container
 {   
     overflow-x: hidden;
-    font-family: 'Finger Paint', cursive;
+	font-family: 'DM Sans', sans-serif;
     width: 90%;
     margin: 0 auto;
 }
@@ -87,7 +87,7 @@
 }
 .blog_h3
 {
-    font-family: 'Finger Paint', cursive;
+	font-family: 'DM Sans', sans-serif;
 }
 .blog_vert_line
 {
@@ -106,7 +106,6 @@
     margin-bottom: 0;
     border-radius: 7px;
     transition: all 0.5s ease-in-out;
-    margin-bottom: 3%;
 }
 .blog_featured:hover
 {
@@ -142,6 +141,7 @@
     padding: 1%;
     background-color: rgba(44, 44, 44, 0.315);
     margin: 0 auto;
+    margin-top: 3%;
 }
 
 .blog_nav_li
