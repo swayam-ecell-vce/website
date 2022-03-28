@@ -30,7 +30,7 @@ const BlogPostComponent = (props) => {
     }
     return(
         <div className='post_div_main'>
-            <div>
+            <div className='post_h1_title'>
                 <h1>{title}</h1>
             </div>
             <div>

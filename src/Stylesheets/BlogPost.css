@@ -1,12 +1,11 @@
 .post_div_main
 {
-    width: 50%;
     min-height: 80vh;
-    padding: 5%;
+    padding: 3%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2%;
     border-radius: 5px;
-    background: linear-gradient(to right bottom, rgb(127, 0, 211), rgb(92, 0, 153), rgb(43, 0, 71), rgb(1, 0, 2));
+    background: linear-gradient(to right, rgb(0, 24, 59), rgb(0, 43, 122) ,rgb(0, 96, 223));
     box-shadow: 0px 0px 5px #000;
     margin-bottom: 5%;
     text-align: center;
@@ -34,5 +33,12 @@
 {
     display: flex;
     justify-content: space-around;
-    color: deepskyblue;
+    color: rgb(187, 187, 187);
+}
+.post_h1_title
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 0 !important;
+    text-transform: uppercase;
 }

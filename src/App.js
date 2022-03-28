@@ -40,9 +40,9 @@ function App()
 
           {/*Big shit right here*/}
 
-          <Route key={pathvar} path = '/blog/collections/Tech' component={BlogCollectionsTech} />
-          <Route key={pathvar} path = '/blog/collections/Business' component={BlogCollectionsBusiness} />
-          <Route key={pathvar} path = '/blog/collections/Tutorials' component={BlogCollectionsTutorials} />
+          <Route  path = '/blog/collections/Tech' component={BlogCollectionsTech} />
+          <Route path = '/blog/collections/Business' component={BlogCollectionsBusiness} />
+          <Route path = '/blog/collections/Tutorials' component={BlogCollectionsTutorials} />
 
       </Switch>
     </div>
